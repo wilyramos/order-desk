@@ -1,6 +1,8 @@
 import type { Request, Response, NextFunction } from "express";
 import { Product } from "../models/product.model.js";
 
+
+
 export async function getProducts(_req: Request, res: Response, next: NextFunction) {
   try {
     const products = await Product.find().sort({ createdAt: -1 });

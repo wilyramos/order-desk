@@ -1,0 +1,402 @@
+[
+  {
+    "name": "iPhone 18 Pro Max 256 GB Borgoña",
+    "category": "iPhone",
+    "price": 6999,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467934_m_jpeg_1_f6ad72a3-6a9c-4b3f-9774-56845d639e00.jpg?v=1788983622"
+  },
+  {
+    "name": "iPhone 18 Pro Max 512 GB Glaciar",
+    "category": "iPhone",
+    "price": 8199,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467983_m_jpeg_1_737e5c12-63da-4ed3-80ce-175d829d8e2f.jpg?v=1788984136"
+  },
+  {
+    "name": "iPhone 18 Pro 512 GB Glaciar",
+    "category": "iPhone",
+    "price": 7599,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467896_m_jpeg_1_0d46aa57-0b5a-4413-9e2e-30a96dd52620.jpg?v=1788982608"
+  },
+  {
+    "name": "iPhone 18 Pro 1 TB Glaciar",
+    "category": "iPhone",
+    "price": 9999,
+    "stock": 0,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467896_m_jpeg_1.jpg?v=1788982589"
+  },
+  {
+    "name": "iPhone 18 Pro 1 TB Color plata",
+    "category": "iPhone",
+    "price": 9999,
+    "stock": 0,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21468005_m_jpeg_1.jpg?v=1788982586"
+  },
+  {
+    "name": "iPhone 18 Pro 256 GB Borgoña",
+    "category": "iPhone",
+    "price": 6499,
+    "stock": 0,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467948_m_jpeg_1.jpg?v=1788982444"
+  },
+  {
+    "name": "iPhone 18 Pro 1 TB Borgoña",
+    "category": "iPhone",
+    "price": 9999,
+    "stock": 0,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467948_m_jpeg_1_7891e497-f476-40c4-85c0-035fcf4f9c8b.jpg?v=1788982665"
+  },
+  {
+    "name": "iPhone 18 Pro 256 GB Color plata",
+    "category": "iPhone",
+    "price": 6499,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21468005_m_jpeg_1_1c5101a2-a184-4507-b929-8df6d340f646.jpg?v=1788982660"
+  },
+  {
+    "name": "iPhone 18 Pro Max 1 TB Color plata",
+    "category": "iPhone",
+    "price": 10599,
+    "stock": 0,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467885_m_jpeg_1.jpg?v=1788982654"
+  },
+  {
+    "name": "iPhone 18 Pro 256 GB Glaciar",
+    "category": "iPhone",
+    "price": 6499,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467896_m_jpeg_1_aa65ec0a-c473-459d-8590-773718ccbf02.jpg?v=1788982821"
+  },
+  {
+    "name": "iPhone 18 Pro Max 1 TB Negro",
+    "category": "iPhone",
+    "price": 10599,
+    "stock": 0,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467994_m_jpeg_1.jpg?v=1788982738"
+  },
+  {
+    "name": "iPhone 18 Pro Max 256 GB Glaciar",
+    "category": "iPhone",
+    "price": 6999,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467983_m_jpeg_1.jpg?v=1788982735"
+  },
+  {
+    "name": "iPhone 18 Pro 512 GB Negro",
+    "category": "iPhone",
+    "price": 7599,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467972_m_jpeg_1.jpg?v=1788983066"
+  },
+  {
+    "name": "iPhone 18 Pro Max 1 TB Borgoña",
+    "category": "iPhone",
+    "price": 10599,
+    "stock": 0,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467934_m_jpeg_1.jpg?v=1788982941"
+  },
+  {
+    "name": "iPhone Duo 2 TB Blanco estrella",
+    "category": "iPhone",
+    "price": 17499,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463722_m_jpeg_1.jpg?v=1788982826"
+  },
+  {
+    "name": "iPhone Duo 2 TB Cielo nocturno",
+    "category": "iPhone",
+    "price": 17499,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463731_m_jpeg_1.jpg?v=1788983148"
+  },
+  {
+    "name": "iPhone Duo 1 TB Cielo nocturno",
+    "category": "iPhone",
+    "price": 14299,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463731_m_jpeg_1_e79cd117-973b-46bb-9c77-49689b65b27f.jpg?v=1788983384"
+  },
+  {
+    "name": "iPhone 18 Pro Max 1 TB Glaciar",
+    "category": "iPhone",
+    "price": 10599,
+    "stock": 0,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467983_m_jpeg_1_344e5ed5-2a9b-4c2c-80eb-d5880e34847c.jpg?v=1788983382"
+  },
+  {
+    "name": "iPhone 18 Pro Max 512 GB Color plata",
+    "category": "iPhone",
+    "price": 8199,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467885_m_jpeg_1_e54c25fc-ba96-4e64-af3e-05ae376a5602.jpg?v=1788983339"
+  },
+  {
+    "name": "iPhone 18 Pro Max 256 GB Negro",
+    "category": "iPhone",
+    "price": 6999,
+    "stock": 0,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467994_m_jpeg_1_70b18478-d83c-4f5f-8a80-57594ef6768d.jpg?v=1788983326"
+  },
+  {
+    "name": "iPhone 18 Pro 1 TB Negro",
+    "category": "iPhone",
+    "price": 9999,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467972_m_jpeg_1_d1f34685-9fc4-4f6f-a883-2485a22e1ad7.jpg?v=1788983571"
+  },
+  {
+    "name": "iPhone 18 Pro 512 GB Borgoña",
+    "category": "iPhone",
+    "price": 7599,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467948_m_jpeg_1_c688b32f-72a0-4eac-93f9-03a02012f79e.jpg?v=1788983470"
+  },
+  {
+    "name": "iPhone Duo 256 GB Blanco estrella",
+    "category": "iPhone",
+    "price": 10999,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463722_m_jpeg_1_ea7524eb-6506-4c52-a662-cbda593a1461.jpg?v=1788983401"
+  },
+  {
+    "name": "iPhone 18 Pro Max 512 GB Negro",
+    "category": "iPhone",
+    "price": 8199,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467994_m_jpeg_1_3a0e7e15-03bb-4c40-84db-428db4c3a781.jpg?v=1788983396"
+  },
+  {
+    "name": "iPhone 18 Pro Max 256 GB Color plata",
+    "category": "iPhone",
+    "price": 6999,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467885_m_jpeg_1_923c6772-e75b-4bd3-aca7-86f0559b7dca.jpg?v=1788983812"
+  },
+  {
+    "name": "iPhone Duo 1 TB Blanco estrella",
+    "category": "iPhone",
+    "price": 14299,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463722_m_jpeg_1_b3d8c267-427f-4aec-adc6-8d2943e74481.jpg?v=1788983738"
+  },
+  {
+    "name": "iPhone Duo 512 GB Blanco estrella",
+    "category": "iPhone",
+    "price": 11999,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463722_m_jpeg_1_7f5c2231-b183-4faf-82cc-d321b23ce773.jpg?v=1788983702"
+  },
+  {
+    "name": "iPhone 18 Pro 256 GB Negro",
+    "category": "iPhone",
+    "price": 6499,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467972_m_jpeg_1_9e467308-22de-4405-a9ed-dd644fe193d8.jpg?v=1788983999"
+  },
+  {
+    "name": "iPhone Duo 256 GB Cielo nocturno",
+    "category": "iPhone",
+    "price": 10999,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463731_m_jpeg_1_45e20e83-7f07-4f44-b288-1e78e6d12311.jpg?v=1788983971"
+  },
+  {
+    "name": "iPhone 18 Pro 512 GB Color plata",
+    "category": "iPhone",
+    "price": 7599,
+    "stock": 10,
+    "description": "iPhone 18 Pro. Pantalla de 6.3 pulgadas con ProMotion, cámara Fusion principal de 48 MP con apertura variable, un gran salto en batería y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21468005_m_jpeg_1_6f514c62-9410-464a-a401-2c4f081a7885.jpg?v=1788983948"
+  },
+  {
+    "name": "iPhone 18 Pro Max 512 GB Borgoña",
+    "category": "iPhone",
+    "price": 8199,
+    "stock": 10,
+    "description": "iPhone 18 Pro Max. Pantalla ProMotion de 6.9 pulgadas, cámara Fusion principal de 48 MP con apertura variable, la mayor duración de batería en un iPhone y chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21467934_m_jpeg_1_73595fdb-c274-4c02-b77a-461934fa94f3.jpg?v=1788984232"
+  },
+  {
+    "name": "iPhone Duo 512 GB Cielo nocturno",
+    "category": "iPhone",
+    "price": 11999,
+    "stock": 0,
+    "description": "iPhone Duo. La pantalla de iPhone más grande hasta ahora. En un diseño delgado y plegable. Marco de titanio resistente. Experiencias únicas de iOS. Sistema de dos cámaras Fusion de 48 MP. Chip A20 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-21463731_m_jpeg_1_3cf09a8d-d719-4867-b17a-88f158d6d6d9.jpg?v=1788984227"
+  },
+  {
+    "name": "iPhone 15 128 GB Rosa",
+    "category": "iPhone",
+    "price": 2999,
+    "stock": 0,
+    "description": "El iPhone 15 viene con la Dynamic Island, cámara gran angular de 48 MP, conector USB-C y un resistente vidrio con infusión de color en un diseño de aluminio.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-10935081.jpg?v=1722624491"
+  },
+  {
+    "name": "iPhone 15 256 GB Negro",
+    "category": "iPhone",
+    "price": 4999,
+    "stock": 0,
+    "description": "El iPhone 15 viene con la Dynamic Island, cámara gran angular de 48 MP, conector USB-C y un resistente vidrio con infusión de color en un diseño de aluminio.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-10935051.jpg?v=1722623385"
+  },
+  {
+    "name": "iPhone 16e 256 GB Blanco",
+    "category": "iPhone",
+    "price": 3699,
+    "stock": 0,
+    "description": "El iPhone 16e está diseñado para Apple Intelligence y tiene toda la potencia del chip A18. Te permite tomar fotos en superalta resolución con la cámara Fusion de 48 MP. Y como trae una superbatería, tienes más tiempo para enviar mensajes, navegar y mucho más.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/373cc234-116d-59b6-b9a8-ae2f92c35338_m_jpg_1_bba5ba4f-793e-42d5-b5f2-a0dfe2a43d26.jpg?v=1740425055"
+  },
+  {
+    "name": "iPhone 16e 256 GB Negro",
+    "category": "iPhone",
+    "price": 3199,
+    "stock": 0,
+    "description": "El iPhone 16e está diseñado para Apple Intelligence y tiene toda la potencia del chip A18. Te permite tomar fotos en superalta resolución con la cámara Fusion de 48 MP. Y como trae una superbatería, tienes más tiempo para enviar mensajes, navegar y mucho más.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/83736d9f-dd3d-57a2-bcf4-2668b975f66d_m_jpg_1.jpg?v=1754408724"
+  },
+  {
+    "name": "iPhone 16 Plus 128 GB Ultramarino",
+    "category": "iPhone",
+    "price": 4799,
+    "stock": 0,
+    "description": "iPhone 16 Plus. Con el nuevo Control de la Cámara. Cámara Fusion de 48 MP. Cinco colores espectaculares. Y el chip A18.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858861.jpg?v=1740443403"
+  },
+  {
+    "name": "iPhone 16 Pro Max 256 GB Titanio del desierto",
+    "category": "iPhone",
+    "price": 5999,
+    "stock": 0,
+    "description": "iPhone 16 Pro Max. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858911_0a118e63-8238-4cb6-a65c-0c152bc00b2a.jpg?v=1726618029"
+  },
+  {
+    "name": "iPhone 16 Pro 256 GB Titanio natural",
+    "category": "iPhone",
+    "price": 5799,
+    "stock": 0,
+    "description": "iPhone 16 Pro. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858941_c0a03dfd-d769-4474-a36b-e91bb9797cb6.jpg?v=1726618007"
+  },
+  {
+    "name": "iPhone 16 512 GB Blanco",
+    "category": "iPhone",
+    "price": 4999,
+    "stock": 0,
+    "description": "iPhone 16. Con Control de la Cámara. Cámara Fusion de 48 MP. Cinco colores espectaculares. Y el chip A18.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858981_1995c9b2-e801-4096-a4bb-2b7728b4e3b6.jpg?v=1726617805"
+  },
+  {
+    "name": "iPhone 16 Pro Max 256 GB Titanio blanco",
+    "category": "iPhone",
+    "price": 4999,
+    "stock": 0,
+    "description": "iPhone 16 Pro Max. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858931_fb57d19f-c17a-4d2b-bbe7-192012d818b8.jpg?v=1726617704"
+  },
+  {
+    "name": "iPhone 16 Pro Max 512 GB Titanio negro",
+    "category": "iPhone",
+    "price": 7099,
+    "stock": 0,
+    "description": "iPhone 16 Pro Max. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858901_48fb910d-41ad-4302-a185-313a6b3215c3.jpg?v=1726617426"
+  },
+  {
+    "name": "iPhone 16 Pro 512 GB Titanio natural",
+    "category": "iPhone",
+    "price": 4399,
+    "stock": 0,
+    "description": "iPhone 16 Pro. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858941.jpg?v=1726617409"
+  },
+  {
+    "name": "iPhone 16 Pro Max 512 GB Titanio natural",
+    "category": "iPhone",
+    "price": 7099,
+    "stock": 0,
+    "description": "iPhone 16 Pro Max. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858921_cc40e16b-6879-486e-9f62-f64e5ec6ab73.jpg?v=1726617365"
+  },
+  {
+    "name": "iPhone 16 Pro 256 GB Titanio blanco",
+    "category": "iPhone",
+    "price": 5799,
+    "stock": 0,
+    "description": "iPhone 16 Pro. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858951_35ac73a0-a335-4580-9b77-054cfd838922.jpg?v=1726617337"
+  },
+  {
+    "name": "iPhone 16 Pro Max 512 GB Titanio blanco",
+    "category": "iPhone",
+    "price": 5999,
+    "stock": 0,
+    "description": "iPhone 16 Pro Max. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858931_46ae0fbe-1915-48c8-94e9-396e173c03b2.jpg?v=1726617325"
+  },
+  {
+    "name": "iPhone 16 128 GB Verde azulado",
+    "category": "iPhone",
+    "price": 3699,
+    "stock": 0,
+    "description": "iPhone 16. Con Control de la Cámara. Cámara Fusion de 48 MP. Cinco colores espectaculares. Y el chip A18.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858961_517beab2-f4c7-4f99-b56d-915186a026f0.jpg?v=1726617251"
+  },
+  {
+    "name": "iPhone 16 Pro 256 GB Titanio del desierto",
+    "category": "iPhone",
+    "price": 5799,
+    "stock": 0,
+    "description": "iPhone 16 Pro. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858891_0343117b-5cc8-4474-8a7b-5c342b4c3da1.jpg?v=1726617031"
+  },
+  {
+    "name": "iPhone 16 256 GB Negro",
+    "category": "iPhone",
+    "price": 4499,
+    "stock": 0,
+    "description": "iPhone 16. Con Control de la Cámara. Cámara Fusion de 48 MP. Cinco colores espectaculares. Y el chip A18.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858811_a49ffdaf-355f-411a-b2e0-e3e9e01326d9.jpg?v=1726616742"
+  },
+  {
+    "name": "iPhone 16 Pro 512 GB Titanio negro",
+    "category": "iPhone",
+    "price": 6599,
+    "stock": 0,
+    "description": "iPhone 16 Pro. Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+    "image": "https://cdn.shopify.com/s/files/1/0612/1603/0835/files/IMG-14858881_6560f570-48b2-4cf7-ab54-6527ed5baa9a.jpg?v=1726616710"
+  }
+]
