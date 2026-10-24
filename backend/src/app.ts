@@ -1,10 +1,13 @@
 import express, { type Request, type Response, type NextFunction } from "express";
 import cors from "cors";
+import productRoutes from "./routes/product.routes.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/api/products", productRoutes);
 
 app.get("/api/health", (_req: Request, res: Response) => {
   res.json({ ok: true, message: "API funcionando" });
