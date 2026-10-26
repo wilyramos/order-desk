@@ -3,9 +3,9 @@ import OrdersList from "@/components/OrdersList";
 
 function OrdersSkeleton() {
   return (
-    <div className="mx-auto grid max-w-3xl gap-6">
+    <div className="mx-auto grid max-w-[980px] gap-8">
       {Array.from({ length: 2 }).map((_, i) => (
-        <div key={i} className="h-72 animate-pulse rounded-3xl bg-[#f5f5f7]" />
+        <div key={i} className="h-64 animate-pulse rounded-2xl bg-white border border-[#d2d2d7]" />
       ))}
     </div>
   );
@@ -17,15 +17,18 @@ export default function OrdersPage({
   searchParams: Promise<{ nuevo?: string }>;
 }) {
   return (
-    <main className="bg-white px-6 pb-24 pt-20 text-[#1d1d1f]">
-      <header className="mb-14 text-center">
-        <p className="text-xl font-medium text-[#6e6e73]">Tu cuenta</p>
-        <h1 className="mt-1 text-5xl font-semibold tracking-tight md:text-6xl">Mis pedidos</h1>
-      </header>
+    <main className="min-h-screen bg-[#f5f5f7] px-4 pb-32 pt-12 md:px-6 md:pt-16 text-[#1d1d1f]">
+      <div className="mx-auto max-w-[980px]">
+        <header className="mb-10 md:mb-14">
+          <h1 className="text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-5xl">
+            Artículos del pedido.
+          </h1>
+        </header>
 
-      <Suspense fallback={<OrdersSkeleton />}>
-        <OrdersList searchParams={searchParams} />
-      </Suspense>
+        <Suspense fallback={<OrdersSkeleton />}>
+          <OrdersList searchParams={searchParams} />
+        </Suspense>
+      </div>
     </main>
   );
 }

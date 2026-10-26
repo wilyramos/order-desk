@@ -3,34 +3,25 @@ import Link from "next/link";
 import { getOrders, ticketUrl } from "@/lib/orders";
 import type { Order, OrderStatus } from "@/types/order";
 
-const priceFormatter = new Intl.NumberFormat("es-PE", {
+const priceFormatter = new Intl.NumberFormat("es-ES", {
   style: "currency",
-  currency: "PEN",
+  currency: "EUR",
   minimumFractionDigits: 2,
 });
 
-const dateFormatter = new Intl.DateTimeFormat("es-PE", {
+const dateFormatter = new Intl.DateTimeFormat("es-ES", {
   day: "numeric",
   month: "short",
   year: "numeric",
 });
 
 const STATUS_TEXT: Record<OrderStatus, (order: Order) => string> = {
-  pendiente: () => "Pendiente de confirmación",
-  confirmado: () => "Confirmado",
+  pendiente: () => "Procesando",
+  confirmado: () => "Pedido confirmado",
   enviado: () => "En camino",
   entregado: (order) => `Entregado el ${dateFormatter.format(new Date(order.updatedAt))}`,
-  recogido: (order) => `Picked Up ${dateFormatter.format(new Date(order.updatedAt))}`,
+  recogido: (order) => `Recogido el ${dateFormatter.format(new Date(order.updatedAt))}`,
   cancelado: () => "Cancelado",
-};
-
-const STATUS_COLOR: Record<OrderStatus, string> = {
-  pendiente: "text-[#b25000]",
-  confirmado: "text-[#0066cc]",
-  enviado: "text-[#5e3bd1]",
-  entregado: "text-[#1d7f3c]",
-  recogido: "text-[#1d7f3c]",
-  cancelado: "text-[#c01818]",
 };
 
 const shortId = (id: string) => id.slice(-8).toUpperCase();
@@ -45,102 +36,132 @@ export default async function OrdersList({
 
   if (orders.length === 0) {
     return (
-      <div className="py-24 text-center">
-        <p className="text-2xl text-[#6e6e73]">Aún no tienes pedidos.</p>
-        <Link href="/" className="mt-6 inline-block text-lg text-[#0066cc] hover:underline">
-          Ir a la tienda ›
+      <div className="rounded-2xl bg-white p-12 text-center border border-[#d2d2d7]">
+        <p className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">Aún no tienes pedidos.</p>
+        <p className="mt-2 text-base text-[#6e6e73]">
+          Aquí solo aparecerán las compras de los últimos 18 meses.
+        </p>
+        <Link
+          href="/"
+          className="mt-6 inline-flex items-center rounded-full bg-[#0071e3] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-[#0077ed]"
+        >
+          Explorar productos
         </Link>
       </div>
     );
   }
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="space-y-8">
       {nuevo && (
-        <div className="mb-10 flex items-center gap-5 rounded-3xl bg-[#e6f7ec] p-6">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#1d7f3c] text-xl text-white">
-            ✓
-          </span>
+        <div className="flex items-center gap-4 rounded-2xl bg-white p-6 border border-[#d2d2d7]">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1d7f3c] text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+            </svg>
+          </div>
           <div>
-            <p className="text-xl font-semibold">¡Gracias por tu compra!</p>
-            <p className="text-[#1d1d1f]/70">
-              Tu pedido Nº {shortId(nuevo)} se registró correctamente.
+            <p className="text-lg font-semibold tracking-tight text-[#1d1d1f]">¡Gracias por tu pedido!</p>
+            <p className="text-sm text-[#6e6e73]">
+              Número de pedido: <span className="font-medium text-[#1d1d1f]">W{shortId(nuevo)}</span>
             </p>
           </div>
         </div>
       )}
 
-      <ul className="grid gap-6">
+      <ul className="space-y-6 md:space-y-8">
         {orders.map((order) => {
-          const isNew = order._id === nuevo;
+          const mainItem = order.items[0];
+          const extraCount = order.items.length - 1;
 
           return (
             <li
               key={order._id}
-              className={`rounded-3xl bg-[#f5f5f7] p-6 sm:p-8 ${isNew ? "ring-2 ring-[#0066cc]" : ""}`}
+              className="overflow-hidden rounded-2xl bg-white border border-[#d2d2d7]"
             >
-              <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                <p className={`text-lg font-semibold ${STATUS_COLOR[order.status]}`}>
-                  {STATUS_TEXT[order.status](order)}
-                </p>
-                <p className="text-sm text-[#6e6e73]">
-                  Pedido Nº {shortId(order._id)} · {dateFormatter.format(new Date(order.createdAt))}
-                </p>
-              </div>
-
-              <div className="mt-6 divide-y divide-black/10">
-                {order.items.map((item, index) => (
-                  <div
-                    key={`${item.product}-${index}`}
-                    className="flex items-center gap-5 py-5 first:pt-0 last:pb-0"
-                  >
-                    <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl bg-white">
-                      {item.image ? (
-                        <Image
-                          src={item.image}
-                          alt={item.name}
-                          fill
-                          sizes="96px"
-                          className="object-contain p-2"
-                        />
-                      ) : (
-                        <div className="flex h-full items-center justify-center text-3xl font-semibold text-gray-300">
-                          {item.name.charAt(0)}
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="min-w-0 flex-1">
-                      <p className="truncate text-[17px] font-semibold text-[#1d1d1f]">{item.name}</p>
-                      <p className="text-sm text-[#6e6e73]">
-                        Cantidad: {item.quantity} · {priceFormatter.format(item.price)} c/u
-                      </p>
-                    </div>
-
-                    <p className="shrink-0 text-[17px] font-semibold">
-                      {priceFormatter.format(item.price * item.quantity)}
+              {/* Barra superior del pedido (Metadatos) */}
+              <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#d2d2d7] bg-[#f5f5f7]/30 px-6 py-4">
+                <div className="flex flex-wrap gap-8">
+                  <div>
+                    <p className="text-xs text-[#6e6e73]">Fecha del pedido</p>
+                    <p className="text-sm font-medium text-[#1d1d1f]">
+                      {dateFormatter.format(new Date(order.createdAt))}
                     </p>
                   </div>
-                ))}
-              </div>
-
-              <div className="mt-6 flex flex-col gap-4 border-t border-black/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-lg text-[#1d1d1f]">
-                  Total <span className="font-semibold">{priceFormatter.format(order.total)}</span>
-                </p>
-
-                <div className="flex gap-6 text-[17px]">
-                  <Link href={`/ordenes/${order._id}`} className="text-[#0066cc] hover:underline">
-                    Ver detalle ›
-                  </Link>
+                  <div>
+                    <p className="text-xs text-[#6e6e73]">Total</p>
+                    <p className="text-sm font-medium text-[#1d1d1f]">
+                      {priceFormatter.format(order.total)}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col md:items-end">
+                  <p className="text-xs text-[#6e6e73]">Número de pedido <span className="font-medium text-[#1d1d1f]">W{shortId(order._id)}</span></p>
                   <a
                     href={ticketUrl(order._id)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#0066cc] hover:underline"
+                    className="text-sm font-medium text-[#0071e3] hover:underline"
                   >
-                    Ver comprobante ›
+                    Ver recibo
                   </a>
+                </div>
+              </div>
+
+              {/* Contenido principal del pedido */}
+              <div className="flex flex-col gap-6 px-6 py-8 md:flex-row md:items-start md:justify-between">
+                <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
+                  {/* Imagen del producto */}
+                  <div className="relative h-32 w-32 shrink-0 md:h-40 md:w-40">
+                    {mainItem?.image ? (
+                      <Image
+                        src={mainItem.image}
+                        alt={mainItem.name}
+                        fill
+                        sizes="(max-width: 768px) 128px, 160px"
+                        className="object-contain"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center rounded-2xl bg-[#f5f5f7] text-4xl font-light text-[#86868b]">
+                        {mainItem?.name.charAt(0) ?? "A"}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Detalles del producto y Estado */}
+                  <div className="flex flex-col justify-center pt-2 md:pt-4">
+                    <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-3xl">
+                      {STATUS_TEXT[order.status](order)}
+                    </h2>
+                    <p className="mt-2 text-base text-[#1d1d1f]">
+                      {mainItem?.name}
+                    </p>
+                    <p className="mt-1 text-sm text-[#6e6e73]">
+                      Cantidad: {mainItem?.quantity}
+                    </p>
+
+                    {extraCount > 0 && (
+                      <p className="mt-2 text-sm text-[#0071e3]">
+                        + {extraCount} artículo{extraCount === 1 ? "" : "s"} más
+                      </p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Acciones */}
+                <div className="flex w-full shrink-0 flex-col gap-3 md:w-56 md:pt-4">
+                  <Link
+                    href={`/ordenes/${order._id}`}
+                    className="flex w-full items-center justify-center rounded-full bg-[#0071e3] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[#0077ed]"
+                  >
+                    Seguir envío
+                  </Link>
+                  <Link
+                    href={`/ordenes/${order._id}`}
+                    className="flex w-full items-center justify-center rounded-full bg-[#e8e8ed] px-4 py-2.5 text-sm font-medium text-[#1d1d1f] transition hover:bg-[#d2d2d7]"
+                  >
+                    Ver detalles del pedido
+                  </Link>
                 </div>
               </div>
             </li>

@@ -20,7 +20,11 @@ export default function AddToCartButton({ product }: { product: Product }) {
       type="button"
       onClick={handleClick}
       disabled={!inStock}
-      className="rounded-full bg-[#0066cc] px-5 py-2 text-white transition hover:bg-[#0071e3] disabled:cursor-not-allowed disabled:bg-gray-400"
+      className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors duration-200 ${
+        added
+          ? "bg-[#1d1d1f] text-white"
+          : "bg-[#0071e3] text-white hover:bg-[#0077ed] active:bg-[#006edb]"
+      } disabled:cursor-not-allowed disabled:bg-[#e8e8ed] disabled:text-[#86868b]`}
     >
       {added ? "Agregado ✓" : "Comprar"}
     </button>

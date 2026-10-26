@@ -6,51 +6,59 @@ import type { Product } from "@/types/product";
 const priceFormatter = new Intl.NumberFormat("es-PE", {
   style: "currency",
   currency: "PEN",
-  minimumFractionDigits: 2,
+  minimumFractionDigits: 0,
 });
 
 export default function ProductCard({ product }: { product: Product }) {
-  const inStock = product.stock > 0;
-
   return (
-    <article className="flex flex-col items-center px-4 pb-6 pt-8 text-center">
-      <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6e6e73]">
-        {product.category}
-      </p>
+    <article className="group relative flex flex-col justify-between rounded-3xl bg-[#f5f5f7] p-8 text-left transition-all duration-300 hover:shadow-xl">
+      <div>
+        <p className="text-xs font-medium uppercase tracking-wider text-[#6e6e73]">
+          {product.category}
+        </p>
 
-      <h3 className="mt-1 text-[28px] font-semibold leading-tight tracking-tight text-[#1d1d1f] md:text-[32px]">
-        {product.name}
-      </h3>
+        <h3 className="mt-1 text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-3xl">
+          {product.name}
+        </h3>
 
-      <p className="mt-2 line-clamp-2 min-h-[2.75rem] max-w-xs text-[17px] leading-snug text-[#6e6e73]">
-        {product.description}
-      </p>
+        <p className="mt-2 line-clamp-2 min-h-[2.5rem] text-sm text-[#6e6e73]">
+          {product.description}
+        </p>
+      </div>
 
-      <div className="relative mt-6 h-64 w-full">
+      <div className="relative my-8 h-60 w-full overflow-hidden">
         {product.image ? (
           <Image
             src={product.image}
             alt={product.name}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-contain transition-transform duration-500 ease-out hover:scale-105"
+            className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
           />
         ) : (
-          <div className="flex h-full items-center justify-center text-7xl font-semibold text-gray-300">
+          <div className="flex h-full items-center justify-center text-6xl font-light text-[#86868b]">
             {product.category.charAt(0)}
           </div>
         )}
       </div>
 
-      <p className="mt-6 text-[17px] text-[#1d1d1f]">
-        Desde <span className="font-semibold">{priceFormatter.format(product.price)}</span>
-      </p>
+      <div>
+        <p className="text-sm font-normal text-[#1d1d1f]">
+          Desde{" "}
+          <span className="font-semibold">
+            {priceFormatter.format(product.price)}
+          </span>
+        </p>
 
-      <div className="mt-5 flex items-center justify-center gap-5 text-[17px]">
-        <AddToCartButton product={product} />
-        <Link href={`/products/${product._id}`} className="text-[#0066cc] hover:underline">
-          Más información ›
-        </Link>
+        <div className="mt-4 flex items-center gap-4">
+          <AddToCartButton product={product} />
+          <Link
+            href={`/products/${product._id}`}
+            className="inline-flex items-center text-sm font-normal text-[#0066cc] hover:underline"
+          >
+            Más información <span className="ml-1 text-base">›</span>
+          </Link>
+        </div>
       </div>
     </article>
   );

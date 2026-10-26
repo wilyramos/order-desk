@@ -16,6 +16,7 @@ const orderItemSchema = new Schema(
     name: { type: String, required: true },
     sku: { type: String, default: "" },
     serialNumber: { type: String, default: "" },
+    imei: { type: String, default: "" },
     price: { type: Number, required: true, min: 0 },
     quantity: { type: Number, required: true, min: 1 },
     quantityFulfilled: { type: Number, default: 0, min: 0 },

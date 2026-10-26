@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Logo({ size = 22 }: { size?: number }) {
   return (
     <Image
-      src="/favicon.ico"
+      src="/Apple_logo_black.svg"
       alt="Apple"
       width={size}
       height={size}

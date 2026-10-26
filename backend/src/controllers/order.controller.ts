@@ -206,9 +206,9 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
       return res.status(409).json({ message: "Un pedido cancelado no se puede editar" });
     }
 
-    const body = (req.body ?? {}) as OrderDetailsBody;
+    const body = req.body ?? {};
 
-    // 1. Datos de contacto y entrega
+    // 1. Contacto
     const customerFields = ["name", "email", "phone", "address"] as const;
     for (const field of customerFields) {
       const value = body.customer?.[field];
@@ -217,7 +217,7 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
       }
     }
 
-    // 2. Método de pago y tarjeta
+    // 2. Método de pago
     if (body.payment) {
       const method = toPaymentMethod(body.payment.method ?? order.paymentMethod);
       order.set("paymentMethod", method);
@@ -227,7 +227,6 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
         if (!/^\d{4}$/.test(last4)) {
           return res.status(400).json({ message: "Los últimos 4 dígitos de la tarjeta no son válidos" });
         }
-
         order.set("paymentCardBrand", String(body.payment.cardBrand ?? order.paymentCardBrand ?? "").trim());
         order.set("paymentLast4", last4);
         order.set("paymentTerms", "Credit Card");
@@ -238,21 +237,22 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
       }
     }
 
-    // 3. Cantidades por producto (se alinean por posición con order.items)
-    if (Array.isArray(body.quantities)) {
-      for (let index = 0; index < order.items.length; index++) {
-        const raw = body.quantities[index];
-        if (raw === undefined) continue;
+    // 3. Cantidades, Serial Number e IMEI por producto
+    if (Array.isArray(body.items)) {
+      body.items.forEach((itemInput: { quantity?: number; serialNumber?: string; imei?: string }, index: number) => {
+        if (!order.items[index]) return;
 
-        const quantity = Math.floor(Number(raw));
-        if (!Number.isFinite(quantity) || quantity < 1) {
-          return res.status(400).json({ message: "Cantidad no válida" });
+        if (typeof itemInput.quantity === "number" && itemInput.quantity >= 1) {
+          order.items[index].quantity = Math.floor(itemInput.quantity);
         }
+        if (typeof itemInput.serialNumber === "string") {
+          order.items[index].serialNumber = itemInput.serialNumber.trim();
+        }
+        if (typeof itemInput.imei === "string") {
+          order.items[index].imei = itemInput.imei.trim();
+        }
+      });
 
-        order.items[index].quantity = quantity;
-      }
-
-      // Recalculamos los importes con los precios y cantidades nuevos
       const total = round2(order.items.reduce((sum, item) => sum + item.price * item.quantity, 0));
       const subtotal = round2(total / (1 + IGV_RATE));
       order.set("total", total);
@@ -272,6 +272,7 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
     next(error);
   }
 }
+
 
 export async function getOrderTicket(req: Request<{ id: string }>, res: Response, next: NextFunction) {
   try {

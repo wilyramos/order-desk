@@ -15,6 +15,7 @@ export interface OrderItem {
   quantityFulfilled?: number;
   serialNumber?: string;
   image?: string;
+  imei?: string;
 }
 
 export interface Order {
