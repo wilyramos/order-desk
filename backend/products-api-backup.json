@@ -1,0 +1,2251 @@
+[
+  {
+    "_id": "6ab381aeeb6e882e359cd9eb",
+    "nombre": "iPhone 18 Pro Max – Silver",
+    "slug": "iphone-18-pro-max-silver",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El iPhone 18 Pro Max en acabado negro reúne una pantalla Super Retina XDR de 6.9 pulgadas, 256 GB de almacenamiento interno y 12 GB de RAM para responder a tareas diarias, entretenimiento, fotografía y video. La resolución de 2868 x 1320 a 460 ppi permite visualizar contenido con gran nivel de detalle, mientras que el procesador A20 PRO y iOS 27 forman parte de su configuración. Esta variante utiliza eSIM y es compatible con tecnología móvil 5G para una experiencia conectada acorde con el uso cotidiano.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Para fotografía y video, integra tres cámaras traseras de 48 MP: principal Fusion, ultra gran angular Fusion y teleobjetivo Fusion. La cámara frontal de 18 MP Center Stage con apertura ƒ/1.9 complementa el sistema para selfies y videollamadas. En conectividad incorpora Bluetooth 6, Wi-Fi y GPS, además de Face ID, escáner LiDAR, barómetro y giroscopio de alto rango dinámico, entre otros sensores. La conexión física se realiza mediante USB Tipo-C, y el equipo admite carga rápida y carga inalámbrica.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Su batería recargable integrada de iones de litio ofrece hasta 43 horas de reproducción de video. El equipo mide 16.34 cm de alto, 7.80 cm de ancho y 0.875 cm de profundidad, con un peso de 249 g. Se encuentra liberado y requiere un adaptador de corriente USB Tipo-C con espiga plana para su alimentación. La garantía proporcionada es de 1 año. En la caja encontrarás iPhone 18 Pro Max, cable de carga y manual de uso, elementos indicados para comenzar a utilizarlo y revisar las funciones principales del equipo.</span></p>",
+    "precio": 7299,
+    "precioComparativo": 8699,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456819/products/hxdyrumgxky8rns01ujv.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456819/products/o0mfskhiwnrdlrn846re.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456819/products/ievwedxxbsr0lebwqa2r.jpg"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "512 gb",
+        "precio": 8299,
+        "precioComparativo": 9600,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6ab834017d1caafc172755a0"
+      },
+      {
+        "nombre": "256 gb",
+        "precio": 7299,
+        "precioComparativo": 8699,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab834017d1caafc172755a1"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "iPhone 18 Pro Max – Silver",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T07:37:18.197Z",
+    "updatedAt": "2026-09-26T21:07:13.451Z",
+    "__v": 1
+  },
+  {
+    "_id": "6ab37dc9eb6e882e359cd692",
+    "nombre": "iPad Pro 13″ M5 – Silver – Wifi",
+    "slug": "ipad-pro-13-m5-silver-wifi",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPad Pro 13″ (2025) M5  Wi-Fi</strong></b><span style=\"white-space: pre-wrap;\"> + </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cellular</strong></b><span style=\"white-space: pre-wrap;\"> es la tablet profesional de Apple pensada para creativos, estudiantes y profesionales que necesitan máximo rendimiento en un formato ultraportátil. Con el nuevo chip M5, este iPad Pro ofrece velocidad y eficiencia de nivel superior en cada tarea.</span></p><h3 class=\"text-xl font-medium mb-2 mt-4\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Características principales</span></h3><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Chip Apple M5 de última generación para máximo rendimiento</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Pantalla de 11 pulgadas con tecnología Liquid Retina</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">256GB / 512GB de almacenamiento interno</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Conectividad Wi-Fi + Cellular</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Acabado exclusivo en color Space Black</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Compatible con Apple Pencil Pro y Magic Keyboard</span></li></ul><p class=\"mb-2\"><br></p><p class=\"mb-2\"><br></p>",
+    "precio": 5299,
+    "precioComparativo": 6500,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790147875/products/knetxa4svvtn6t7lysfr.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146796/products/yrpog50dcj8xlvcdehbu.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790147875/products/a0t0ojdluk2ygu9aifxp.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790147875/products/thseljfeoeqjwkpxyore.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65434c8d1da0babc4243",
+      "nombre": "iPad"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": false,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "256 gb",
+        "precio": 5299,
+        "precioComparativo": 5700,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6abf00bb24e623123ce61923"
+      },
+      {
+        "nombre": "512 gb",
+        "precio": 5599,
+        "precioComparativo": 6500,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6abf00bb24e623123ce61924"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "iPad Pro 13″ M5 – Space Black – Wifi + Cellular",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T07:20:41.706Z",
+    "updatedAt": "2026-10-02T00:54:19.604Z",
+    "__v": 2
+  },
+  {
+    "_id": "6ab37c4feb6e882e359cd5cf",
+    "nombre": "iPad Pro 13″ M5 – Space Black – Wifi + Celular",
+    "slug": "ipad-pro-13-m5-space-black-wifi-celular",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPad Pro 13″ (2025) M5  Wi-Fi</strong></b><span style=\"white-space: pre-wrap;\"> + </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cellular</strong></b><span style=\"white-space: pre-wrap;\"> es la tablet profesional de Apple pensada para creativos, estudiantes y profesionales que necesitan máximo rendimiento en un formato ultraportátil. Con el nuevo chip M5, este iPad Pro ofrece velocidad y eficiencia de nivel superior en cada tarea.</span></p><h3 class=\"text-xl font-medium mb-2 mt-4\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Características principales</span></h3><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Chip Apple M5 de última generación para máximo rendimiento</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Pantalla de 11 pulgadas con tecnología Liquid Retina</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">256GB / 512GB de almacenamiento interno</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Conectividad Wi-Fi + Cellular</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Acabado exclusivo en color Space Black</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Compatible con Apple Pencil Pro y Magic Keyboard</span></li></ul><p class=\"mb-2\"><br></p><p class=\"mb-2\"><br></p>",
+    "precio": 5499,
+    "precioComparativo": 6500,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146796/products/m9dpob6ficn9dpgvysoe.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146796/products/yrpog50dcj8xlvcdehbu.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146797/products/edhrzaozvrbpw4js2lbc.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65434c8d1da0babc4243",
+      "nombre": "iPad"
+    },
+    "stock": 1,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": false,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "256 gb",
+        "precio": 5499,
+        "precioComparativo": 5700,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ac9587c24e623123ce6b1b0"
+      },
+      {
+        "nombre": "512 gb",
+        "precio": 5699,
+        "precioComparativo": 6500,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6ac9587c24e623123ce6b1b1"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "iPad Pro 13″ M5 – Space Black – Wifi + Cellular",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T07:14:23.094Z",
+    "updatedAt": "2026-10-09T21:11:24.423Z",
+    "__v": 6
+  },
+  {
+    "_id": "6ab37a97eb6e882e359cd545",
+    "nombre": "iPad Pro 11″ M5 – Space Black – Wifi",
+    "slug": "ipad-pro-11-m5-space-black-wifi",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPad Pro 11″ (2025) M5  Wi-Fi</strong></b><span style=\"white-space: pre-wrap;\"> es la tablet profesional de Apple pensada para creativos, estudiantes y profesionales que necesitan máximo rendimiento en un formato ultraportátil. Con el nuevo chip M5, este iPad Pro ofrece velocidad y eficiencia de nivel superior en cada tarea.</span></p><h3 class=\"text-xl font-medium mb-2 mt-4\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Características principales</span></h3><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Chip Apple M5 de última generación para máximo rendimiento</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Pantalla de 11 pulgadas con tecnología Liquid Retina</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">256GB / 512GB de almacenamiento interno</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Conectividad Wi-Fi</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Acabado exclusivo en color Space Black</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Compatible con Apple Pencil Pro y Magic Keyboard</span></li></ul><p class=\"mb-2\"><br></p><p class=\"mb-2\"><br></p>",
+    "precio": 4399,
+    "precioComparativo": 5000,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146796/products/m9dpob6ficn9dpgvysoe.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146796/products/yrpog50dcj8xlvcdehbu.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790146797/products/edhrzaozvrbpw4js2lbc.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65434c8d1da0babc4243",
+      "nombre": "iPad"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": false,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "256 gb",
+        "precio": 4399,
+        "precioComparativo": 5000,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6abf00f924e623123ce61985"
+      },
+      {
+        "nombre": "512 gb",
+        "precio": 5399,
+        "precioComparativo": 6000,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6abf00f924e623123ce61986"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "iPad Pro 11″ M5 – Space Black – Wifi",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T07:07:03.066Z",
+    "updatedAt": "2026-10-02T00:55:21.278Z",
+    "__v": 2
+  },
+  {
+    "_id": "6ab373e3eb6e882e359cd1b8",
+    "nombre": "AirPods - 5ta generación",
+    "slug": "airpods-5ta-generacion",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: left;\"><span style=\"white-space: pre-wrap;\">Los Apple AirPods 5 con estuche de carga inalámbrica en color blanco ofrecen una experiencia de audio cómoda, fluida y pensada para el día a día. Su conexión Bluetooth 5.3 aporta una vinculación rápida y estable con tus dispositivos, mientras que el micrófono integrado y el modo manos libres facilitan llamadas claras y prácticas en cualquier momento.</span><br><br><span style=\"white-space: pre-wrap;\">Disfruta de hasta 5 horas de autonomía y de un estuche que suma comodidad en cada uso. Incluyen cancelación de ruido, sensor de proximidad y asistentes de voz integrados con Siri para un manejo más intuitivo, además de controles para reproducir, cambiar canciones, atender llamadas y silenciar. Su clasificación IP57 brinda resistencia al polvo y al agua, y la carga USB-C junto con la carga inalámbrica completan un diseño versátil para acompañarte con estilo.</span></p>",
+    "precio": 799,
+    "precioComparativo": 1100,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790145423/products/bop51fadtk8kraybz4qz.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790145423/products/h2dymsmvhzlg1oeev3cb.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790145423/products/kifxkoh32asbbwhac6dl.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790145423/products/ntcl83nczzxxcie0bedk.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "estuche sin carga inalambrica",
+        "precio": 799,
+        "precioComparativo": 1100,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "carga inalambrica": "estuche sin carga inalambrica"
+        },
+        "_id": "6ab377d7eb6e882e359cd4c3"
+      },
+      {
+        "nombre": "estuche con carga inalambrica",
+        "precio": 899,
+        "precioComparativo": 1200,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "carga inalambrica": "estuche con carga inalambrica"
+        },
+        "_id": "6ab377d7eb6e882e359cd4c4"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "AirPods - 5ta generación",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T06:38:27.144Z",
+    "updatedAt": "2026-09-23T06:55:19.548Z",
+    "__v": 3
+  },
+  {
+    "_id": "6ab369edeb6e882e359cc803",
+    "nombre": "iPhone 17 - White",
+    "slug": "iphone-17-white",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 17 </strong></b><span style=\"white-space: pre-wrap;\">combina un diseño elegante con tecnología avanzada para ofrecer una experiencia rápida, fluida y eficiente. Su pantalla Super Retina XDR brinda colores vibrantes y una excelente calidad visual, mientras que su potente procesador garantiza un rendimiento sobresaliente en aplicaciones, juegos y multitarea.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Además, incorpora un sistema de cámaras de 48 MP que captura fotos y videos con gran detalle, incluso en condiciones de poca luz, junto con una batería de larga duración y compatibilidad con carga rápida para acompañarte durante todo el día.</span></p><p class=\"mb-2\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador potente</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Este equipo incorpora el avanzado&nbsp;chip A19&nbsp;de&nbsp;3 nm,&nbsp;desarrollado por&nbsp;Apple&nbsp;para ofrecer un salto significativo en&nbsp;potencia y eficiencia&nbsp;frente a generaciones anteriores. Este&nbsp;procesador&nbsp;cuenta con una&nbsp;CPU de 6 núcleos,&nbsp;compuesta por&nbsp;2 núcleos de alto rendimiento y 4 núcleos de eficiencia,&nbsp;lo que garantiza fluidez en tareas exigentes como edición de video 4K, uso de apps profesionales y videojuegos de última generación, al mismo tiempo que optimiza el consumo de&nbsp;batería&nbsp;en actividades más ligeras. Su&nbsp;GPU de 5 núcleos&nbsp;integra soporte para&nbsp;ray tracing por hardware,&nbsp;proporcionando gráficos realistas con reflejos y sombras más detalladas, ideal para experiencias de gaming inmersivas. A esto se suma un renovado&nbsp;Neural Engine de 16 núcleos,&nbsp;diseñado para procesar hasta&nbsp;25 billones de operaciones por segundo,&nbsp;lo que mejora funciones de&nbsp;inteligencia artificial,&nbsp;desde el reconocimiento facial más seguro hasta traducciones instantáneas y edición fotográfica avanzada con un nivel profesional. Gracias a esta arquitectura, el&nbsp;iPhone 17&nbsp;no solo ofrece mayor potencia, sino también un mejor manejo térmico, reduciendo el calentamiento incluso bajo uso intensivo. En conjunto, el&nbsp;chip A19&nbsp;convierte al&nbsp;iPhone 17&nbsp;en un equipo de referencia para quienes buscan velocidad, gráficos de última generación, autonomía optimizada y un ecosistema inteligente que se adapta al futuro de la movilidad.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Fotos y videos de calidad profesional</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El iPhone 17 está equipado con un avanzado sistema de cámaras Dual Fusion de 48 MP, compuesto por una cámara principal de 48 MP con apertura f/1.6 y una cámara ultra gran angular de 48 MP con un campo de visión de 120°, permitiendo capturar imágenes con gran nivel de detalle, colores precisos y un amplio rango dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Su tecnología de estabilización óptica de imagen (OIS) con sensor-shift ayuda a obtener fotografías más nítidas y videos más estables, incluso en condiciones de poca luz o cuando se graba en movimiento. Además, el modo Noche mejorado optimiza automáticamente la iluminación para conseguir resultados más claros y definidos.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">En video, el iPhone 17 permite grabar en resolución 4K a 60 fps con HDR Dolby Vision, ofreciendo una calidad excepcional para creadores de contenido. También incorpora funciones avanzadas como Modo Acción para tomas más estables y Modo Cine en 4K HDR, que agrega un atractivo efecto de profundidad y enfoque dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">La cámara frontal de 18 MP con autofocus garantiza selfies más detalladas y videollamadas de alta calidad, complementándose con funciones inteligentes que mejoran la experiencia tanto para uso personal como profesional.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Gracias a tecnologías como Photonic Engine, Deep Fusion y Smart HDR 5, el iPhone 17 optimiza automáticamente cada captura para ofrecer fotografías y videos con calidad sobresaliente en cualquier situación.</span></p>",
+    "precio": 3699,
+    "precioComparativo": 3895,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142926/products/kroupfterf5mksf1s5gq.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142926/products/dswi08jalztowgxpshdm.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142926/products/unhetkwqlb1gvxhb3cxy.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142926/products/axbofzjxitfu23q15xge.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 1,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "iPhone 17 - White",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T05:55:57.109Z",
+    "updatedAt": "2026-10-26T23:20:14.675Z",
+    "__v": 1
+  },
+  {
+    "_id": "6ab3666aeb6e882e359cc599",
+    "nombre": "iPhone 18 Pro – Glacier",
+    "slug": "iphone-18-pro-glacier",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 18 Pro: Máximo Rendimiento Pro en Tamaño Compacto</strong></b></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El iPhone 18 Pro ofrece una combinación de potencia, procesamiento de inteligencia artificial y tecnología fotográfica avanzada. Diseñado para ofrecer una experiencia fluida tanto en tareas profesionales de alta exigencia como en la creación de contenido multimedia.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Características Principales:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Potencia del Chip A20 Pro:</strong></b><span style=\"white-space: pre-wrap;\"> Procesador fabricado en arquitectura de 2 nanómetros para lograr alta velocidad multitarea, eficiencia energética superior y rendimiento gráfico de clase consola.</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Pantalla Super Retina XDR de 6,3″:</strong></b><span style=\"white-space: pre-wrap;\"> Panel OLED interactivo con tecnología ProMotion de 120 Hz, revestimiento antirreflectante y protección Ceramic Shield de alta resistencia.</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Ecosistema Apple Intelligence:</strong></b><span style=\"white-space: pre-wrap;\"> Funciones integradas de inteligencia artificial para la automatización de flujos de trabajo, procesamiento de texto y asistencia personalizada con Siri.</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Sistema de Triple Cámara de 48 MP:</strong></b><span style=\"white-space: pre-wrap;\"> Sensores de grado profesional que incluyen gran angular con apertura variable, ultra gran angular y teleobjetivo periscópico con zoom óptico 4x, acompañados de escáner LiDAR.</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Grabación de Video Avanzada:</strong></b><span style=\"white-space: pre-wrap;\"> Soporte para grabación en 4K hasta 120 fps, ProRes RAW, Apple Log 2 y captura de video espacial 3D.</span></li><li value=\"6\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Conectividad y Construcción Prémium:</strong></b><span style=\"white-space: pre-wrap;\"> Chasis de alta resistencia con certificación IP68, puerto USB-C 3.2 Gen 2 con salida de video DisplayPort y soporte para redes 5G y Wi-Fi 7.</span></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Especificaciones Técnicas:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Modelo:</strong></b><span style=\"white-space: pre-wrap;\"> iPhone 18 Pro</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Pantalla:</strong></b><span style=\"white-space: pre-wrap;\"> LTPO Super Retina XDR OLED de 6,3 pulgadas (1206 x 2622 px) a 120 Hz</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador:</strong></b><span style=\"white-space: pre-wrap;\"> Apple A20 Pro (2 nm)</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Memoria RAM:</strong></b><span style=\"white-space: pre-wrap;\"> 12 GB</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Capacidad de Almacenamiento:</strong></b><span style=\"white-space: pre-wrap;\"> 256 GB, 512 GB, 1 TB</span></li><li value=\"6\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cámara Principal (Triple):</strong></b><span style=\"white-space: pre-wrap;\"> 48 MP (Gran Angular) + 48 MP (Teleobjetivo Periscópico 4x) + 48 MP (Ultra Gran Angular) + LiDAR</span></li><li value=\"7\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cámara Frontal:</strong></b><span style=\"white-space: pre-wrap;\"> 25 MP con sensor biométrico SL 3D y Face ID</span></li><li value=\"8\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Redes y Conectividad:</strong></b><span style=\"white-space: pre-wrap;\"> 5G, Wi-Fi 7, Bluetooth 6.0, eSIM y Nano-SIM (según región)</span></li><li value=\"9\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Puerto de Carga y Datos:</strong></b><span style=\"white-space: pre-wrap;\"> USB-C 3.2 Gen 2 (hasta 10 Gbps) con DisplayPort</span></li><li value=\"10\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Batería y Carga:</strong></b><span style=\"white-space: pre-wrap;\"> Carga rápida por cable, MagSafe inalámbrico de 25W y carga Qi2</span></li><li value=\"11\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Contenido del Empaque:</strong></b><span style=\"white-space: pre-wrap;\"> iPhone 18 Pro, Cable de carga USB-C a USB-C</span></li></ul>",
+    "precio": 6599,
+    "precioComparativo": 6999,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790458743/products/guhtzdh86yvjhofssm1d.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790458743/products/aq1zziaj4mlcj1pnjfvz.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790458743/products/ixcxmstzoqflqp7nhyjp.jpg"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 2,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "256 gb",
+        "precio": 6599,
+        "precioComparativo": 6999,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab83b827d1caafc172757ae"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "metaTitle": "iPhone 18 Pro – Glacier",
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-23T05:40:58.396Z",
+    "updatedAt": "2026-09-26T21:39:14.591Z",
+    "__v": 2
+  },
+  {
+    "_id": "6aae28a0369849ae6e7f8724",
+    "nombre": "Airtag - 2da Generación",
+    "slug": "airtag-2da-generacion",
+    "descripcion": "<p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El Apple AirTag es un dispositivo de rastreo de tamaño compacto y diseño elegante en color blanco. Este pequeño y poderoso accesorio te permitirá localizar tus objetos personales con facilidad a través de la aplicación Find My de Apple. Ya sea que lo coloques en tu bolso, llaves o cualquier otro objeto que no quieras perder, el AirTag te ayudará a encontrarlo. Con una unidad por envase, este producto es perfecto para aquellos que buscan una solución eficiente y confiable para mantener un seguimiento de sus pertenencias. Su tecnología de precisión y la calidad que caracteriza a la marca Apple, hacen del AirTag una inversión inteligente para tu tranquilidad y seguridad.</span><br><br><span style=\"white-space: pre-wrap;\">Airtag presentación x unidad, con caja incluida</span></p>",
+    "precio": 139,
+    "precioComparativo": 189,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798499/products/mkd2y4lfgioeowru4c5u.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798499/products/mr608qx3etkzldox3tm0.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798499/products/rfccusvgucrqxdtgx7jf.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798499/products/poa1tgkzx9wjwvjumudo.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798499/products/m8wxqg27na0dnllamqtc.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 2,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T06:16:00.754Z",
+    "updatedAt": "2026-09-23T07:37:34.841Z",
+    "__v": 0
+  },
+  {
+    "_id": "6aae27b7369849ae6e7f8636",
+    "nombre": "Cargador Apple 40W – (máx. 60 W)",
+    "slug": "cargador-apple-40w-max-60-w",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">DESCRIPCION DEL PRODUCTO: </strong></b></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El adaptador con potencia dinámica de&nbsp;40&nbsp;W a&nbsp;60&nbsp;W máx. está diseñado para suministrar hasta&nbsp;60&nbsp;W de forma dinámica y cargar a toda velocidad.¹</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Ofrece todas las ventajas de los cargadores de mayor potencia en un tamaño mucho menor. Así podrás cargar tu dispositivo de forma rápida y sencilla en casa, en el trabajo o en cualquier sitio. Este adaptador de corriente también cuenta con fuente de voltaje ajustable, que regula con precisión el voltaje para lograr una carga más eficiente.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El adaptador de potencia dinámica ofrece carga rápida para el iPhone&nbsp;18&nbsp;Pro, iPhone&nbsp;18 Pro&nbsp;Max (hasta el 50&nbsp;% de batería en unos 15&nbsp;minutos), iPhone&nbsp;Duo (hasta el 50&nbsp;% de batería en unos 20&nbsp;minutos), iPhone&nbsp;17, iPhone&nbsp;17&nbsp;Pro, iPhone&nbsp;17 Pro&nbsp;Max (hasta el 50&nbsp;% de batería en unos 20&nbsp;minutos) o iPhone&nbsp;Air (hasta el 50&nbsp;% de batería en unos 30&nbsp;minutos) o modelos de iPad&nbsp;Pro de 13&nbsp;pulgadas (hasta el 50&nbsp;% de batería en unos 35&nbsp;minutos).</span></p>",
+    "precio": 199,
+    "precioComparativo": 270,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798301/products/ykcm1umvcg4gdaly6xyg.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798301/products/ruqcjhw8gp88vnuj5nfx.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1789798301/products/p9rb2pohias5rdc82aag.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 10,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T06:12:07.037Z",
+    "updatedAt": "2026-10-06T19:04:52.157Z",
+    "__v": 0
+  },
+  {
+    "_id": "6aae2646369849ae6e7f84c9",
+    "nombre": "iPhone Duo – Star White",
+    "slug": "iphone-duo-star-white",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone Duo: Potencia, Innovación y Pantalla Desplegable</strong></b><br><span style=\"white-space: pre-wrap;\">El iPhone Duo representa una solución avanzada en la categoría de telefonía inteligente. Diseñado para usuarios que requieren máxima productividad, multitarea eficiente y una experiencia multimedia inmersiva sin sacrificar la comodidad del transporte diario.</span><br><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Características Principales:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Diseño Desplegable Avanzado:</strong></b><span style=\"white-space: pre-wrap;\">Disfrute de la flexibilidad que ofrece una pantalla expandible protegida por un chasis resistente y acabado prémium en colores</span><i><em class=\"italic\" style=\"white-space: pre-wrap;\">Star White</em></i><span style=\"white-space: pre-wrap;\">y</span><i><em class=\"italic\" style=\"white-space: pre-wrap;\">Night Sky</em></i><span style=\"white-space: pre-wrap;\">.</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Integración con Apple Intelligence:</strong></b><span style=\"white-space: pre-wrap;\">Potenciado con Siri y funciones de inteligencia artificial para optimizar el flujo de trabajo, la redacción de contenidos y la personalización del dispositivo.</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Sistema de Cámara Dual Fusion:</strong></b><span style=\"white-space: pre-wrap;\">Capture fotografías y videos de alta calidad gracias a sus sensores de precisión y rendimiento optimizado en condiciones de poca luz.</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Conectividad eSIM Integral:</strong></b><span style=\"white-space: pre-wrap;\">Funciona mediante tecnología eSIM digital (sin ranura física para SIM), brindando mayor seguridad, gestión ágil de líneas y facilidades de itinerancia internacional.</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Almacenamiento de Alta Capacidad:</strong></b><span style=\"white-space: pre-wrap;\">Opciones configurables que van desde 256 GB hasta 2 TB para guardar proyectos y archivos multimedia sin restricciones.</span></li></ul><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Especificaciones Técnicas:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Modelo:</strong></b><span style=\"white-space: pre-wrap;\">iPhone Duo</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Colores Disponibles:</strong></b><span style=\"white-space: pre-wrap;\">Star White, Night Sky</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Capacidad de Almacenamiento:</strong></b><span style=\"white-space: pre-wrap;\">256 GB, 512 GB, 1 TB, 2 TB</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Sistema de Cámara:</strong></b><span style=\"white-space: pre-wrap;\">Dual Fusion Camera System</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Tecnología de Inteligencia Artificial:</strong></b><span style=\"white-space: pre-wrap;\">Apple Intelligence y Siri AI</span></li><li value=\"6\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Redes y Conectividad:</strong></b><span style=\"white-space: pre-wrap;\">5G / LTE, eSIM únicamente </span></li><li value=\"7\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Puerto de Carga:</strong></b><span style=\"white-space: pre-wrap;\">USB-C con soporte para carga rápida</span></li><li value=\"8\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Contenido del Empaque:</strong></b><span style=\"white-space: pre-wrap;\">iPhone Duo, Cable de carga USB-C a USB-C</span></li></ul>",
+    "precio": 10499,
+    "precioComparativo": 11499,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790453327/products/kiilkb417xqpi4ovvrf6.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790453327/products/t9ia6wk75ftmhfzuyjdu.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790453327/products/n2ntae83x5k20wsy4h4j.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790453327/products/habwbt32fitea8itagmw.jpg"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "256 gb",
+        "precio": 10499,
+        "precioComparativo": 11499,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab826607d1caafc17275342"
+      },
+      {
+        "nombre": "512 gb",
+        "precio": 11499,
+        "precioComparativo": 12499,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6ab826607d1caafc17275343"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T06:05:58.066Z",
+    "updatedAt": "2026-09-26T20:09:04.469Z",
+    "__v": 4
+  },
+  {
+    "_id": "6aae23d8369849ae6e7f8397",
+    "nombre": "iPhone 18 Pro – Burgundy",
+    "slug": "iphone-18-pro-burgundy",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 18 Pro: Máximo Rendimiento Pro en Tamaño Compacto</strong></b></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El iPhone 18 Pro ofrece una combinación de potencia, procesamiento de inteligencia artificial y tecnología fotográfica avanzada. Diseñado para ofrecer una experiencia fluida tanto en tareas profesionales de alta exigencia como en la creación de contenido multimedia.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Características Principales:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Potencia del Chip A20 Pro:</strong></b><span style=\"white-space: pre-wrap;\"> Procesador fabricado en arquitectura de 2 nanómetros para lograr alta velocidad multitarea, eficiencia energética superior y rendimiento gráfico de clase consola.</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Pantalla Super Retina XDR de 6,3″:</strong></b><span style=\"white-space: pre-wrap;\"> Panel OLED interactivo con tecnología ProMotion de 120 Hz, revestimiento antirreflectante y protección Ceramic Shield de alta resistencia.</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Ecosistema Apple Intelligence:</strong></b><span style=\"white-space: pre-wrap;\"> Funciones integradas de inteligencia artificial para la automatización de flujos de trabajo, procesamiento de texto y asistencia personalizada con Siri.</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Sistema de Triple Cámara de 48 MP:</strong></b><span style=\"white-space: pre-wrap;\"> Sensores de grado profesional que incluyen gran angular con apertura variable, ultra gran angular y teleobjetivo periscópico con zoom óptico 4x, acompañados de escáner LiDAR.</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Grabación de Video Avanzada:</strong></b><span style=\"white-space: pre-wrap;\"> Soporte para grabación en 4K hasta 120 fps, ProRes RAW, Apple Log 2 y captura de video espacial 3D.</span></li><li value=\"6\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Conectividad y Construcción Prémium:</strong></b><span style=\"white-space: pre-wrap;\"> Chasis de alta resistencia con certificación IP68, puerto USB-C 3.2 Gen 2 con salida de video DisplayPort y soporte para redes 5G y Wi-Fi 7.</span></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Especificaciones Técnicas:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Modelo:</strong></b><span style=\"white-space: pre-wrap;\"> iPhone 18 Pro</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Pantalla:</strong></b><span style=\"white-space: pre-wrap;\"> LTPO Super Retina XDR OLED de 6,3 pulgadas (1206 x 2622 px) a 120 Hz</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador:</strong></b><span style=\"white-space: pre-wrap;\"> Apple A20 Pro (2 nm)</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Memoria RAM:</strong></b><span style=\"white-space: pre-wrap;\"> 12 GB</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Capacidad de Almacenamiento:</strong></b><span style=\"white-space: pre-wrap;\"> 256 GB, 512 GB, 1 TB</span></li><li value=\"6\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cámara Principal (Triple):</strong></b><span style=\"white-space: pre-wrap;\"> 48 MP (Gran Angular) + 48 MP (Teleobjetivo Periscópico 4x) + 48 MP (Ultra Gran Angular) + LiDAR</span></li><li value=\"7\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cámara Frontal:</strong></b><span style=\"white-space: pre-wrap;\"> 25 MP con sensor biométrico SL 3D y Face ID</span></li><li value=\"8\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Redes y Conectividad:</strong></b><span style=\"white-space: pre-wrap;\"> 5G, Wi-Fi 7, Bluetooth 6.0, eSIM y Nano-SIM (según región)</span></li><li value=\"9\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Puerto de Carga y Datos:</strong></b><span style=\"white-space: pre-wrap;\"> USB-C 3.2 Gen 2 (hasta 10 Gbps) con DisplayPort</span></li><li value=\"10\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Batería y Carga:</strong></b><span style=\"white-space: pre-wrap;\"> Carga rápida por cable, MagSafe inalámbrico de 25W y carga Qi2</span></li><li value=\"11\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Contenido del Empaque:</strong></b><span style=\"white-space: pre-wrap;\"> iPhone 18 Pro, Cable de carga USB-C a USB-C</span></li></ul>",
+    "precio": 6599,
+    "precioComparativo": 6999,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790458711/products/mjemkjqrn9kgac7hca1f.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790458711/products/pepgqjkwdfgf0ufmkixd.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790458711/products/ucif3rkj7uz5qgfxnnjf.jpg"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 2,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "256 gb",
+        "precio": 6599,
+        "precioComparativo": 6999,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab83b657d1caafc17275794"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T05:55:36.589Z",
+    "updatedAt": "2026-09-26T21:38:45.668Z",
+    "__v": 4
+  },
+  {
+    "_id": "6aae2260369849ae6e7f8187",
+    "nombre": "iPhone 18 Pro Max – Black",
+    "slug": "iphone-18-pro-max-black",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El iPhone 18 Pro Max en acabado negro reúne una pantalla Super Retina XDR de 6.9 pulgadas, 256 GB de almacenamiento interno y 12 GB de RAM para responder a tareas diarias, entretenimiento, fotografía y video. La resolución de 2868 x 1320 a 460 ppi permite visualizar contenido con gran nivel de detalle, mientras que el procesador A20 PRO y iOS 27 forman parte de su configuración. Esta variante utiliza eSIM y es compatible con tecnología móvil 5G para una experiencia conectada acorde con el uso cotidiano.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Para fotografía y video, integra tres cámaras traseras de 48 MP: principal Fusion, ultra gran angular Fusion y teleobjetivo Fusion. La cámara frontal de 18 MP Center Stage con apertura ƒ/1.9 complementa el sistema para selfies y videollamadas. En conectividad incorpora Bluetooth 6, Wi-Fi y GPS, además de Face ID, escáner LiDAR, barómetro y giroscopio de alto rango dinámico, entre otros sensores. La conexión física se realiza mediante USB Tipo-C, y el equipo admite carga rápida y carga inalámbrica.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Su batería recargable integrada de iones de litio ofrece hasta 43 horas de reproducción de video. El equipo mide 16.34 cm de alto, 7.80 cm de ancho y 0.875 cm de profundidad, con un peso de 249 g. Se encuentra liberado y requiere un adaptador de corriente USB Tipo-C con espiga plana para su alimentación. La garantía proporcionada es de 1 año. En la caja encontrarás iPhone 18 Pro Max, cable de carga y manual de uso, elementos indicados para comenzar a utilizarlo y revisar las funciones principales del equipo.</span></p>",
+    "precio": 7299,
+    "precioComparativo": 8699,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456061/products/ro4kfqhccd6avyp7dzhk.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456061/products/ihtmynologxxdeiek8mz.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456074/products/dwbyqcviroxn6ufpohtt.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "512 gb",
+        "precio": 8299,
+        "precioComparativo": 9600,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6ab831157d1caafc17275530"
+      },
+      {
+        "nombre": "256 gb",
+        "precio": 7299,
+        "precioComparativo": 8699,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab831157d1caafc17275531"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T05:49:20.351Z",
+    "updatedAt": "2026-09-26T20:54:45.788Z",
+    "__v": 3
+  },
+  {
+    "_id": "6aae2195369849ae6e7f80e4",
+    "nombre": "iPhone 18 Pro Max – Glacier",
+    "slug": "iphone-18-pro-max-glacier",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El iPhone 18 Pro Max en acabado negro reúne una pantalla Super Retina XDR de 6.9 pulgadas, 256 GB de almacenamiento interno y 12 GB de RAM para responder a tareas diarias, entretenimiento, fotografía y video. La resolución de 2868 x 1320 a 460 ppi permite visualizar contenido con gran nivel de detalle, mientras que el procesador A20 PRO y iOS 27 forman parte de su configuración. Esta variante utiliza eSIM y es compatible con tecnología móvil 5G para una experiencia conectada acorde con el uso cotidiano.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Para fotografía y video, integra tres cámaras traseras de 48 MP: principal Fusion, ultra gran angular Fusion y teleobjetivo Fusion. La cámara frontal de 18 MP Center Stage con apertura ƒ/1.9 complementa el sistema para selfies y videollamadas. En conectividad incorpora Bluetooth 6, Wi-Fi y GPS, además de Face ID, escáner LiDAR, barómetro y giroscopio de alto rango dinámico, entre otros sensores. La conexión física se realiza mediante USB Tipo-C, y el equipo admite carga rápida y carga inalámbrica.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Su batería recargable integrada de iones de litio ofrece hasta 43 horas de reproducción de video. El equipo mide 16.34 cm de alto, 7.80 cm de ancho y 0.875 cm de profundidad, con un peso de 249 g. Se encuentra liberado y requiere un adaptador de corriente USB Tipo-C con espiga plana para su alimentación. La garantía proporcionada es de 1 año. En la caja encontrarás iPhone 18 Pro Max, cable de carga y manual de uso, elementos indicados para comenzar a utilizarlo y revisar las funciones principales del equipo.</span></p>",
+    "precio": 7299,
+    "precioComparativo": 8699,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456859/products/voedssnnedbykehmnpxv.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456859/products/yrujvwjanxybojjwhtrr.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456859/products/a5d33mjw2k67d2zldlb0.jpg"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "512 gb",
+        "precio": 8299,
+        "precioComparativo": 9600,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6ab834287d1caafc172755dc"
+      },
+      {
+        "nombre": "256 gb",
+        "precio": 7299,
+        "precioComparativo": 8699,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab834287d1caafc172755dd"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T05:45:57.964Z",
+    "updatedAt": "2026-09-26T21:07:52.678Z",
+    "__v": 3
+  },
+  {
+    "_id": "6aae1e69369849ae6e7f7f2d",
+    "nombre": "iPhone 18 Pro Max – Burgundy",
+    "slug": "iphone-18-pro-max-burgundy",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El iPhone 18 Pro Max en acabado negro reúne una pantalla Super Retina XDR de 6.9 pulgadas, 256 GB de almacenamiento interno y 12 GB de RAM para responder a tareas diarias, entretenimiento, fotografía y video. La resolución de 2868 x 1320 a 460 ppi permite visualizar contenido con gran nivel de detalle, mientras que el procesador A20 PRO y iOS 27 forman parte de su configuración. Esta variante utiliza eSIM y es compatible con tecnología móvil 5G para una experiencia conectada acorde con el uso cotidiano.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Para fotografía y video, integra tres cámaras traseras de 48 MP: principal Fusion, ultra gran angular Fusion y teleobjetivo Fusion. La cámara frontal de 18 MP Center Stage con apertura ƒ/1.9 complementa el sistema para selfies y videollamadas. En conectividad incorpora Bluetooth 6, Wi-Fi y GPS, además de Face ID, escáner LiDAR, barómetro y giroscopio de alto rango dinámico, entre otros sensores. La conexión física se realiza mediante USB Tipo-C, y el equipo admite carga rápida y carga inalámbrica.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Su batería recargable integrada de iones de litio ofrece hasta 43 horas de reproducción de video. El equipo mide 16.34 cm de alto, 7.80 cm de ancho y 0.875 cm de profundidad, con un peso de 249 g. Se encuentra liberado y requiere un adaptador de corriente USB Tipo-C con espiga plana para su alimentación. La garantía proporcionada es de 1 año. En la caja encontrarás iPhone 18 Pro Max, cable de carga y manual de uso, elementos indicados para comenzar a utilizarlo y revisar las funciones principales del equipo.</span></p>",
+    "precio": 7299,
+    "precioComparativo": 8699,
+    "costo": 0,
+    "imagenes": [
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456967/products/bkxsozm7pcyrdulny3i6.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456967/products/pnkbj65kxt5hsvjvejbi.jpg",
+      "https://res.cloudinary.com/dj8p0jl7v/image/upload/v1790456967/products/tujafwoowxo3gxe5ge7l.jpg"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "512 gb",
+        "precio": 8299,
+        "precioComparativo": 9600,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "512 gb"
+        },
+        "_id": "6ab834e27d1caafc17275655"
+      },
+      {
+        "nombre": "256 gb",
+        "precio": 7299,
+        "precioComparativo": 8699,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "almacenamiento": "256 gb"
+        },
+        "_id": "6ab834e27d1caafc17275656"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-19T05:32:25.436Z",
+    "updatedAt": "2026-09-26T21:10:58.514Z",
+    "__v": 9
+  },
+  {
+    "_id": "6aa55e509f310bf9afaaa541",
+    "nombre": "iPhone 17 - Black",
+    "slug": "iphone-17-black-1",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 17 </strong></b><span style=\"white-space: pre-wrap;\">combina un diseño elegante con tecnología avanzada para ofrecer una experiencia rápida, fluida y eficiente. Su pantalla Super Retina XDR brinda colores vibrantes y una excelente calidad visual, mientras que su potente procesador garantiza un rendimiento sobresaliente en aplicaciones, juegos y multitarea.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Además, incorpora un sistema de cámaras de 48 MP que captura fotos y videos con gran detalle, incluso en condiciones de poca luz, junto con una batería de larga duración y compatibilidad con carga rápida para acompañarte durante todo el día.</span></p><p class=\"mb-2\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador potente</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Este equipo incorpora el avanzado&nbsp;chip A19&nbsp;de&nbsp;3 nm,&nbsp;desarrollado por&nbsp;Apple&nbsp;para ofrecer un salto significativo en&nbsp;potencia y eficiencia&nbsp;frente a generaciones anteriores. Este&nbsp;procesador&nbsp;cuenta con una&nbsp;CPU de 6 núcleos,&nbsp;compuesta por&nbsp;2 núcleos de alto rendimiento y 4 núcleos de eficiencia,&nbsp;lo que garantiza fluidez en tareas exigentes como edición de video 4K, uso de apps profesionales y videojuegos de última generación, al mismo tiempo que optimiza el consumo de&nbsp;batería&nbsp;en actividades más ligeras. Su&nbsp;GPU de 5 núcleos&nbsp;integra soporte para&nbsp;ray tracing por hardware,&nbsp;proporcionando gráficos realistas con reflejos y sombras más detalladas, ideal para experiencias de gaming inmersivas. A esto se suma un renovado&nbsp;Neural Engine de 16 núcleos,&nbsp;diseñado para procesar hasta&nbsp;25 billones de operaciones por segundo,&nbsp;lo que mejora funciones de&nbsp;inteligencia artificial,&nbsp;desde el reconocimiento facial más seguro hasta traducciones instantáneas y edición fotográfica avanzada con un nivel profesional. Gracias a esta arquitectura, el&nbsp;iPhone 17&nbsp;no solo ofrece mayor potencia, sino también un mejor manejo térmico, reduciendo el calentamiento incluso bajo uso intensivo. En conjunto, el&nbsp;chip A19&nbsp;convierte al&nbsp;iPhone 17&nbsp;en un equipo de referencia para quienes buscan velocidad, gráficos de última generación, autonomía optimizada y un ecosistema inteligente que se adapta al futuro de la movilidad.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Fotos y videos de calidad profesional</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El iPhone 17 está equipado con un avanzado sistema de cámaras Dual Fusion de 48 MP, compuesto por una cámara principal de 48 MP con apertura f/1.6 y una cámara ultra gran angular de 48 MP con un campo de visión de 120°, permitiendo capturar imágenes con gran nivel de detalle, colores precisos y un amplio rango dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Su tecnología de estabilización óptica de imagen (OIS) con sensor-shift ayuda a obtener fotografías más nítidas y videos más estables, incluso en condiciones de poca luz o cuando se graba en movimiento. Además, el modo Noche mejorado optimiza automáticamente la iluminación para conseguir resultados más claros y definidos.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">En video, el iPhone 17 permite grabar en resolución 4K a 60 fps con HDR Dolby Vision, ofreciendo una calidad excepcional para creadores de contenido. También incorpora funciones avanzadas como Modo Acción para tomas más estables y Modo Cine en 4K HDR, que agrega un atractivo efecto de profundidad y enfoque dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">La cámara frontal de 18 MP con autofocus garantiza selfies más detalladas y videollamadas de alta calidad, complementándose con funciones inteligentes que mejoran la experiencia tanto para uso personal como profesional.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Gracias a tecnologías como Photonic Engine, Deep Fusion y Smart HDR 5, el iPhone 17 optimiza automáticamente cada captura para ofrecer fotografías y videos con calidad sobresaliente en cualquier situación.</span></p>",
+    "precio": 3699,
+    "precioComparativo": 3895,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142723/products/xuogfi0anmqez5cdtfnc.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142723/products/udek3e9nw2kwt64mrsl1.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142723/products/fx7ggm9knlozqnw4ehyr.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142723/products/obeotsql8ingqrj5q5zk.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 1,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-12T14:14:40.853Z",
+    "updatedAt": "2026-10-26T23:19:51.598Z",
+    "__v": 4
+  },
+  {
+    "_id": "6aa55d589f310bf9afaaa429",
+    "nombre": "iPhone 17 - Mist  Blue",
+    "slug": "iphone-17-mist-blue",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 17 </strong></b><span style=\"white-space: pre-wrap;\">combina un diseño elegante con tecnología avanzada para ofrecer una experiencia rápida, fluida y eficiente. Su pantalla Super Retina XDR brinda colores vibrantes y una excelente calidad visual, mientras que su potente procesador garantiza un rendimiento sobresaliente en aplicaciones, juegos y multitarea.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Además, incorpora un sistema de cámaras de 48 MP que captura fotos y videos con gran detalle, incluso en condiciones de poca luz, junto con una batería de larga duración y compatibilidad con carga rápida para acompañarte durante todo el día.</span></p><p class=\"mb-2\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador potente</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Este equipo incorpora el avanzado&nbsp;chip A19&nbsp;de&nbsp;3 nm,&nbsp;desarrollado por&nbsp;Apple&nbsp;para ofrecer un salto significativo en&nbsp;potencia y eficiencia&nbsp;frente a generaciones anteriores. Este&nbsp;procesador&nbsp;cuenta con una&nbsp;CPU de 6 núcleos,&nbsp;compuesta por&nbsp;2 núcleos de alto rendimiento y 4 núcleos de eficiencia,&nbsp;lo que garantiza fluidez en tareas exigentes como edición de video 4K, uso de apps profesionales y videojuegos de última generación, al mismo tiempo que optimiza el consumo de&nbsp;batería&nbsp;en actividades más ligeras. Su&nbsp;GPU de 5 núcleos&nbsp;integra soporte para&nbsp;ray tracing por hardware,&nbsp;proporcionando gráficos realistas con reflejos y sombras más detalladas, ideal para experiencias de gaming inmersivas. A esto se suma un renovado&nbsp;Neural Engine de 16 núcleos,&nbsp;diseñado para procesar hasta&nbsp;25 billones de operaciones por segundo,&nbsp;lo que mejora funciones de&nbsp;inteligencia artificial,&nbsp;desde el reconocimiento facial más seguro hasta traducciones instantáneas y edición fotográfica avanzada con un nivel profesional. Gracias a esta arquitectura, el&nbsp;iPhone 17&nbsp;no solo ofrece mayor potencia, sino también un mejor manejo térmico, reduciendo el calentamiento incluso bajo uso intensivo. En conjunto, el&nbsp;chip A19&nbsp;convierte al&nbsp;iPhone 17&nbsp;en un equipo de referencia para quienes buscan velocidad, gráficos de última generación, autonomía optimizada y un ecosistema inteligente que se adapta al futuro de la movilidad.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Fotos y videos de calidad profesional</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El iPhone 17 está equipado con un avanzado sistema de cámaras Dual Fusion de 48 MP, compuesto por una cámara principal de 48 MP con apertura f/1.6 y una cámara ultra gran angular de 48 MP con un campo de visión de 120°, permitiendo capturar imágenes con gran nivel de detalle, colores precisos y un amplio rango dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Su tecnología de estabilización óptica de imagen (OIS) con sensor-shift ayuda a obtener fotografías más nítidas y videos más estables, incluso en condiciones de poca luz o cuando se graba en movimiento. Además, el modo Noche mejorado optimiza automáticamente la iluminación para conseguir resultados más claros y definidos.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">En video, el iPhone 17 permite grabar en resolución 4K a 60 fps con HDR Dolby Vision, ofreciendo una calidad excepcional para creadores de contenido. También incorpora funciones avanzadas como Modo Acción para tomas más estables y Modo Cine en 4K HDR, que agrega un atractivo efecto de profundidad y enfoque dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">La cámara frontal de 18 MP con autofocus garantiza selfies más detalladas y videollamadas de alta calidad, complementándose con funciones inteligentes que mejoran la experiencia tanto para uso personal como profesional.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Gracias a tecnologías como Photonic Engine, Deep Fusion y Smart HDR 5, el iPhone 17 optimiza automáticamente cada captura para ofrecer fotografías y videos con calidad sobresaliente en cualquier situación.</span></p>",
+    "precio": 3649,
+    "precioComparativo": 3895,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142616/products/kfc1loebdkreevcngheb.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142616/products/fx6vvz3kxycqhunccwcb.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142616/products/jbg6afeu4nb3gl7fvngh.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142616/products/ibwoksbgkpnaybwjvtsa.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-12T14:10:32.699Z",
+    "updatedAt": "2026-10-16T22:48:41.972Z",
+    "__v": 3
+  },
+  {
+    "_id": "6aa55ccd9f310bf9afaaa38f",
+    "nombre": "iPhone 17 - Green",
+    "slug": "iphone-17-green-1",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 17 </strong></b><span style=\"white-space: pre-wrap;\">combina un diseño elegante con tecnología avanzada para ofrecer una experiencia rápida, fluida y eficiente. Su pantalla Super Retina XDR brinda colores vibrantes y una excelente calidad visual, mientras que su potente procesador garantiza un rendimiento sobresaliente en aplicaciones, juegos y multitarea.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Además, incorpora un sistema de cámaras de 48 MP que captura fotos y videos con gran detalle, incluso en condiciones de poca luz, junto con una batería de larga duración y compatibilidad con carga rápida para acompañarte durante todo el día.</span></p><p class=\"mb-2\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador potente</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Este equipo incorpora el avanzado&nbsp;chip A19&nbsp;de&nbsp;3 nm,&nbsp;desarrollado por&nbsp;Apple&nbsp;para ofrecer un salto significativo en&nbsp;potencia y eficiencia&nbsp;frente a generaciones anteriores. Este&nbsp;procesador&nbsp;cuenta con una&nbsp;CPU de 6 núcleos,&nbsp;compuesta por&nbsp;2 núcleos de alto rendimiento y 4 núcleos de eficiencia,&nbsp;lo que garantiza fluidez en tareas exigentes como edición de video 4K, uso de apps profesionales y videojuegos de última generación, al mismo tiempo que optimiza el consumo de&nbsp;batería&nbsp;en actividades más ligeras. Su&nbsp;GPU de 5 núcleos&nbsp;integra soporte para&nbsp;ray tracing por hardware,&nbsp;proporcionando gráficos realistas con reflejos y sombras más detalladas, ideal para experiencias de gaming inmersivas. A esto se suma un renovado&nbsp;Neural Engine de 16 núcleos,&nbsp;diseñado para procesar hasta&nbsp;25 billones de operaciones por segundo,&nbsp;lo que mejora funciones de&nbsp;inteligencia artificial,&nbsp;desde el reconocimiento facial más seguro hasta traducciones instantáneas y edición fotográfica avanzada con un nivel profesional. Gracias a esta arquitectura, el&nbsp;iPhone 17&nbsp;no solo ofrece mayor potencia, sino también un mejor manejo térmico, reduciendo el calentamiento incluso bajo uso intensivo. En conjunto, el&nbsp;chip A19&nbsp;convierte al&nbsp;iPhone 17&nbsp;en un equipo de referencia para quienes buscan velocidad, gráficos de última generación, autonomía optimizada y un ecosistema inteligente que se adapta al futuro de la movilidad.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Fotos y videos de calidad profesional</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El iPhone 17 está equipado con un avanzado sistema de cámaras Dual Fusion de 48 MP, compuesto por una cámara principal de 48 MP con apertura f/1.6 y una cámara ultra gran angular de 48 MP con un campo de visión de 120°, permitiendo capturar imágenes con gran nivel de detalle, colores precisos y un amplio rango dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Su tecnología de estabilización óptica de imagen (OIS) con sensor-shift ayuda a obtener fotografías más nítidas y videos más estables, incluso en condiciones de poca luz o cuando se graba en movimiento. Además, el modo Noche mejorado optimiza automáticamente la iluminación para conseguir resultados más claros y definidos.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">En video, el iPhone 17 permite grabar en resolución 4K a 60 fps con HDR Dolby Vision, ofreciendo una calidad excepcional para creadores de contenido. También incorpora funciones avanzadas como Modo Acción para tomas más estables y Modo Cine en 4K HDR, que agrega un atractivo efecto de profundidad y enfoque dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">La cámara frontal de 18 MP con autofocus garantiza selfies más detalladas y videollamadas de alta calidad, complementándose con funciones inteligentes que mejoran la experiencia tanto para uso personal como profesional.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Gracias a tecnologías como Photonic Engine, Deep Fusion y Smart HDR 5, el iPhone 17 optimiza automáticamente cada captura para ofrecer fotografías y videos con calidad sobresaliente en cualquier situación.</span></p>",
+    "precio": 3699,
+    "precioComparativo": 3895,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142858/products/yktyofapjq1nynq8ptvr.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142858/products/asz418d3xnd51lvwud7i.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142858/products/grztwqhguxj1b9zcrbyj.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142858/products/hdfmqo7yih8p1ekblke6.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 1,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-12T14:08:13.756Z",
+    "updatedAt": "2026-10-26T23:19:27.396Z",
+    "__v": 9
+  },
+  {
+    "_id": "6aa315faebefb1c77c310ddf",
+    "nombre": "iPhone 17 - Lavanda",
+    "slug": "iphone-17-lavanda-1",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">iPhone 17 </strong></b><span style=\"white-space: pre-wrap;\">combina un diseño elegante con tecnología avanzada para ofrecer una experiencia rápida, fluida y eficiente. Su pantalla Super Retina XDR brinda colores vibrantes y una excelente calidad visual, mientras que su potente procesador garantiza un rendimiento sobresaliente en aplicaciones, juegos y multitarea.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Además, incorpora un sistema de cámaras de 48 MP que captura fotos y videos con gran detalle, incluso en condiciones de poca luz, junto con una batería de larga duración y compatibilidad con carga rápida para acompañarte durante todo el día.</span></p><p class=\"mb-2\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Procesador potente</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Este equipo incorpora el avanzado&nbsp;chip A19&nbsp;de&nbsp;3 nm,&nbsp;desarrollado por&nbsp;Apple&nbsp;para ofrecer un salto significativo en&nbsp;potencia y eficiencia&nbsp;frente a generaciones anteriores. Este&nbsp;procesador&nbsp;cuenta con una&nbsp;CPU de 6 núcleos,&nbsp;compuesta por&nbsp;2 núcleos de alto rendimiento y 4 núcleos de eficiencia,&nbsp;lo que garantiza fluidez en tareas exigentes como edición de video 4K, uso de apps profesionales y videojuegos de última generación, al mismo tiempo que optimiza el consumo de&nbsp;batería&nbsp;en actividades más ligeras. Su&nbsp;GPU de 5 núcleos&nbsp;integra soporte para&nbsp;ray tracing por hardware,&nbsp;proporcionando gráficos realistas con reflejos y sombras más detalladas, ideal para experiencias de gaming inmersivas. A esto se suma un renovado&nbsp;Neural Engine de 16 núcleos,&nbsp;diseñado para procesar hasta&nbsp;25 billones de operaciones por segundo,&nbsp;lo que mejora funciones de&nbsp;inteligencia artificial,&nbsp;desde el reconocimiento facial más seguro hasta traducciones instantáneas y edición fotográfica avanzada con un nivel profesional. Gracias a esta arquitectura, el&nbsp;iPhone 17&nbsp;no solo ofrece mayor potencia, sino también un mejor manejo térmico, reduciendo el calentamiento incluso bajo uso intensivo. En conjunto, el&nbsp;chip A19&nbsp;convierte al&nbsp;iPhone 17&nbsp;en un equipo de referencia para quienes buscan velocidad, gráficos de última generación, autonomía optimizada y un ecosistema inteligente que se adapta al futuro de la movilidad.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><br></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Fotos y videos de calidad profesional</strong></b></li></ul><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El iPhone 17 está equipado con un avanzado sistema de cámaras Dual Fusion de 48 MP, compuesto por una cámara principal de 48 MP con apertura f/1.6 y una cámara ultra gran angular de 48 MP con un campo de visión de 120°, permitiendo capturar imágenes con gran nivel de detalle, colores precisos y un amplio rango dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Su tecnología de estabilización óptica de imagen (OIS) con sensor-shift ayuda a obtener fotografías más nítidas y videos más estables, incluso en condiciones de poca luz o cuando se graba en movimiento. Además, el modo Noche mejorado optimiza automáticamente la iluminación para conseguir resultados más claros y definidos.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">En video, el iPhone 17 permite grabar en resolución 4K a 60 fps con HDR Dolby Vision, ofreciendo una calidad excepcional para creadores de contenido. También incorpora funciones avanzadas como Modo Acción para tomas más estables y Modo Cine en 4K HDR, que agrega un atractivo efecto de profundidad y enfoque dinámico.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">La cámara frontal de 18 MP con autofocus garantiza selfies más detalladas y videollamadas de alta calidad, complementándose con funciones inteligentes que mejoran la experiencia tanto para uso personal como profesional.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Gracias a tecnologías como Photonic Engine, Deep Fusion y Smart HDR 5, el iPhone 17 optimiza automáticamente cada captura para ofrecer fotografías y videos con calidad sobresaliente en cualquier situación.</span></p>",
+    "precio": 3699,
+    "precioComparativo": 3895,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142810/products/ev988os8yhvjctdigwqs.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142810/products/itl3k4gzigtwixtr5gf5.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142811/products/alvclf6zmpi2lqb4cidg.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790142811/products/c1sanaynfkltsdca6jzw.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 1,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T20:41:30.370Z",
+    "updatedAt": "2026-10-26T23:20:39.365Z",
+    "__v": 5
+  },
+  {
+    "_id": "6aa31103ebefb1c77c310baa",
+    "nombre": "iPhone 17 Pro - Cosmic Orange",
+    "slug": "iphone-17-pro-cosmic-orange-1",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 PRO - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: left;\"><span style=\"white-space: pre-wrap;\">Prepárate para experimentar el futuro en tus manos con el revolucionario iPhone 17 Pro. Equipado con el potente chip A19 Pro, este smartphone redefine la velocidad y eficiencia, brindándote una experiencia fluida e inigualable. Captura momentos inolvidables con su impresionante sistema de cámaras de 48MP y 18MP, diseñado para fotos y videos de calidad profesional. Su pantalla de 6.3 pulgadas te sumerge en un mundo de colores vibrantes y detalles nítidos. Con 256GB de almacenamiento, tendrás espacio de sobra para todas tus fotos, videos y apps.</span></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Disfruta de la conectividad 5G ultrarrápida para streaming, juegos y descargas sin interrupciones.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">El avanzado sistema operativo iOS te ofrece seguridad, privacidad y una interfaz intuitiva.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Captura fotos y videos impresionantes con el sistema de cámara de alta resolución.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Guarda todos tus recuerdos y archivos importantes en sus 256GB de almacenamiento interno.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Experimenta un rendimiento superior con el innovador chip A19 Pro de Apple.</span></li></ul>",
+    "precio": 4699,
+    "precioComparativo": 5629,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143628/products/yayxnu9lq4xvniwmrkc2.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143628/products/wqjuewswntqilbtnqjmp.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143628/products/hlovhj3cswlcs7ta0vfi.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143628/products/ywdbijmtnhyfe3kwaqft.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {
+      "almacenamiento": "256 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T20:20:19.779Z",
+    "updatedAt": "2026-10-06T18:56:11.714Z",
+    "__v": 8
+  },
+  {
+    "_id": "6aa3107eebefb1c77c310afb",
+    "nombre": "iPhone 17 pro - Deep Blue",
+    "slug": "iphone-17-pro-deep-blue-1",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 PRO - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: left;\"><span style=\"white-space: pre-wrap;\">Prepárate para experimentar el futuro en tus manos con el revolucionario iPhone 17 Pro. Equipado con el potente chip A19 Pro, este smartphone redefine la velocidad y eficiencia, brindándote una experiencia fluida e inigualable. Captura momentos inolvidables con su impresionante sistema de cámaras de 48MP y 18MP, diseñado para fotos y videos de calidad profesional. Su pantalla de 6.3 pulgadas te sumerge en un mundo de colores vibrantes y detalles nítidos. Con 256GB de almacenamiento, tendrás espacio de sobra para todas tus fotos, videos y apps.</span></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Disfruta de la conectividad 5G ultrarrápida para streaming, juegos y descargas sin interrupciones.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">El avanzado sistema operativo iOS te ofrece seguridad, privacidad y una interfaz intuitiva.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Captura fotos y videos impresionantes con el sistema de cámara de alta resolución.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Guarda todos tus recuerdos y archivos importantes en sus 256GB de almacenamiento interno.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Experimenta un rendimiento superior con el innovador chip A19 Pro de Apple.</span></li></ul>",
+    "precio": 4699,
+    "precioComparativo": 5629,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143679/products/lq6zjgitfotkdmdu5hot.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143679/products/jocd82hm6vmhpdtsskdz.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143679/products/tmdsdfksyd6d1z3fm4j6.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143679/products/syx6slxqxf5pt878hujn.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 2,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {
+      "almacenamiento": "256 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T20:18:06.722Z",
+    "updatedAt": "2026-10-25T00:03:43.839Z",
+    "__v": 5
+  },
+  {
+    "_id": "6aa30ff9ebefb1c77c310a52",
+    "nombre": "iPhone 17 Pro - Silver",
+    "slug": "iphone-17-pro-silver-1",
+    "descripcion": "<ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 PRO - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></li></ul><p class=\"mb-2\" style=\"text-align: left;\"><span style=\"white-space: pre-wrap;\">Prepárate para experimentar el futuro en tus manos con el revolucionario iPhone 17 Pro. Equipado con el potente chip A19 Pro, este smartphone redefine la velocidad y eficiencia, brindándote una experiencia fluida e inigualable. Captura momentos inolvidables con su impresionante sistema de cámaras de 48MP y 18MP, diseñado para fotos y videos de calidad profesional. Su pantalla de 6.3 pulgadas te sumerge en un mundo de colores vibrantes y detalles nítidos. Con 256GB de almacenamiento, tendrás espacio de sobra para todas tus fotos, videos y apps.</span></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Disfruta de la conectividad 5G ultrarrápida para streaming, juegos y descargas sin interrupciones.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">El avanzado sistema operativo iOS te ofrece seguridad, privacidad y una interfaz intuitiva.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Captura fotos y videos impresionantes con el sistema de cámara de alta resolución.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Guarda todos tus recuerdos y archivos importantes en sus 256GB de almacenamiento interno.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Experimenta un rendimiento superior con el innovador chip A19 Pro de Apple.</span></li></ul>",
+    "precio": 4699,
+    "precioComparativo": 5629,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143782/products/bagid3zmlr6ajdkuwbxs.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143782/products/u6aohxzcymgbhkwtodyu.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143782/products/cnjy7fqxar9rbm5iawqo.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790143782/products/xb2injzdcrkryjf5d22r.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {
+      "almacenamiento": "256 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T20:15:53.430Z",
+    "updatedAt": "2026-10-20T23:03:54.241Z",
+    "__v": 8
+  },
+  {
+    "_id": "6aa30098ebefb1c77c3104fd",
+    "nombre": "iPhone 17 Pro Max - Silver",
+    "slug": "iphone-17-pro-max-silver-1",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 PRO MAX - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></p><h2 class=\"text-2xl font-semibold mb-3 mt-5\"><span style=\"white-space: pre-wrap;\">Descripción del producto</span></h2><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑO UNIBODY. PARA UNA POTENCIA FUERA DE SERIE. — Gracias a su diseño unibody de aluminio forjado en caliente, este es el iPhone más poderoso que existe.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CERAMIC SHIELD SUPERRESISTENTE. ADELANTE Y ATRÁS. — El Ceramic Shield protege la parte posterior del iPhone 17 Pro Max y lo vuelve 4 veces más resistente a los golpes.2 Y el nuevo frente de Ceramic Shield 2 tiene una resistencia a los rayones 3 veces mayor.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">EL MEJOR SISTEMA DE CÁMARAS PRO — Equipado con cámaras traseras de 48 MP y zoom de 8x de calidad óptica, el mayor rango de zoom que se haya visto en un iPhone. Es como tener 8 lentes profesionales en tu bolsillo.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CÁMARA FRONTAL CENTER STAGE DE 18 MP — Nuevas posibilidades para encuadrar tus tomas, selfies grupales más inteligentes, video con Captura Dual para grabar al mismo tiempo con la cámara frontal y una cámara trasera, y mucho más.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CHIP A19 PRO. ENFRIADO POR EVAPORACIÓN. VELOCIDAD POR LAS NUBES. — El chip A19 Pro es el más potente en un iPhone y ofrece un rendimiento continuo hasta 40% superior.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">LA MAYOR DURACIÓN DE BATERÍA QUE EXISTE EN UN IPHONE — El diseño unibody libera espacio para una batería con más capacidad que permite disfrutar hasta 39 horas de reproducción de video.4 Y puedes cargarla hasta 50% en 20 minutos.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">iOS 26. ESTRENANDO LOOK. DERROCHANDO MAGIA. — El nuevo diseño con Liquid Glass se ve increíble y se siente familiar al instante, con una pantalla bloqueada que atrapa miradas, fondos personalizables y encuestas en Mensajes, Revisión de Llamadas y mucho más.</span></li><li value=\"8\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑADO PARA APPLE INTELLIGENCE — Personal, privado y poderoso. Escribe, exprésate y haz de todo con mucha facilidad.</span></li><li value=\"9\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">FUNCIONALIDADES SATELITALES — Si estás en una zona sin cobertura ni Wi-Fi, el iPhone se conecta vía satélite para que puedas mandar mensajes y Tapbacks.8 Y si tienes un accidente grave de auto, el iPhone puede pedir ayuda en caso de que tú no puedas.</span></li><li value=\"10\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">MEJOR CONECTIVIDAD. GRAN VELOCIDAD. — Sigue en contacto a velocidades más rápidas con conexiones seguras a Wi-Fi 79, redes 5G10 y Bluetooth 6, y con la eSIM.</span></li><li value=\"11\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">eSIM. FLEXIBILIDAD. SEGURIDAD. SIMPLICIDAD. — El iPhone 17 Pro Max se activa con una eSIM11, para que disfrutes una mayor flexibilidad, comodidad y seguridad, además de una gran conectividad, sobre todo cuando viajas a otro país. También te da más seguridad, ya que nadie puede quitarla en caso de robo o pérdida de tu iPhone.</span></li><li value=\"12\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">PRIVACIDAD — Un nuevo nivel de privacidad y seguridad integradas.</span></li></ul>",
+    "precio": 5049,
+    "precioComparativo": 6200,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144105/products/oqhdx1dtuvltsfrftlyv.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144105/products/impcddcetxjenw4edds9.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144105/products/bjwnoxzglurkg14sweck.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144105/products/e8mjxrem19nesnfidzef.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 5,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {
+      "almacenamiento": "256 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T19:10:16.239Z",
+    "updatedAt": "2026-10-13T00:51:25.986Z",
+    "__v": 4
+  },
+  {
+    "_id": "6aa30064ebefb1c77c3104cf",
+    "nombre": "iPhone 17 Pro max - Deep Blue",
+    "slug": "iphone-17-pro-max-deep-blue-1",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 PRO MAX - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></p><h2 class=\"text-2xl font-semibold mb-3 mt-5\"><span style=\"white-space: pre-wrap;\">Descripción del producto</span></h2><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑO UNIBODY. PARA UNA POTENCIA FUERA DE SERIE. — Gracias a su diseño unibody de aluminio forjado en caliente, este es el iPhone más poderoso que existe.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CERAMIC SHIELD SUPERRESISTENTE. ADELANTE Y ATRÁS. — El Ceramic Shield protege la parte posterior del iPhone 17 Pro Max y lo vuelve 4 veces más resistente a los golpes.2 Y el nuevo frente de Ceramic Shield 2 tiene una resistencia a los rayones 3 veces mayor.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">EL MEJOR SISTEMA DE CÁMARAS PRO — Equipado con cámaras traseras de 48 MP y zoom de 8x de calidad óptica, el mayor rango de zoom que se haya visto en un iPhone. Es como tener 8 lentes profesionales en tu bolsillo.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CÁMARA FRONTAL CENTER STAGE DE 18 MP — Nuevas posibilidades para encuadrar tus tomas, selfies grupales más inteligentes, video con Captura Dual para grabar al mismo tiempo con la cámara frontal y una cámara trasera, y mucho más.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CHIP A19 PRO. ENFRIADO POR EVAPORACIÓN. VELOCIDAD POR LAS NUBES. — El chip A19 Pro es el más potente en un iPhone y ofrece un rendimiento continuo hasta 40% superior.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">LA MAYOR DURACIÓN DE BATERÍA QUE EXISTE EN UN IPHONE — El diseño unibody libera espacio para una batería con más capacidad que permite disfrutar hasta 39 horas de reproducción de video.4 Y puedes cargarla hasta 50% en 20 minutos.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">iOS 26. ESTRENANDO LOOK. DERROCHANDO MAGIA. — El nuevo diseño con Liquid Glass se ve increíble y se siente familiar al instante, con una pantalla bloqueada que atrapa miradas, fondos personalizables y encuestas en Mensajes, Revisión de Llamadas y mucho más.</span></li><li value=\"8\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑADO PARA APPLE INTELLIGENCE — Personal, privado y poderoso. Escribe, exprésate y haz de todo con mucha facilidad.</span></li><li value=\"9\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">FUNCIONALIDADES SATELITALES — Si estás en una zona sin cobertura ni Wi-Fi, el iPhone se conecta vía satélite para que puedas mandar mensajes y Tapbacks.8 Y si tienes un accidente grave de auto, el iPhone puede pedir ayuda en caso de que tú no puedas.</span></li><li value=\"10\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">MEJOR CONECTIVIDAD. GRAN VELOCIDAD. — Sigue en contacto a velocidades más rápidas con conexiones seguras a Wi-Fi 79, redes 5G10 y Bluetooth 6, y con la eSIM.</span></li><li value=\"11\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">eSIM. FLEXIBILIDAD. SEGURIDAD. SIMPLICIDAD. — El iPhone 17 Pro Max se activa con una eSIM11, para que disfrutes una mayor flexibilidad, comodidad y seguridad, además de una gran conectividad, sobre todo cuando viajas a otro país. También te da más seguridad, ya que nadie puede quitarla en caso de robo o pérdida de tu iPhone.</span></li><li value=\"12\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">PRIVACIDAD — Un nuevo nivel de privacidad y seguridad integradas.</span></li></ul>",
+    "precio": 5049,
+    "precioComparativo": 6200,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144191/products/xx0rtw2mbylrtsdtrj4t.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144191/products/khrmslhyr8zxncsszyab.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144191/products/drlluvccparmbmjdkhyo.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144191/products/xft62ce99xihfdom3xfs.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 5,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {
+      "almacenamiento": "256 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T19:09:24.733Z",
+    "updatedAt": "2026-10-13T00:52:07.066Z",
+    "__v": 6
+  },
+  {
+    "_id": "6aa30017ebefb1c77c310456",
+    "nombre": "iPhone 17 Pro Max - Cosmic Orange",
+    "slug": "iphone-17-pro-max-cosmic-orange-1",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">IPHONE 17 PRO MAX - PRODUCTO EN LISTA BLANCA - REGISTRADO EN OSIPTEL</strong></b></p><h2 class=\"text-2xl font-semibold mb-3 mt-5\"><span style=\"white-space: pre-wrap;\">Descripción del producto</span></h2><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑO UNIBODY. PARA UNA POTENCIA FUERA DE SERIE. — Gracias a su diseño unibody de aluminio forjado en caliente, este es el iPhone más poderoso que existe.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CERAMIC SHIELD SUPERRESISTENTE. ADELANTE Y ATRÁS. — El Ceramic Shield protege la parte posterior del iPhone 17 Pro Max y lo vuelve 4 veces más resistente a los golpes.2 Y el nuevo frente de Ceramic Shield 2 tiene una resistencia a los rayones 3 veces mayor.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">EL MEJOR SISTEMA DE CÁMARAS PRO — Equipado con cámaras traseras de 48 MP y zoom de 8x de calidad óptica, el mayor rango de zoom que se haya visto en un iPhone. Es como tener 8 lentes profesionales en tu bolsillo.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CÁMARA FRONTAL CENTER STAGE DE 18 MP — Nuevas posibilidades para encuadrar tus tomas, selfies grupales más inteligentes, video con Captura Dual para grabar al mismo tiempo con la cámara frontal y una cámara trasera, y mucho más.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CHIP A19 PRO. ENFRIADO POR EVAPORACIÓN. VELOCIDAD POR LAS NUBES. — El chip A19 Pro es el más potente en un iPhone y ofrece un rendimiento continuo hasta 40% superior.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">LA MAYOR DURACIÓN DE BATERÍA QUE EXISTE EN UN IPHONE — El diseño unibody libera espacio para una batería con más capacidad que permite disfrutar hasta 39 horas de reproducción de video.4 Y puedes cargarla hasta 50% en 20 minutos.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">iOS 26. ESTRENANDO LOOK. DERROCHANDO MAGIA. — El nuevo diseño con Liquid Glass se ve increíble y se siente familiar al instante, con una pantalla bloqueada que atrapa miradas, fondos personalizables y encuestas en Mensajes, Revisión de Llamadas y mucho más.</span></li><li value=\"8\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑADO PARA APPLE INTELLIGENCE — Personal, privado y poderoso. Escribe, exprésate y haz de todo con mucha facilidad.</span></li><li value=\"9\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">FUNCIONALIDADES SATELITALES — Si estás en una zona sin cobertura ni Wi-Fi, el iPhone se conecta vía satélite para que puedas mandar mensajes y Tapbacks.8 Y si tienes un accidente grave de auto, el iPhone puede pedir ayuda en caso de que tú no puedas.</span></li><li value=\"10\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">MEJOR CONECTIVIDAD. GRAN VELOCIDAD. — Sigue en contacto a velocidades más rápidas con conexiones seguras a Wi-Fi 79, redes 5G10 y Bluetooth 6, y con la eSIM.</span></li><li value=\"11\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">eSIM. FLEXIBILIDAD. SEGURIDAD. SIMPLICIDAD. — El iPhone 17 Pro Max se activa con una eSIM11, para que disfrutes una mayor flexibilidad, comodidad y seguridad, además de una gran conectividad, sobre todo cuando viajas a otro país. También te da más seguridad, ya que nadie puede quitarla en caso de robo o pérdida de tu iPhone.</span></li><li value=\"12\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">PRIVACIDAD — Un nuevo nivel de privacidad y seguridad integradas.</span></li></ul>",
+    "precio": 5049,
+    "precioComparativo": 6200,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144148/products/pa97bwmssljvnvz6tkt6.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144148/products/jhonxypgmlrl89lgcpdp.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144148/products/rq5duff5tldqvfxtuqpu.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1790144148/products/c9wy2gnpjnhzzkxh43qu.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65d34c8d1da0babc430c",
+      "nombre": "iPhone"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 5,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {
+      "almacenamiento": "256 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-10T19:08:07.454Z",
+    "updatedAt": "2026-10-13T00:51:41.459Z",
+    "__v": 7
+  },
+  {
+    "_id": "6a9895bd5cef70516bd3c793",
+    "nombre": "Airpods - Pro3",
+    "slug": "airpods-pro3",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: left;\"><span style=\"white-space: pre-wrap;\">Sumérgete en una experiencia sonora inigualable con los AirPods Pro 3 de APPLE. Diseñados para el audiófilo moderno, estos auriculares in-ear te brindan un sonido nítido y potente, mientras que su conectividad Bluetooth te libera de los cables. Disfruta de la comodidad y el ajuste perfecto gracias a sus almohadillas de silicona en cinco tamaños (XXS a L). El estuche de carga MagSafe (USB-C) no solo protege tus AirPods, sino que también te ofrece carga inalámbrica y ahora viene con altavoz y enganche para correa, para que nunca los pierdas de vista. Vive la música como nunca antes, con la calidad y el diseño que solo APPLE puede ofrecer.</span></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Audio Espacial Personalizado:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Sumérgete en un sonido tridimensional que te rodea, creando una experiencia envolvente e inmersiva.</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cancelación Activa de Ruido:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Bloquea el mundo exterior y concéntrate en tu música, podcasts o llamadas, disfrutando de una claridad excepcional.</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Adaptabilidad Total:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Elige entre cinco tamaños de almohadillas de silicona (XXS a L) para un ajuste cómodo y seguro, ideal para cualquier actividad.</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Conectividad Inalámbrica Avanzada:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;La tecnología Bluetooth te permite emparejar fácilmente tus AirPods Pro 3 con tus dispositivos APPLE y disfrutar de una conexión estable y sin interrupciones.</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Estuche de Carga MagSafe:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Protege y carga tus AirPods Pro 3 con el estuche MagSafe, ahora con altavoz y enganche para correa, para que siempre estén listos para usar.</span></li></ul>",
+    "precio": 999,
+    "precioComparativo": 1999,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788389587/products/0f747a7d-5c70-4e03-b265-792726ac9446.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788389662/products/5fbb8ee5-85aa-4ec0-8020-beb1d9d0e93f.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788389724/products/8dcf227f-7dc9-412d-bff5-49fc67f0b01e.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788389733/products/efb63b43-03db-49f6-bb71-6d0d16352693.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788389758/products/f904ac19-4e47-494c-934f-d7383d281d5c.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 6,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-02T21:31:41.940Z",
+    "updatedAt": "2026-10-17T17:33:35.394Z",
+    "__v": 4
+  },
+  {
+    "_id": "6a9892a45cef70516bd3c728",
+    "nombre": "Apple pencil Pro USB-C",
+    "slug": "apple-pencil-pro-usb-c",
+    "descripcion": "<p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Apple Pencil Pro agrega capacidades aún más mágicas para ayudarte a hacer realidad tus ideas. Las nuevas funciones avanzadas hacen que marcar, tomar notas y crear una obra maestra sea más intuitivo que nunca.</span><br><br><span style=\"white-space: pre-wrap;\">Estrujar. El Apple Pencil Pro puede detectar cuando lo aprietas y muestra una nueva paleta, para que puedas cambiar rápidamente de herramientas, grosores de línea y colores.</span><br><br><span style=\"white-space: pre-wrap;\">Tonel. Un nuevo giroscopio te permite rotar el Apple Pencil Pro para un control preciso de las herramientas de pincel y lápiz con forma.</span><br><br><span style=\"white-space: pre-wrap;\">Retroalimentación háptica. Un motor háptico personalizado proporciona información precisa que puedes sentir. Cuando aprietas o tocas dos veces, sentirás un ligero pulso que confirma la acción.</span><br><br><span style=\"white-space: pre-wrap;\">Coloca el Apple Pencil.¹ Obtén una vista previa de exactamente dónde tocará tu Apple Pencil en tu pantalla y verás una sombra virtual de tu herramienta. Así podrás escribir, dibujar e ilustrar con aún mayor precisión.</span><br><br><span style=\"white-space: pre-wrap;\">Doble toque. Cambia rápidamente entre herramientas, como un bolígrafo y un borrador, con un doble toque en el Apple Pencil.</span><br><br><span style=\"white-space: pre-wrap;\">Y si extravías el Apple Pencil Pro mientras estás fuera de casa o en casa, puedes localizarlo fácilmente en la aplicación Find My. El Apple Pencil Pro se conecta, empareja y carga magnéticamente en el lateral de tu iPad.</span><br><br><span style=\"white-space: pre-wrap;\">Modelos de iPad compatible:</span><br><br><span style=\"white-space: pre-wrap;\">iPad Pro de 13 pulgadas (M5)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Pro de 13 pulgadas (M4)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Pro de 11 pulgadas (M5)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Pro de 11 pulgadas (M4)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Air de 13 pulgadas (M4)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Air de 11 pulgadas (M4)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Air de 13 pulgadas (M3)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Air de 11 pulgadas (M3)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Air de 13 pulgadas (M2)</span><br><br><span style=\"white-space: pre-wrap;\">iPad Air de 11 pulgadas (M2)</span><br><br><span style=\"white-space: pre-wrap;\">iPad mini (A17 Pro)</span></p>",
+    "precio": 599,
+    "precioComparativo": 899,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788383798/products/5ba04df6-1ab7-4c70-8090-f29351323077.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788383798/products/11a3f7a7-3af3-472e-a60e-361ba42827a1.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788383798/products/495f0c9c-2402-4bdc-a9ab-86040fbc4e57.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 8,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-02T21:18:28.544Z",
+    "updatedAt": "2026-09-23T07:27:09.718Z",
+    "__v": 1
+  },
+  {
+    "_id": "6a988c475cef70516bd3c604",
+    "nombre": "Apple Watch S11 – 46mm – Aluminio – Jet Black – Gps",
+    "slug": "apple-watch-s11-46mm-aluminio-jet-black-gps",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: left;\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">DESCRIPCION DEL PRODUCTO:</strong></b></p><p class=\"mb-2\" style=\"text-align: left;\"><span style=\"white-space: pre-wrap;\">Descubre el futuro en tu muñeca con el Apple Watch Series 11 de 46mm. Un diseño elegante que se adapta a tu estilo de vida activo, ofreciéndote un rendimiento superior y una experiencia intuitiva. Mantente conectado, saludable y en control de tu día a día con este dispositivo innovador. Su avanzada tecnología te permite monitorizar tu actividad física, recibir notificaciones importantes y disfrutar de tus aplicaciones favoritas directamente en tu muñeca. Experimenta la combinación perfecta de funcionalidad y sofisticación.</span></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Rendimiento Excepcional:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Equipado con el potente chip S11 para una respuesta rápida y fluida.</span></li><li value=\"2\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Diseño Premium:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Caja de 46mm con una correa deportiva cómoda y duradera.</span></li><li value=\"3\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Salud y Bienestar:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Monitoriza tu ritmo cardíaco, registra tus entrenamientos y controla tu actividad diaria.</span></li><li value=\"4\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Conectividad Total:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Recibe notificaciones, responde llamadas y accede a tus aplicaciones favoritas al instante.</span></li><li value=\"5\" class=\"mb-1\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Carga Inalámbrica:</strong></b><span style=\"white-space: pre-wrap;\">&nbsp;Incluye MagSafe Charger para una carga fácil y eficiente.</span></li></ul>",
+    "precio": 1749,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788382053/products/5d96ce19-2e6c-4f79-9396-840153d3329e.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788382053/products/e471e1d5-6737-42ba-8407-f9efe3672580.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788382053/products/e5560dd9-324f-4fe9-a965-abcff20b9bb4.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788382054/products/0ea64271-1cff-463d-a10c-6fde4aef8616.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788382055/products/e6fc4330-f19f-40ea-9728-88de8389a9b3.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 1,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-02T20:51:19.624Z",
+    "updatedAt": "2026-09-23T06:27:32.611Z",
+    "__v": 0,
+    "precioComparativo": 2600
+  },
+  {
+    "_id": "6a9888245cef70516bd3c425",
+    "nombre": "Apple Watch Ultra 3 – Ocean Band – Black",
+    "slug": "apple-watch-ultra-3-ocean-band-black",
+    "descripcion": "<h2 class=\"text-2xl font-semibold mb-3 mt-5\"><span style=\"white-space: pre-wrap;\">Descripción del producto</span></h2><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">ULTRAFUERTE Y LISTO PARA LA ACCIÓN — El compañero perfecto para el deporte y la aventura está diseñado para durar, con una robusta caja de titanio y una pantalla de cristal de zafiro resistente. Tiene una clasificación de resistencia al agua de 100 metros, ideal para nadar y practicar buceo recreativo y deportes acuáticos de alta velocidad.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">UNA PANTALLA DESLUMBRANTE — La pantalla más grande y avanzada emite más luz en ángulos más amplios para que la veas y la leas mejor.3 Además, puedes usarla como linterna.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">BATERÍA PARA VARIOS DÍAS — Hasta 42 horas de uso normal y hasta 72 horas en modo Ahorrar Batería. Registra un entrenamiento con lecturas completas del GPS y de la frecuencia cardiaca durante 20 horas en modo Ahorrar Batería.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">UN COMPAÑERO PERFECTO PARA CORRER Y ENTRENAR — GPS de precisión y doble frecuencia, Ritmo, Zonas de Frecuencia Cardiaca, Entrenamientos Personalizados, Potencia al Correr y Carga de Entrenamiento: todo lo que necesitas para correr, nadar, andar en bici y hacer atletismo.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">FUNCIONALIDADES DE SEGURIDAD — El Ultra 3 puede detectar si sufriste una caída fuerte o un accidente de auto grave. Si estás en una zona sin cobertura ni Wi-Fi, la comunicación satelital integrada te permite enviar mensajes de texto vía satélite a los servicios de emergencia para pedir ayuda.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">MANTENTE EN CONTACTO ESTÉS DONDE ESTÉS — Envía mensajes de texto, haz llamadas, descarga música y podcasts, y comunícate con los servicios de emergencia incluso si no llevas tu iPhone contigo.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">BOTÓN DE ACCIÓN PERSONALIZABLE — Presiónalo y accede a un montón de funciones personalizables, como iniciar un entrenamiento o encender la linterna.</span></li><li value=\"8\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">INFORMACIÓN IMPORTANTE SOBRE TU SALUD — Recibe notificaciones de posible ritmo cardiaco irregular7 o frecuencia cardiaca demasiado alta o baja. Conoce tu Puntuación de Sueño, consulta tu estado de salud diario con la app Signos Vitales8 y mide tu nivel de oxígeno en sangre.</span></li><li value=\"9\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">LA LIBERTAD TE ESTÁ LLAMANDO — Haz y recibe llamadas, disfruta música y podcasts en streaming, y escucha con tus AirPods o a través de la bocina integrada del Apple Watch, incluso si no llevas tu iPhone contigo.</span></li></ul>",
+    "precio": 2849,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788379416/products/ec1c2e83-8bae-4710-a630-f5d996f7eb04.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788379416/products/7c67c907-1ebf-4ee8-bb9e-6708afe698c9.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788379415/products/1dff63c2-8fa9-4e5e-81cc-da2a848dc0c4.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788379435/products/64bf45e4-dd51-4c33-a01a-2dbf244586a1.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-02T20:33:40.305Z",
+    "updatedAt": "2026-09-23T06:29:13.862Z",
+    "__v": 1,
+    "precioComparativo": 4200
+  },
+  {
+    "_id": "6a977572367df2681560005c",
+    "nombre": "Airpods - Max2",
+    "slug": "airpods-max2",
+    "descripcion": "<h2 class=\"text-2xl font-semibold mb-3 mt-5\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Descripción del producto</span></h2><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">LA EXPERIENCIA MÁS AVANZADA EN AUDÍFONOS DE DIADEMA — El controlador dinámico diseñado por Apple ofrece un sonido de alta fidelidad. El audio computacional combina un diseño acústico exclusivo con el chip H1 y el software de Apple para brindar una experiencia de audio revolucionaria.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">FUNDA SMART  —  Case del mismo color de los airpods.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CONCÉNTRATE EN LO QUE ESCUCHAS — La Cancelación Activa de Ruido nivel pro elimina hasta 2 veces más ruido de fondo, para que puedas sumergirte en tu música.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">ESCUCHA LO QUE OCURRE A TU ALREDEDOR — El modo Ambiente te permite mantenerte en contacto con el mundo que te rodea.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">AUDIO ESPACIAL PERSONALIZADO — El sonido de los AirPods Max se adapta a la forma única de tu oreja y sigue los movimientos de tu cabeza para sumergirte en una experiencia de audio envolvente. También puedes escuchar algunas canciones, series y películas en Dolby Atmos.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DISEÑO ACÚSTICO — Están diseñados con una diadema de malla tejida y almohadillas de memory foam para un ajuste excepcional que aísla el sonido a la perfección.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">UNA EXPERIENCIA MÁGICA — Para enlazar los AirPods Max sólo acércalos a tu dispositivo y toca Conectar en la pantalla. Los AirPods Max pausan el audio cuando te los quitas y Cambio Automático hace que sea muy fácil pasar de escuchar contenido del iPhone al iPad o a la Mac.</span></li><li value=\"8\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CONTROL PRECISO — Usa la Digital Crown para reproducir y pausar música, responder y finalizar llamadas, silenciar el micrófono, controlar el volumen y cambiar de canción.</span></li><li value=\"9\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CARGA CON USB-C — El nuevo conector USB-C te permite cargar los AirPods Max con el mismo cable que usas para cargar tu iPhone, iPad, Mac y otros dispositivos Apple</span></li></ul>",
+    "precio": 2199,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310322/products/954c5611-dcbb-46d6-b312-e9489e6b61ba.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310326/products/ca9d5742-f33c-4ba1-812d-8fa06616a71d.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310372/products/701625a2-6ecb-4314-852a-c2f819502bdc.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310431/products/147f9995-b707-4e66-906b-47c9f99762f7.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310435/products/77495585-e758-400b-82a6-2d4c8379fead.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    },
+    "stock": 4,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "midnight",
+        "precio": 2199,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310322/products/954c5611-dcbb-46d6-b312-e9489e6b61ba.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310326/products/ca9d5742-f33c-4ba1-812d-8fa06616a71d.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310333/products/a36a113e-7dc9-42c7-8f5b-dcf31627be3e.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310435/products/77495585-e758-400b-82a6-2d4c8379fead.webp"
+        ],
+        "atributos": {
+          "color": "midnight"
+        },
+        "_id": "6ab3742ceb6e882e359cd24d"
+      },
+      {
+        "nombre": "blue",
+        "precio": 2199,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310372/products/701625a2-6ecb-4314-852a-c2f819502bdc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310380/products/56de7150-dfce-4e0b-9dec-a51553ccfb13.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310384/products/0fb95b53-6b1d-440e-8d25-fbe89a067a64.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1788310431/products/147f9995-b707-4e66-906b-47c9f99762f7.webp"
+        ],
+        "atributos": {
+          "color": "blue"
+        },
+        "_id": "6ab3742ceb6e882e359cd24e"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-09-02T01:01:38.864Z",
+    "updatedAt": "2026-09-23T06:39:40.573Z",
+    "__v": 5,
+    "precioComparativo": 3500
+  },
+  {
+    "_id": "6a31bc524658ef0b5c0bda2d",
+    "nombre": "iPad Air 11″ - M4",
+    "slug": "ipad-air-11-m4",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Descripcion:</strong></b></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">iPad Air M4 de 11 pulgadas. Diseñado para Apple Intelligence y ahora con los superpoderes del chip M4 de Apple. Es tan poderoso como accesible. Viene con una espectacular pantalla Liquid Retina, cámara frontal Center Stage de 12 MP para videollamadas increíbles, iPadOS y conexiones Wi-Fi 72 y 5G ultrarrápidas. Como funciona con el Apple Pencil Pro, el Magic Keyboard para el iPad Air y más, puedes hacer varias tareas al mismo tiempo, estudiar, trabajar, jugar y crear con facilidad.</span></p><p class=\"mb-2\"><br></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Caracteristicas:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">POR QUÉ EL IPAD AIR — El iPad Air con chip M4 de Apple ofrece un rendimiento fuera de serie en un diseño elegante. Además, está disponible en dos tamaños perfectos para llevar a todos lados. Viene con Apple Intelligence, una espectacular pantalla Liquid Retina, Touch ID, cámaras avanzadas y Wi-Fi 7.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">RENDIMIENTO Y ALMACENAMIENTO — El chip M4 ofrece gráficos avanzados y un rendimiento increíble para hacer multitasking y tareas complejas de IA con mucha fluidez. Y con una batería que te acompaña todo el día, puedes seguir trabajando y divirtiéndote dondequiera que estés. Elige hasta 1 TB de almacenamiento para tus apps, canciones, películas y más.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">IPADOS + APPS — Usa apps y haz mucho más con las funcionalidades revolucionarias y el diseño intuitivo de iPadOS. El sistema de ventanas flexible te permite controlar, organizar y gestionar tus flujos de trabajo como nunca antes.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">APPLE INTELLIGENCE — Apple Intelligence es un sistema de inteligencia personal que te ayuda a crear, comunicarte y hacer de todo fácilmente, con revolucionarias protecciones de privacidad a cada paso.</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">PANTALLA LIQUID RETINA DE 11 PULGADAS — La espectacular pantalla Liquid Retina integra tecnologías avanzadas como True Tone, amplia gama de colores P3 y una reflectividad extremadamente baja para que todo se vea de maravilla.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CONECTIVIDAD — La conexión Wi‑Fi 7 con el chip N1 de Apple permite conexiones inalámbricas rápidas para transferir fotos, documentos y archivos de video pesados. Y la conexión 5G ultrarrápida que ofrece el módem C1X de Apple te da total flexibilidad para seguir en contacto dondequiera que estés.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">COMPATIBLE CON APPLE PENCIL Y MAGIC KEYBOARD PARA EL IPAD AIR — El Apple Pencil Pro y el Apple Pencil (USB-C) permiten un control preciso e intuitivo para dibujar, tomar notas y dar rienda suelta a la creatividad. El Magic Keyboard te permite escribir con total comodidad y viene con un trackpad con respuesta háptica.</span></li><li value=\"8\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CÁMARAS AVANZADAS — El iPad Air viene con una cámara frontal Center Stage de 12 MP, perfecta para hacer videollamadas y sacarte selfies, y una cámara trasera gran angular de 12 MP para escanear documentos, tomar fotos y grabar videos 4K.</span></li><li value=\"9\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DESBLOQUEA Y PAGA CON TOUCH ID — Touch ID te permite desbloquear el iPad Air con tu huella digital, iniciar sesión en apps y hacer pagos de forma segura con Apple Pay.</span></li></ul><p class=\"mb-2\"><br></p>",
+    "precio": 2850,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654321/products/dd6cca12-d9cb-4521-b76f-8a6376622209.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654321/products/628cedcd-90d7-4a23-adf3-361dad5da1bf.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654321/products/098aefeb-49d8-447e-aeec-28745e3aea66.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654473/products/9393e9a1-617b-47bc-b81b-01af164ac71e.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654322/products/0f717652-c549-42e5-b3d3-a981c2a93a4e.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654321/products/350daf6c-80a2-4d91-8f0c-f9b24dc7fd3b.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65434c8d1da0babc4243",
+      "nombre": "iPad"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": false,
+    "atributos": {
+      "almacenamiento": "128 gb"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "128 gb / silver",
+        "precio": 2850,
+        "precioComparativo": 4000,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654321/products/098aefeb-49d8-447e-aeec-28745e3aea66.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654473/products/9393e9a1-617b-47bc-b81b-01af164ac71e.webp"
+        ],
+        "atributos": {
+          "almacenamiento": "128 gb",
+          "color": "silver"
+        },
+        "_id": "6ab374beeb6e882e359cd303"
+      },
+      {
+        "nombre": "128 gb / azul",
+        "precio": 2850,
+        "precioComparativo": 4000,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654322/products/0f717652-c549-42e5-b3d3-a981c2a93a4e.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781654321/products/350daf6c-80a2-4d91-8f0c-f9b24dc7fd3b.webp"
+        ],
+        "atributos": {
+          "almacenamiento": "128 gb",
+          "color": "azul"
+        },
+        "_id": "6ab374beeb6e882e359cd304"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-06-16T21:12:50.010Z",
+    "updatedAt": "2026-09-23T06:42:06.873Z",
+    "__v": 18,
+    "precioComparativo": 4000
+  },
+  {
+    "_id": "6a31b9004658ef0b5c0bd7a7",
+    "nombre": "MICA DE VIDRIO TEMPLADO - SUPER RESISTENTE",
+    "slug": "mica-de-vidrio-templado-super-resistente",
+    "descripcion": "<p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Protector Full Glass High Quality para Modelos iPhone: Claridad y Protección en Uno.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Este protector ofrece la máxima protección para tu iPhone sin sacrificar la claridad de tu pantalla. Mantén tu dispositivo impecable y disfruta de una calidad de visualización excepcional. La elección ideal para mantener tu iPhone seguro y con un aspecto perfecto.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Características y especificaciones:</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">1&nbsp; Full Cover Full Glue Vidrio templado</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">2. La cubierta completa proporciona una alta protección para su pantalla.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">3. El recubrimiento hidrofóbico y OLEOFÓBICO evita que su teléfono tenga manchas como aceite, huellas dactilares, etc.</span></p><p class=\"mb-2\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">4. Alta sensibilidad y respuesta como la pantalla original</span></p>",
+    "precio": 29.9,
+    "precioComparativo": 35,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "stock": 23,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": false,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "iphone 13",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 13"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9ba"
+      },
+      {
+        "nombre": "iphone 13 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 13 pro"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9bb"
+      },
+      {
+        "nombre": "iphone 13 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 13 pro max"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9bc"
+      },
+      {
+        "nombre": "iphone 14",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 14"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9bd"
+      },
+      {
+        "nombre": "iphone 14 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 14 pro"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9be"
+      },
+      {
+        "nombre": "iphone 14 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 14 pro max"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9bf"
+      },
+      {
+        "nombre": "iphone 15",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/c98f640f-29df-4631-8edf-30660f9d5959.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642174/products/15a2523b-2f39-4848-b1cd-f5740826062a.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642172/products/a101762a-10ad-45f2-ae71-1df7a621255f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781642173/products/f7d7ff4a-83bf-4612-a105-80590ce4923e.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 15"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c0"
+      },
+      {
+        "nombre": "iphone 15 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 1,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 15 pro"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c1"
+      },
+      {
+        "nombre": "iphone 15 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 15 pro max"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c2"
+      },
+      {
+        "nombre": "iphone 16",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 16"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c3"
+      },
+      {
+        "nombre": "iphone 16 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 16 pro"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c4"
+      },
+      {
+        "nombre": "iphone 16 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 16 pro max"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c5"
+      },
+      {
+        "nombre": "iphone 17",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 17"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c6"
+      },
+      {
+        "nombre": "iphone 17 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 17 pro"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c7"
+      },
+      {
+        "nombre": "iphone 17 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [],
+        "atributos": {
+          "compatibilidad": "iphone 17 pro max"
+        },
+        "_id": "6a31baec4658ef0b5c0bd9c8"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-06-16T20:58:40.164Z",
+    "updatedAt": "2026-06-16T21:06:52.059Z",
+    "__v": 2
+  },
+  {
+    "_id": "6a31a65e4658ef0b5c0bd372",
+    "nombre": "Case con carga Magsafe para iPhone - Transparente",
+    "slug": "case-con-carga-magsafe-para-iphone-transparente-1",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">DESCRIPCION:</strong></b></p><p class=\"mb-2\"><br><span style=\"white-space: pre-wrap;\">Compatible con cargadores inalámbricos Magsafe. Los imanes de 38 cuadrupolos incorporados se alinean automáticamente con el cargador magnético, y el cargador magnético se puede girar 360 grados rápidamente. La atracción magnética es 10 veces más fuerte, sin interferencias de señal. La funda híbrida de una pieza para teléfono móvil combina un parachoques de goma que absorbe los golpes y un respaldo de plástico flexible resistente a los arañazos. La forma delgada y el ajuste ceñido, la manija antideslizante es flexible, duradera, suave y ligera. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• Todo el cuerpo es a prueba de golpes y una protección resistente a las caídas sin hinchazón. Carcasa ultrafina, bordes elevados en la parte delantera y trasera, cojines reforzados en las esquinas, mantienen la pantalla y la lente de la cámara lejos de superficies planas. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• La funda para teléfono transparente anti-amarillo de 4-6 meses muestra la belleza original de su teléfono. El diseño elegante y perfectamente ajustado es adecuado para hombres, mujeres, niñas y niños.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\"> • Material: respaldo de PC marco de TPU </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• 4H anti-rayado. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• 99,5% de transparencia, elegante efecto espejo, le permite decorarlo.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• Alineación automática perfecta con cargador de seguridad magnético, adsorción magnética, carga giratoria de 360 grados </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• Respaldo rígido, puede mantenerse en forma incluso si se usa durante mucho tiempo. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• El marco de Tpu suave y el ángulo de amortiguación único absorben el impacto de una caída corta. Excelente agarre. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• Forma ultrafina, protección pesada. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• Incisión precisa y acceso rápido. Botón de superposición táctil para una respuesta rápida. </span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">• Compatible con carga inalámbrica magnética. </span></p>",
+    "precio": 29.9,
+    "precioComparativo": 55,
+    "costo": 29.9,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "stock": 32,
+    "isActive": true,
+    "esDestacado": false,
+    "esNuevo": false,
+    "atributos": {
+      "compatibilidad": "iphone 17"
+    },
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "iphone 17",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 17"
+        },
+        "_id": "6ab36f58eb6e882e359ccd2e"
+      },
+      {
+        "nombre": "iphone 17 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 17 pro"
+        },
+        "_id": "6ab36f58eb6e882e359ccd2f"
+      },
+      {
+        "nombre": "iphone 17 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 3,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 17 pro max"
+        },
+        "_id": "6ab36f58eb6e882e359ccd30"
+      },
+      {
+        "nombre": "iphone 13",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 13"
+        },
+        "_id": "6ab36f58eb6e882e359ccd31"
+      },
+      {
+        "nombre": "iphone 13 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 13 pro"
+        },
+        "_id": "6ab36f58eb6e882e359ccd32"
+      },
+      {
+        "nombre": "iphone 13 pro max",
+        "precio": 29,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 13 pro max"
+        },
+        "_id": "6ab36f58eb6e882e359ccd33"
+      },
+      {
+        "nombre": "iphone 14",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 14"
+        },
+        "_id": "6ab36f58eb6e882e359ccd34"
+      },
+      {
+        "nombre": "iphone 14 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 14 pro"
+        },
+        "_id": "6ab36f58eb6e882e359ccd35"
+      },
+      {
+        "nombre": "iphone 14 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 14 pro max"
+        },
+        "_id": "6ab36f58eb6e882e359ccd36"
+      },
+      {
+        "nombre": "iphone 15",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 15"
+        },
+        "_id": "6ab36f58eb6e882e359ccd37"
+      },
+      {
+        "nombre": "iphone 15 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 15 pro"
+        },
+        "_id": "6ab36f58eb6e882e359ccd38"
+      },
+      {
+        "nombre": "iphone 15 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 15 pro max"
+        },
+        "_id": "6ab36f58eb6e882e359ccd39"
+      },
+      {
+        "nombre": "iphone 16",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 16"
+        },
+        "_id": "6ab36f58eb6e882e359ccd3a"
+      },
+      {
+        "nombre": "iphone 16 pro",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 2,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 16 pro"
+        },
+        "_id": "6ab36f58eb6e882e359ccd3b"
+      },
+      {
+        "nombre": "iphone 16 pro max",
+        "precio": 29.9,
+        "precioComparativo": 55,
+        "stock": 3,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638600/products/cf119f99-d0d7-44b2-8c3c-34aa1e38da95.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/e5a3afd4-c58e-411b-baff-e7d51ad7e0fc.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/314a70db-aa97-4a9d-9136-8f4e59fcc87f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781638601/products/f1e8af01-be46-4db0-9419-d85e679aa6fe.webp"
+        ],
+        "atributos": {
+          "compatibilidad": "iphone 16 pro max"
+        },
+        "_id": "6ab36f58eb6e882e359ccd3c"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-06-16T19:39:10.998Z",
+    "updatedAt": "2026-09-23T06:19:04.232Z",
+    "__v": 12
+  },
+  {
+    "_id": "6a2de93dc530c70036ce1858",
+    "nombre": "Cargador Apple 20W",
+    "slug": "cargador-apple-20w-1",
+    "descripcion": "<h3 class=\"text-xl font-medium mb-2 mt-4\"><span style=\"white-space: pre-wrap;\">Cargador de Pared Original Apple USB-C 20W</span></h3><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">El </span><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Cargador de Pared Original Apple USB-C de 20W</strong></b><span style=\"white-space: pre-wrap;\"> está diseñado para ofrecer una carga rápida, eficiente y segura en dispositivos compatibles. Gracias a su tecnología de carga optimizada, permite aprovechar al máximo el rendimiento de la batería, reduciendo los tiempos de espera y garantizando una experiencia de uso confiable.</span></p><p class=\"mb-2\"><span style=\"white-space: pre-wrap;\">Su diseño compacto y ligero facilita el transporte, convirtiéndolo en una solución práctica para el hogar, la oficina o los viajes.</span></p><h3 class=\"text-xl font-medium mb-2 mt-4\"><span style=\"white-space: pre-wrap;\">Características Principales</span></h3><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Potencia de 20W</strong></b><br><span style=\"white-space: pre-wrap;\">Proporciona una carga rápida y estable para dispositivos compatibles, optimizando el tiempo de carga y el rendimiento energético.</span></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Puerto USB-C</strong></b><br><span style=\"white-space: pre-wrap;\">Ofrece una conexión moderna y eficiente, compatible con cables USB-C a Lightning y USB-C a USB-C.</span></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Carga Inteligente</strong></b><br><span style=\"white-space: pre-wrap;\">Ajusta automáticamente la potencia suministrada según las necesidades del dispositivo, contribuyendo a una carga segura y eficiente.</span></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Diseño Compacto</strong></b><br><span style=\"white-space: pre-wrap;\">Su formato ligero y portátil permite transportarlo fácilmente y utilizarlo en cualquier lugar.</span></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Amplia Compatibilidad</strong></b><br><span style=\"white-space: pre-wrap;\">Compatible con iPhone, iPad, AirPods y otros dispositivos que admitan carga mediante USB-C.</span></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">Calidad Original Apple</strong></b><br><span style=\"white-space: pre-wrap;\">Fabricado bajo los estándares de calidad de Apple para garantizar seguridad, durabilidad y un rendimiento óptimo.</span></p><h3 class=\"text-xl font-medium mb-2 mt-4\"><span style=\"white-space: pre-wrap;\">Contenido de la Caja</span></h3><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">Adaptador de Corriente Apple USB-C de 20W</span></li></ul>",
+    "precio": 119,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781393346/products/fd350baf-262a-4439-bcb7-ad4c2db40845.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781393346/products/81479b70-9ebc-404c-94a6-007bfe602dff.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781393346/products/a92c9f07-3767-481d-b5c2-89cad7e7a4fe.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781393346/products/f077522c-e5e6-49fd-83c8-2450b514b337.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e62c84c8d1da0babc4211",
+      "nombre": "Accesorios"
+    },
+    "stock": 10,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-06-13T23:35:25.788Z",
+    "updatedAt": "2026-10-01T18:32:28.226Z",
+    "__v": 0,
+    "precioComparativo": 159,
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    }
+  },
+  {
+    "_id": "6a1f5a5e41f449394604a12a",
+    "nombre": "iPad 11″ - A16",
+    "slug": "ipad-11-a16",
+    "descripcion": "<p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">DESCRIPCION:</strong></b><br><span style=\"white-space: pre-wrap;\">El iPad de 11 pulgadas es más poderoso que nunca. Trae el chip A16 ultrarrápido, pantalla Liquid Retina, cámaras avanzadas, rápidas conexiones Wi-Fi 6 y conector USB-C. El iPad es perfecto para trabajar, darles forma a tus ideas y mantenerte en contacto con tu mundo. Viene en cuatro increíbles colores y ahora es mucho más asequible.</span></p><p class=\"mb-2\"><b><strong class=\"font-bold\" style=\"white-space: pre-wrap;\">CARACTERISTICAS:</strong></b></p><ul class=\"list-disc pl-5 mb-4\"><li value=\"1\" class=\"mb-1\"><br><span style=\"white-space: pre-wrap;\">PANTALLA LIQUID RETINA DE 11 PULGADAS — La espectacular pantalla Liquid Retina es el lugar ideal para ver tus películas favoritas o dibujar tu próxima obra maestra. La tecnología True Tone ajusta la temperatura del color según la luz ambiente del lugar donde estés, para que todo se vea más natural.</span></li><li value=\"2\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">RENDIMIENTO Y ALMACENAMIENTO — El chip&nbsp;A16 multiplica el rendimiento del dispositivo para agilizar todo lo que hagas. Y con una batería que te acompaña todo el día, el iPad es perfecto para sumergirte en tus juegos favoritos o editar fotos y videos. Disponible desde 128&nbsp;GB hasta 512&nbsp;GB de almacenamiento.</span></li><li value=\"3\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">IPADOS + APPS — iPadOS hace que el iPad sea más productivo, intuitivo y versátil. Te permite ejecutar varias apps a la vez, usar el Apple&nbsp;Pencil para escribir en cualquier campo de texto con la funcionalidad Escribir a Mano, y editar y compartir fotos. Las apps esenciales de Apple, como Safari, Mensajes y Keynote, ya vienen instaladas en el iPad, y hay más de un millón de apps diseñadas especialmente para el iPad disponibles en el App&nbsp;Store.</span></li><li value=\"4\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">SE PUEDE VINCULAR CON APPLE PENCIL Y MAGIC KEYBOARD FOLIO — El Apple&nbsp;Pencil (USB-C) convierte el iPad en un gran lienzo para darle rienda suelta a tu creatividad y en el mejor dispositivo del mundo para tomar notas. El Magic Keyboard Folio tiene un diseño versátil compuesto por dos piezas que se acoplan magnéticamente al iPad: un teclado desmontable y una cubierta posterior ajustable. El iPad también es compatible con el Apple&nbsp;Pencil (1.ª&nbsp;generación).</span></li><li value=\"5\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CÁMARAS AVANZADAS — El iPad viene con una cámara frontal 12MP Center Stage que es perfecta para hacer videollamadas y tomar selfies. La cámara trasera gran angular de 12 MP con flash True Tone es ideal para escanear documentos, tomar fotos y grabar videos 4K.</span></li><li value=\"6\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">CONEXIÓN WI-FI Y RED 5G RÁPIDAS — Con Wi-Fi 6 tienes acceso a conexiones inalámbricas rápidas para descargar archivos, disfrutar juegos multijugador, ver películas en streaming, comunicarte con tus seres queridos y más. Si no hay Wi-Fi cerca, la compatibilidad con 5G te da la opción de conectarte desde cualquier lugar y agregar un plan de datos flexible cuando lo necesites.</span></li><li value=\"7\" class=\"mb-1\"><span style=\"white-space: pre-wrap;\">DESBLOQUEA Y PAGA CON TOUCH ID — Touch ID viene integrado en el botón superior para que puedas desbloquear tu iPad&nbsp;con tu huella digital, iniciar sesión en apps y hacer pagos de forma segura con Apple&nbsp;Pay.</span></li></ul><p class=\"mb-2\"><br></p>",
+    "precio": 1649,
+    "precioComparativo": 2500,
+    "costo": 1,
+    "imagenes": [
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653311/products/a521a409-c126-4503-aa05-642396ccb453.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653312/products/43287bc8-1f31-4a8e-927c-2fc95e42b7cd.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653312/products/6a63851f-f21b-434c-a83f-fa1f30f6df56.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653311/products/786afdc8-1a82-470a-99e3-14a430e63146.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653377/products/5ad8c8ae-e0e8-452a-b4a6-9a961938a6a8.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653401/products/259600a5-f0f2-4866-b7c8-0fbc64515740.webp",
+      "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653437/products/57df32ea-a68f-471b-932c-8693e857fedd.webp"
+    ],
+    "categoria": {
+      "_id": "6a0e65434c8d1da0babc4243",
+      "nombre": "iPad"
+    },
+    "stock": 0,
+    "isActive": true,
+    "esDestacado": true,
+    "esNuevo": true,
+    "atributos": {},
+    "especificaciones": [],
+    "diasEnvio": 1,
+    "variants": [
+      {
+        "nombre": "128 gb / silver",
+        "precio": 1649,
+        "precioComparativo": 2500,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653312/products/43287bc8-1f31-4a8e-927c-2fc95e42b7cd.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653377/products/5ad8c8ae-e0e8-452a-b4a6-9a961938a6a8.webp"
+        ],
+        "atributos": {
+          "almacenamiento": "128 gb",
+          "color": "silver"
+        },
+        "_id": "6ad2a9ff24e623123ce710a3"
+      },
+      {
+        "nombre": "128 gb / azul",
+        "precio": 1649,
+        "precioComparativo": 2500,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653312/products/6a63851f-f21b-434c-a83f-fa1f30f6df56.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653401/products/259600a5-f0f2-4866-b7c8-0fbc64515740.webp"
+        ],
+        "atributos": {
+          "almacenamiento": "128 gb",
+          "color": "azul"
+        },
+        "_id": "6ad2a9ff24e623123ce710a4"
+      },
+      {
+        "nombre": "128 gb / rosado",
+        "precio": 1549,
+        "precioComparativo": 2500,
+        "stock": 0,
+        "sku": "",
+        "barcode": "",
+        "imagenes": [
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653437/products/2ce7eac8-b802-45aa-bf46-061684ccb20f.webp",
+          "https://res.cloudinary.com/dvdziub9f/image/upload/v1781653437/products/57df32ea-a68f-471b-932c-8693e857fedd.webp"
+        ],
+        "atributos": {
+          "almacenamiento": "128 gb",
+          "color": "rosado"
+        },
+        "_id": "6ad2a9ff24e623123ce710a5"
+      }
+    ],
+    "complementarios": [],
+    "tags": [],
+    "rating": 0,
+    "numReviews": 0,
+    "deletedAt": null,
+    "collections": [],
+    "createdAt": "2026-06-02T22:34:06.275Z",
+    "updatedAt": "2026-10-16T22:49:35.999Z",
+    "__v": 19,
+    "brand": {
+      "_id": "6a976409882bc513a5e04a65",
+      "nombre": "APPLE"
+    }
+  }
+]
