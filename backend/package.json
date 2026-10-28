@@ -7,8 +7,8 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "import:products": "tsx src/scripts/import-products.ts"
-    ,
+    "import:products": "tsx src/scripts/import-products.ts",
+    "import:api": "tsx src/scripts/import-products-api.ts",
     "scrape:apple": "tsx src/scripts/scrape-apple-store.ts",
     "seed:en": "tsx src/seed/seed-products-en.ts",
     "import:iphones-en": "tsx src/scripts/import-iphones-en.ts",

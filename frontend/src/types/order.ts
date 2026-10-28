@@ -16,6 +16,7 @@ export interface OrderItem {
   serialNumber?: string;
   image?: string;
   imei?: string;
+  returnDate?: string;
 }
 
 export interface Order {
@@ -31,6 +32,8 @@ export interface Order {
   location?: {
     name?: string;
     address?: string;
+    email?: string;
+    phone?: string;
   };
   items: OrderItem[];
   subtotal?: number;
@@ -42,6 +45,12 @@ export interface Order {
   paymentCardBrand?: string;
   paymentLast4?: string;
   paymentTerms?: string;
+  paymentAuthCode?: string;
+  paymentApplicationId?: string;
+  paymentDeviceId?: string;
+  paymentCardType?: string;
+  paymentTvr?: string;
+  paymentTsi?: string;
   status: OrderStatus;
   createdAt: string;
   updatedAt: string;

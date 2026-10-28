@@ -15,6 +15,6 @@ router.post("/", createOrder);
 router.get("/:id", getOrderById);
 router.get("/:id/ticket", getOrderTicket);
 router.patch("/:id/status", updateOrderStatus);
-router.patch("/:id", updateOrderDetails);
+router.patch("/:id", updateOrderDetails); // Este endpoint ahora permite editar la orden completa
 
 export default router;

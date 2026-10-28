@@ -1,79 +1,178 @@
+// components/PrintableReceipt.tsx
 import Image from "next/image";
+import { Source_Sans_3 } from "next/font/google";
 import Code39Barcode from "@/components/Code39Barcode";
 import { orderBarcodeValue } from "@/lib/code39";
 import type { Order } from "@/types/order";
 
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-source-sans",
+  display: "swap",
+});
+
 const RETURN_DAYS = 14;
 
 const CSS = `
-  @page { 
-    size: letter; 
-    margin: 0; 
+  @page {
+    size: 21.59cm 27.94cm;
+    margin: 0;
   }
 
-  .rcp { 
-    font-family: Arial, Helvetica, sans-serif; 
-    color: #000; 
-    font-size: 6.5pt; 
-    line-height: 1.2; 
+  * {
+    box-sizing: border-box;
+  }
+
+  .rcp {
+    font-family: var(--font-source-sans), "Source Sans 3", "Source Sans Pro", Arial, sans-serif;
+    color: #000;
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .rcp-container {
-    width: 4.2in;
+    width: 21.59cm !important;
+    min-height: 27.94cm;
     box-sizing: border-box;
-    padding: 1.2in 0.25in 1.2in 0.25in;
+    padding: 2.5cm 5cm;
     margin: 0 auto;
     position: relative;
     background: #fff;
   }
 
-  .rcp-hr { 
-    border: none; 
-    border-top: 1.2px solid #000; 
-    margin: 18px 0; 
+  .rcp-header {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
   }
 
-  .rcp-row { 
-    display: flex; 
-    justify-content: space-between; 
-    gap: 8px; 
+  .rcp-logo {
+    display: block;
+    width: 22px;
+    height: 26px;
+    object-fit: contain;
+    margin: 0 0 12px;
   }
 
-  .rcp-indent { 
-    padding-left: 0.18in; 
+  .rcp-bold {
+    font-weight: 700;
   }
 
-  .rcp-small { 
-    font-size: 6pt; 
-    line-height: 1.15;
+  .rcp-hr {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1.5px solid #000;
   }
 
-  .rcp-legal { 
-    font-size: 5.5pt; 
-    line-height: 1.2; 
+  .rcp-date {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
   }
 
-  .rcp-legal p { 
-    margin: 0 0 8px 0; 
+  .rcp-products {
+    margin: 0;
+    padding: 0;
   }
 
-  .rcp-center { 
-    text-align: center; 
+  .rcp-product {
+    margin: 0 0 24px;
+    padding: 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
-  .rcp-totals { 
-    display: grid; 
-    grid-template-columns: 1fr auto; 
-    row-gap: 3px; 
+  .rcp-product:last-child {
+    margin-bottom: 0;
   }
 
-  .rcp-totals .lbl { 
-    text-align: right; 
-    padding-right: 0.6in; 
+  .rcp-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    line-height: 1.5;
   }
 
-  .rcp-totals .val { 
-    text-align: right; 
+  .rcp-product-name {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .rcp-product-price {
+    flex-shrink: 0;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .rcp-product-details {
+    margin-top: 18px;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  .rcp-product-details > div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rcp-support {
+    margin-top: 10px !important;
+  }
+
+  .rcp-legal {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rcp-legal p {
+    margin: 0 0 8px;
+    padding: 0;
+  }
+
+  .rcp-legal p:last-child {
+    margin-bottom: 0;
+  }
+
+  .rcp-totals {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 0;
+    row-gap: 4px;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .rcp-totals .lbl {
+    text-align: right;
+    padding-right: 64px;
+    white-space: nowrap;
+  }
+
+  .rcp-totals .val {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .rcp-center {
+    text-align: center;
+  }
+
+  .rcp-barcode {
+    display: inline-block;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .rcp-page-break {
@@ -82,43 +181,117 @@ const CSS = `
     margin-top: 40px;
   }
 
+  .rcp-authorization {
+    line-height: 1.5;
+  }
+
+  .rcp-authorization > div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rcp-authorization-links {
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .rcp-authorization-links > div {
+    margin-bottom: 6px;
+  }
+
+  .rcp-authorization-links > div:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen {
-    body { background: #1e1e1e; }
-    .rcp-container { 
-      margin: 40px auto; 
-      box-shadow: 0 2px 12px rgba(0,0,0,.3); 
+    body {
+      background: #525659;
+    }
+
+    .rcp-container {
+      margin: 40px auto;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
     }
   }
 
   @media print {
-    html, body { 
-      background: #fff !important; 
-      margin: 0 !important; 
-      padding: 0 !important; 
+    html,
+    body {
+      width: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      background: #fff !important;
     }
-    header, footer { 
-      display: none !important; 
+
+    header,
+    footer {
+      display: none !important;
     }
-    .rcp-container { 
-      margin: 0 auto; 
-      box-shadow: none; 
-      padding: 1in 0.25in 1in 0.25in;
+
+    .rcp {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rcp-container {
+      width: 21.59cm !important;
+      min-height: 27.94cm;
+      margin: 0 auto;
+      box-shadow: none;
+    }
+
+    .rcp-page-break {
+      page-break-before: always;
+      break-before: page;
     }
   }
 `;
 
 const money = (value: number) =>
-  "$ " + new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value);
+  "$ " +
+  new Intl.NumberFormat("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
 
-const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const MONTHS_SHORT = ["Jan.","Feb.","Mar.","Apr.","May","June","July","Aug.","Sept.","Oct.","Nov.","Dec."];
+const MONTHS = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const MONTHS_SHORT = [
+  "Jan.",
+  "Feb.",
+  "Mar.",
+  "Apr.",
+  "May",
+  "June",
+  "July",
+  "Aug.",
+  "Sept.",
+  "Oct.",
+  "Nov.",
+  "Dec.",
+];
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
 function headerDate(d: Date): string {
   const h = d.getHours() % 12 || 12;
   const ampm = d.getHours() < 12 ? "AM" : "PM";
-  return `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()} ${h}:${pad(d.getMinutes())} ${ampm}`;
+
+  return `${MONTHS[d.getMonth()]} ${pad(d.getDate())}, ${d.getFullYear()} ${pad(h)}:${pad(d.getMinutes())} ${ampm}`;
 }
 
 function authDate(d: Date): string {
@@ -126,170 +299,254 @@ function authDate(d: Date): string {
 }
 
 function shortDate(d: Date): string {
-  return `${MONTHS_SHORT[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  return `${MONTHS_SHORT[d.getMonth()]} ${pad(d.getDate())}, ${d.getFullYear()}`;
 }
 
 export default function PrintableReceipt({ order }: { order: Order }) {
   const created = new Date(order.createdAt);
-  const returnBy = new Date(created.getTime() + RETURN_DAYS * 24 * 60 * 60 * 1000);
+
+  const returnBy = new Date(
+    created.getTime() + RETURN_DAYS * 24 * 60 * 60 * 1000
+  );
 
   const total = order.total;
   const subtotal = order.subtotal ?? total;
   const tax = order.tax ?? 0;
-  const amountDue = order.amountDue ?? total;
 
   const method = order.paymentMethod ?? "card";
   const isCard = method === "card";
-  const brand = order.paymentCardBrand || "Visa";
-  const last4 = order.paymentLast4 || "8107";
+
+  const brand = (order.paymentCardBrand || "AMERICAN EXPRESS").toUpperCase();
+  const last4 = order.paymentLast4 || "7544";
   const barcode = orderBarcodeValue(order);
 
   const paidVia =
-    method === "cash" ? "Cash" : method === "transfer" ? "Bank Transfer" : `${brand} Credit (Chip)`;
+    method === "cash"
+      ? "CASH"
+      : method === "transfer"
+        ? "BANK TRANSFER"
+        : `${brand} (Contactless)`;
 
   return (
-    <div className="rcp" style={{ width: "100%", minHeight: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+    <div
+      className={`rcp ${sourceSans.variable}`}
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
       <style>{CSS}</style>
 
-      <div className="rcp-container" style={{ paddingTop: "2in" }}>
-        {/* ENCABEZADO */}
-        <Image
-          src="/Apple_logo_black.svg"
-          alt="Apple"
-          width={18}
-          height={22}
-          unoptimized
-          style={{ display: "block", marginBottom: "10px" }}
-        />
-        <div className="rcp-small">
-          <div>{"Apple Rockingham Park"}</div>
-          <div>99 Rockingham Park Blvd.STE W143A</div>
-          <div>Salem, NH 03079</div>
-          <div>rockinghampark@apple.com</div>
-          <div>603-328-3140</div>
-          <div>www.apple.com/retail/rockinghampark</div>
+      <div className="rcp-container">
+        {/* HEADER */}
+        <div className="rcp-header">
+          <Image
+            src="/Apple_logo_black.svg"
+            alt="Apple"
+            width={22}
+            height={26}
+            unoptimized
+            className="rcp-logo"
+          />
+
+          <div className="rcp-bold">Apple West 14th Street</div>
+          <div>401 West 14th Street</div>
+          <div>New York, NY 10014</div>
+          <div>west14thstreet@apple.com</div>
+          <div>212-444-3400</div>
+          <div>DCA License # 1273537 &amp; 1273536</div>
+          <div>www.apple.com/retail/west14thstreet</div>
         </div>
 
-        <hr className="rcp-hr" style={{ marginBottom: 2 }} />
-        <div>{headerDate(created)}</div>
-        <hr className="rcp-hr" style={{ marginBottom: 0 }} />
+        <hr
+          className="rcp-hr"
+          style={{ marginTop: "16px", marginBottom: "8px" }}
+        />
 
-        {/* DETALLE DE PRODUCTOS */}
-        {order.items.map((item, index) => (
-          <div key={`${item.product}-${index}`} style={{ marginTop: index === 2 ? 2 : 12, marginBottom: 12 }}>
-            <div className="rcp-row">
-              <span>{item.name}</span>
-              <span>{money(item.price * item.quantity)}</span>
+        <div className="rcp-date">{headerDate(created)}</div>
+        <hr
+          className="rcp-hr"
+          style={{
+            marginTop: "34px",
+            marginBottom: "2px",
+            borderTopWidth: "1.5px",
+          }}
+        />
+
+        {/* PRODUCTS */}
+        <div className="rcp-products">
+          {order.items.map((item, index) => (
+            <div key={`${item.product}-${index}`} className="rcp-product">
+              <div className="rcp-row rcp-bold">
+                <span className="rcp-product-name">{item.name}</span>
+
+                <span className="rcp-product-price">
+                  {money(item.price * item.quantity)}
+                </span>
+              </div>
+
+              <div className="rcp-product-details">
+                <div>Part Number: {item.sku || "MJWC4LL/A"}</div>
+
+                {item.serialNumber && (
+                  <div>Serial Number: {item.serialNumber}</div>
+                )}
+
+                {item.imei && <div>IMEI: {item.imei}</div>}
+
+                <div>Return Date: {shortDate(returnBy)}</div>
+
+                <div className="rcp-support">
+                  For Support, Visit: www.apple.com/support
+                </div>
+              </div>
             </div>
-            <div className="rcp-small" style={{ marginTop: 4 }}>
-              <div className="rcp-row" style={{ justifyContent: "flex-start" }}>
-                <span>Part Number: {item.sku || "MJQ64LL/A"}</span>
-              </div>
-              <div className="rcp-row" style={{ justifyContent: "flex-start" }}>
-                <span>Serial Number: {item.serialNumber || "MYJRG9GPM7"}</span>
-              </div>
-              <div className="rcp-row" style={{ justifyContent: "flex-start" }}>
-                <span>IMEI: {item.imei || "353916270183924"}</span>
-              </div>
-              <div className="rcp-row" style={{ justifyContent: "flex-start" }}>
-                <span>Return Date: {shortDate(returnBy)}</span>
-              </div>
-            </div>
+          ))}
+        </div>
 
-            <div className="rcp-small" style={{ marginTop: 6 }}>
-              For Support, Visit: www.apple.com/support
-            </div>
-          </div>
-        ))}
+        {/* LEGAL TERMS */}
+        <hr
+          className="rcp-hr"
+          style={{ marginTop: "24px", marginBottom: "16px" }}
+        />
 
-        <hr className="rcp-hr" style={{ marginTop: 70 }} />
-
-        {/* TÉRMINOS LEGALES */}
         <div className="rcp-legal">
           <p>
-            Use of iPhone constitutes acceptance of the iPhone terms and conditions and other third party
-            terms and conditions found in the iPhone box, or at http://www.apple.com/legal/sla/.
+            Use of iPhone constitutes acceptance of the iPhone terms and
+            conditions and other third party terms and conditions found in
+            the iPhone box, or at http://www.apple.com/legal/sla/.
           </p>
+
           <p>
-            If you are not fully satisfied with your iPhone purchase, you can return your undamaged iPhone
-            within {RETURN_DAYS} days of purchase for a full refund with no restocking fee.
+            If you are not fully satisfied with your iPhone purchase, you can
+            return your undamaged iPhone within {RETURN_DAYS} days of purchase
+            for a full refund with no restocking fee.
           </p>
+
           <p>
-            If you disagree with these terms and conditions you can return the iPhone in accordance with the
-            Apple Store&apos;s return policy http://www.apple.com/legal/sales_policies/retail.html
+            If you disagree with these terms and conditions you can return
+            the iPhone in accordance with the Apple Store&apos;s return policy
+            http://www.apple.com/legal/sales_policies/retail.html
           </p>
-          <p>For information on Apple&apos;s privacy policy see www.apple.com/privacy</p>
+
+          <p>
+            For information on Apple&apos;s privacy policy see
+            www.apple.com/privacy
+          </p>
         </div>
 
-        <hr className="rcp-hr" />
+        <hr
+          className="rcp-hr"
+          style={{ marginTop: "16px", marginBottom: "16px" }}
+        />
 
-        {/* TOTALES */}
-        <div className="rcp-totals" style={{ marginTop: 12 }}>
+        {/* TOTALS */}
+        <div className="rcp-totals">
           <span className="lbl">Sub-Total</span>
           <span className="val">{money(subtotal)}</span>
+
           <span className="lbl">Tax</span>
           <span className="val">{money(tax)}</span>
-          <span className="lbl">Total</span>
-          <span className="val">{money(total)}</span>
+
+          <span className="lbl rcp-bold">Total</span>
+          <span className="val rcp-bold">{money(total)}</span>
         </div>
 
-        <div className="rcp-totals" style={{ marginTop: 16 }}>
-          <span className="lbl" style={{ textAlign: "center", gridColumn: "1 / span 2" }}>
+        {/* PAYMENT METHOD */}
+        <div className="rcp-totals" style={{ marginTop: "16px" }}>
+          <span className="lbl rcp-bold" style={{ paddingBottom: "4px" }}>
             Payment Method
           </span>
-          <span className="lbl" style={{ marginTop: 5 }}>
-            Amount Paid Via {paidVia}
-          </span>
-          <span className="val" style={{ marginTop: 5 }}>
-            {money(amountDue)}
-          </span>
+          <span className="val"></span>
+
+          <span className="lbl">Amount Paid Via {paidVia}</span>
+          <span className="val">{money(total)}</span>
+
           {isCard && (
             <>
               <span className="lbl">•••• {last4}</span>
-              <span className="val" />
-              <span className="lbl">{order.invoiceNumber || "007302"}</span>
-              <span className="val" />
+              <span className="val"></span>
+
+              <span className="lbl">{order.invoiceNumber || "841650"}</span>
+              <span className="val"></span>
             </>
           )}
         </div>
 
-        <hr className="rcp-hr" style={{ marginTop: 60 }} />
+        {/* BARCODE */}
+        <hr
+          className="rcp-hr"
+          style={{
+            marginTop: "32px",
+            marginBottom: "16px",
+            borderTopWidth: "3px",
+          }}
+        />
 
-        {/* CÓDIGO DE BARRAS */}
-        <div className="rcp-center" style={{ marginTop: 14 }}>
-          <Code39Barcode value={barcode} height={24} narrow={0.8} />
+        <div className="rcp-center">
+          <div className="rcp-barcode">
+            <Code39Barcode value={barcode} height={30} narrow={1} />
+          </div>
+          <div
+            style={{
+              marginTop: "4px",
+              fontSize: "8.5px",
+              letterSpacing: "1.5px",
+              fontWeight: "bold",
+            }}
+          >
+            * {barcode.split("").join(" ")} *
+          </div>
         </div>
 
-        {/* VOUCHER DE AUTORIZACIÓN (SI ES PAGO CON TARJETA) */}
+        {/* CARD AUTHORIZATION */}
         {isCard && (
           <div className="rcp-page-break">
-            <hr className="rcp-hr" style={{ marginTop: 0 }} />
-            <div className="rcp-small" style={{ lineHeight: 1.45 }}>
-              <div>Please debit my account •••• {last4} by {money(total)} (Sale)</div>
-              <div>Card Number: •••• {last4}</div>
+            <hr className="rcp-hr" style={{ marginBottom: "16px" }} />
+
+            <div className="rcp-authorization">
+              <div>
+                Please debit my account{" "}
+                <span className="rcp-base">•••• {last4}</span> by{" "}
+                {money(total)} (Sale)
+              </div>
+
+              <div>
+                Card Number: <span className="rcp-">•••• {last4}</span>
+              </div>
+
               <div>Date/Time: {authDate(created)}</div>
-              <div>Application ID: A0000000031010</div>
-              <div>Application PAN Sequence Number: 00</div>
-              <div>Device Id: 0300</div>
+              <div>Application ID: A000000025010402</div>
+              <div>Device Id: 0830</div>
               <div>Card Type: Credit</div>
-              <div>Preferred Name: {brand} Credit</div>
-              <div>TVR: 0080048000</div>
+              <div>TVR: 0000008000</div>
               <div>TSI: E800</div>
-              <div>Verified by PIN</div>
+              <div>No CVM</div>
             </div>
 
-            <hr className="rcp-hr" style={{ marginTop: 20 }} />
+            <hr
+              className="rcp-hr"
+              style={{ marginTop: "24px", marginBottom: "16px" }}
+            />
 
-            <div className="rcp-center rcp-small" style={{ lineHeight: 1.4, marginTop: 14 }}>
-              <div>https://www.apple.com/legal/sales-support/sales-policies/retail_us.html</div>
-              <div style={{ marginTop: 4 }}>
-                Apple can recycle your old electronics, visit apple.com/recycle to learn how
+            <div className="rcp-center rcp-authorization-links">
+              <div>
+                https://www.apple.com/legal/sales-support/sales-policies/retail_us.html
               </div>
-              <div style={{ marginTop: 4 }}>
-                Learn how to set up your product and transfer your data from home at support.apple.com.
+
+              <div>
+                Apple can recycle your old electronics, visit apple.com/recycle
+                to learn how
+              </div>
+
+              <div>
+                Learn how to set up your product and transfer your data from
+                home at support.apple.com.
               </div>
             </div>
-            <hr className="rcp-hr" style={{ marginTop: 14 }} />
+
+            <hr className="rcp-hr" style={{ marginTop: "16px" }} />
           </div>
         )}
       </div>

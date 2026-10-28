@@ -10,23 +10,6 @@ import {
 } from "../models/order.model.js";
 import { buildTicketHtml } from "../utils/ticket.js";
 
-interface OrderRequestBody {
-  customer: {
-    name: string;
-    email: string;
-    phone: string;
-    address: string;
-  };
-  items: { productId: string; quantity: number }[];
-  payment?: { method?: string; cardBrand?: string; last4?: string };
-}
-
-interface OrderDetailsBody {
-  customer?: Partial<{ name: string; email: string; phone: string; address: string }>;
-  payment?: Partial<{ method: string; cardBrand: string; last4: string }>;
-  quantities?: number[];
-}
-
 type OrderStatusValue = (typeof ORDER_STATUSES)[number];
 type PaymentMethodValue = (typeof PAYMENT_METHODS)[number];
 
@@ -42,25 +25,15 @@ const toPaymentMethod = (value: unknown): PaymentMethodValue =>
 
 export async function createOrder(req: Request, res: Response, next: NextFunction) {
   try {
-    const { customer, items, payment } = req.body as Partial<OrderRequestBody>;
+    const { customer, items, payment } = req.body;
 
     if (!customer || !Array.isArray(items) || items.length === 0) {
       return res.status(400).json({ message: "Datos del pedido incompletos" });
     }
 
-    const orderItems: {
-      product: string;
-      name: string;
-      sku: string;
-      serialNumber: string;
-      price: number;
-      quantity: number;
-      quantityFulfilled: number;
-      image: string;
-    }[] = [];
+    const orderItems = [];
     let total = 0;
 
-    // Validamos solo que los productos existan. El stock no se controla ni se descuenta.
     for (const item of items) {
       const quantity = Math.floor(Number(item.quantity));
       if (!Number.isFinite(quantity) || quantity < 1) {
@@ -72,12 +45,12 @@ export async function createOrder(req: Request, res: Response, next: NextFunctio
         return res.status(404).json({ message: `Producto no encontrado: ${item.productId}` });
       }
 
-      // El precio se toma de la base de datos, nunca del cliente
       orderItems.push({
         product: String(product._id),
         name: product.name,
         sku: String(product._id).slice(-8).toUpperCase(),
         serialNumber: "",
+        imei: "",
         price: product.price,
         quantity,
         quantityFulfilled: 0,
@@ -86,7 +59,6 @@ export async function createOrder(req: Request, res: Response, next: NextFunctio
       total += product.price * quantity;
     }
 
-    // Los precios incluyen IGV: el subtotal y el impuesto se calculan hacia atrás
     total = round2(total);
     const taxRate = IGV_RATE;
     const subtotal = round2(total / (1 + taxRate));
@@ -138,12 +110,8 @@ export async function getOrderById(req: Request<{ id: string }>, res: Response, 
     if (!mongoose.isValidObjectId(req.params.id)) {
       return res.status(400).json({ message: "ID no válido" });
     }
-
     const order = await Order.findById(req.params.id);
-    if (!order) {
-      return res.status(404).json({ message: "Pedido no encontrado" });
-    }
-
+    if (!order) return res.status(404).json({ message: "Pedido no encontrado" });
     res.json(order);
   } catch (error) {
     next(error);
@@ -152,31 +120,17 @@ export async function getOrderById(req: Request<{ id: string }>, res: Response, 
 
 export async function updateOrderStatus(req: Request<{ id: string }>, res: Response, next: NextFunction) {
   try {
-    if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).json({ message: "ID no válido" });
-    }
+    if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).json({ message: "ID no válido" });
 
-    const newStatus = toOrderStatus((req.body as { status?: unknown }).status);
-    if (!newStatus) {
-      return res.status(400).json({ message: "Estado no válido" });
-    }
+    const newStatus = toOrderStatus(req.body.status);
+    if (!newStatus) return res.status(400).json({ message: "Estado no válido" });
 
     const order = await Order.findById(req.params.id);
-    if (!order) {
-      return res.status(404).json({ message: "Pedido no encontrado" });
-    }
+    if (!order) return res.status(404).json({ message: "Pedido no encontrado" });
 
-    const previousStatus = order.status;
+    if (order.status === newStatus) return res.json(order);
+    if (order.status === "cancelado") return res.status(409).json({ message: "Un pedido cancelado no puede reactivarse" });
 
-    if (previousStatus === newStatus) {
-      return res.json(order);
-    }
-
-    if (previousStatus === "cancelado") {
-      return res.status(409).json({ message: "Un pedido cancelado no puede reactivarse" });
-    }
-
-    // La cantidad entregada se completa solo en los estados de salida
     const fulfilled = FULFILLED_STATUSES.includes(newStatus);
     order.items.forEach((item) => {
       item.quantityFulfilled = fulfilled ? item.quantity : 0;
@@ -184,7 +138,6 @@ export async function updateOrderStatus(req: Request<{ id: string }>, res: Respo
 
     order.status = newStatus;
     await order.save();
-
     res.json(order);
   } catch (error) {
     next(error);
@@ -198,72 +151,71 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
     }
 
     const order = await Order.findById(req.params.id);
-    if (!order) {
-      return res.status(404).json({ message: "Pedido no encontrado" });
-    }
-
-    if (order.status === "cancelado") {
-      return res.status(409).json({ message: "Un pedido cancelado no se puede editar" });
-    }
+    if (!order) return res.status(404).json({ message: "Pedido no encontrado" });
+    if (order.status === "cancelado") return res.status(409).json({ message: "Un pedido cancelado no se puede editar" });
 
     const body = req.body ?? {};
 
-    // 1. Contacto
-    const customerFields = ["name", "email", "phone", "address"] as const;
-    for (const field of customerFields) {
-      const value = body.customer?.[field];
-      if (typeof value === "string") {
-        order.set(`customer.${field}`, value.trim());
+    // Actualización de campos a nivel raíz
+    if (body.invoiceNumber) order.invoiceNumber = body.invoiceNumber;
+    if (body.customerNumber) order.customerNumber = body.customerNumber;
+    if (body.status && toOrderStatus(body.status)) order.status = body.status;
+
+    // 1. Cliente y Ubicación
+    // 1. Cliente y Ubicación
+    if (body.customer) { for (const [key, value] of Object.entries(body.customer)) {
+        order.set(`customer.${key}`, value);
       }
     }
 
-    // 2. Método de pago
+    if (body.location) {
+      for (const [key, value] of Object.entries(body.location)) {
+        order.set(`location.${key}`, value);
+      }
+    }
+
+    // 2. Método de pago y metadatos
     if (body.payment) {
-      const method = toPaymentMethod(body.payment.method ?? order.paymentMethod);
-      order.set("paymentMethod", method);
-
-      if (method === "card") {
-        const last4 = String(body.payment.last4 ?? order.paymentLast4 ?? "").trim();
-        if (!/^\d{4}$/.test(last4)) {
-          return res.status(400).json({ message: "Los últimos 4 dígitos de la tarjeta no son válidos" });
-        }
-        order.set("paymentCardBrand", String(body.payment.cardBrand ?? order.paymentCardBrand ?? "").trim());
-        order.set("paymentLast4", last4);
-        order.set("paymentTerms", "Credit Card");
-      } else {
-        order.set("paymentCardBrand", "");
-        order.set("paymentLast4", "");
-        order.set("paymentTerms", "Cash");
-      }
+      const p = body.payment;
+      if (p.method) order.paymentMethod = toPaymentMethod(p.method);
+      if (p.cardBrand !== undefined) order.paymentCardBrand = p.cardBrand;
+      if (p.last4 !== undefined) order.paymentLast4 = p.last4;
+      if (p.terms !== undefined) order.paymentTerms = p.terms;
+      if (p.authCode !== undefined) order.paymentAuthCode = p.authCode;
+      if (p.applicationId !== undefined) order.paymentApplicationId = p.applicationId;
+      if (p.deviceId !== undefined) order.paymentDeviceId = p.deviceId;
+      if (p.cardType !== undefined) order.paymentCardType = p.cardType;
+      if (p.tvr !== undefined) order.paymentTvr = p.tvr;
+      if (p.tsi !== undefined) order.paymentTsi = p.tsi;
     }
 
-    // 3. Cantidades, Serial Number e IMEI por producto
+    // 3. Reemplazo/Edición total de Productos
     if (Array.isArray(body.items)) {
-      body.items.forEach((itemInput: { quantity?: number; serialNumber?: string; imei?: string }, index: number) => {
-        if (!order.items[index]) return;
+      order.items = body.items; // Sobrescribe permitiendo editar cualquier propiedad del producto
+    }
 
-        if (typeof itemInput.quantity === "number" && itemInput.quantity >= 1) {
-          order.items[index].quantity = Math.floor(itemInput.quantity);
-        }
-        if (typeof itemInput.serialNumber === "string") {
-          order.items[index].serialNumber = itemInput.serialNumber.trim();
-        }
-        if (typeof itemInput.imei === "string") {
-          order.items[index].imei = itemInput.imei.trim();
-        }
-      });
+    // 4. Recálculo manual o automático de finanzas
+    const customTaxRate = body.taxRate !== undefined ? Number(body.taxRate) : order.taxRate;
+    order.taxRate = customTaxRate;
 
+    if (Array.isArray(body.items)) {
       const total = round2(order.items.reduce((sum, item) => sum + item.price * item.quantity, 0));
-      const subtotal = round2(total / (1 + IGV_RATE));
-      order.set("total", total);
-      order.set("subtotal", subtotal);
-      order.set("tax", round2(total - subtotal));
-      order.set("amountDue", total);
+      const subtotal = round2(total / (1 + customTaxRate));
+      order.total = total;
+      order.subtotal = subtotal;
+      order.tax = round2(total - subtotal);
+      order.amountDue = total;
 
       const fulfilled = FULFILLED_STATUSES.includes(order.status as OrderStatusValue);
       order.items.forEach((item) => {
         item.quantityFulfilled = fulfilled ? item.quantity : 0;
       });
+    } else if (body.total !== undefined) {
+      // Si no se pasaron items pero sí totales explícitos, se permite el override manual
+      order.total = Number(body.total);
+      order.subtotal = Number(body.subtotal ?? order.subtotal);
+      order.tax = Number(body.tax ?? order.tax);
+      order.amountDue = Number(body.amountDue ?? order.amountDue);
     }
 
     await order.save();
@@ -273,17 +225,12 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
   }
 }
 
-
 export async function getOrderTicket(req: Request<{ id: string }>, res: Response, next: NextFunction) {
   try {
-    if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send("ID no válido");
-    }
+    if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).send("ID no válido");
 
     const order = await Order.findById(req.params.id).lean();
-    if (!order) {
-      return res.status(404).send("Pedido no encontrado");
-    }
+    if (!order) return res.status(404).send("Pedido no encontrado");
 
     res.type("html").send(buildTicketHtml(order));
   } catch (error) {
