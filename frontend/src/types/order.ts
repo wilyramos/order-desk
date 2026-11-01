@@ -21,7 +21,9 @@ export interface OrderItem {
 
 export interface Order {
   _id: string;
+   printUrl?: string;
   invoiceNumber?: string;
+  orderNumber?: string; // Formato: W1439345839
   customerNumber?: string;
   customer: {
     name: string;

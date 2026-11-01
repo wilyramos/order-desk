@@ -36,15 +36,23 @@ export function encodeCode39(value: string, narrow = 0.9): { bars: BarRect[]; wi
   return { bars, width: x - narrow * 1.2 };
 }
 
-export function orderBarcodeValue(order: Pick<Order, "_id" | "createdAt">): string {
+export function orderBarcodeValue(order: Pick<Order, "_id" | "createdAt" | "orderNumber">): string {
   const d = new Date(order.createdAt);
   const ymd =
     `${d.getFullYear()}` +
     `${String(d.getMonth() + 1).padStart(2, "0")}` +
     `${String(d.getDate()).padStart(2, "0")}`;
 
-  const numeric = parseInt(order._id.slice(-8), 16);
-  const digits = String(numeric).padStart(10, "0").slice(-10);
+  // Si existe orderNumber explícito (ej. W1408180021), extraer los 10 dígitos o usar el valor completo
+  let orderDigits = "";
+  if (order.orderNumber) {
+    const match = order.orderNumber.match(/\d{10}/);
+    orderDigits = match ? match[0] : order.orderNumber;
+  } else {
+    // Fallback numérico basado en _id
+    const numeric = parseInt(order._id.slice(-8), 16);
+    orderDigits = String(numeric).padStart(10, "0").slice(-10);
+  }
 
-  return `${ymd}R${digits}`;
+  return `${ymd}R${orderDigits}`;
 }

@@ -463,15 +463,15 @@ export default function PrintableReceipt({ order }: { order: Order }) {
           <span className="lbl">Amount Paid Via {paidVia}</span>
           <span className="val">{money(total)}</span>
 
-          {isCard && (
-            <>
-              <span className="lbl">•••• {last4}</span>
-              <span className="val"></span>
+    {isCard && (
+  <>
+    <span className="lbl">•••• {last4}</span>
+    <span className="val"></span>
 
-              <span className="lbl">{order.invoiceNumber || "841650"}</span>
-              <span className="val"></span>
-            </>
-          )}
+    <span className="lbl">{order.paymentAuthCode || "841650"}</span>
+    <span className="val"></span>
+  </>
+)}
         </div>
 
         {/* BARCODE */}

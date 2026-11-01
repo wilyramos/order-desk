@@ -97,14 +97,7 @@ export default async function OrdersList({
                 </div>
                 <div className="flex flex-col md:items-end">
                   <p className="text-xs text-[#6e6e73]">Número de pedido <span className="font-medium text-[#1d1d1f]">W{shortId(order._id)}</span></p>
-                  <a
-                    href={ticketUrl(order._id)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium text-[#0071e3] hover:underline"
-                  >
-                    Ver recibo
-                  </a>
+                
                 </div>
               </div>
 

@@ -17,3 +17,7 @@ export async function getOrder(id: string): Promise<Order | null> {
 export function ticketUrl(id: string): string {
   return `${API_URL}/api/orders/${id}/ticket`;
 }
+
+export function invoicePdfUrl(id: string): string {
+  return `${API_URL}/api/orders/${id}/invoice`;
+}

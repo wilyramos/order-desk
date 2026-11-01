@@ -9,6 +9,7 @@ import {
   IGV_RATE,
 } from "../models/order.model.js";
 import { buildTicketHtml } from "../utils/ticket.js";
+import { buildInvoiceA4Html } from "../utils/invoiceA4.js";
 
 type OrderStatusValue = (typeof ORDER_STATUSES)[number];
 type PaymentMethodValue = (typeof PAYMENT_METHODS)[number];
@@ -144,6 +145,7 @@ export async function updateOrderStatus(req: Request<{ id: string }>, res: Respo
   }
 }
 
+// En order.controller.ts -> updateOrderDetails:
 export async function updateOrderDetails(req: Request<{ id: string }>, res: Response, next: NextFunction) {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) {
@@ -152,18 +154,22 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
 
     const order = await Order.findById(req.params.id);
     if (!order) return res.status(404).json({ message: "Pedido no encontrado" });
-    if (order.status === "cancelado") return res.status(409).json({ message: "Un pedido cancelado no se puede editar" });
+    if (order.status === "cancelado") {
+      return res.status(409).json({ message: "Un pedido cancelado no se puede editar" });
+    }
 
     const body = req.body ?? {};
 
-    // Actualización de campos a nivel raíz
-    if (body.invoiceNumber) order.invoiceNumber = body.invoiceNumber;
-    if (body.customerNumber) order.customerNumber = body.customerNumber;
+    // 1. Identificadores y Fecha
+    if (body.invoiceNumber !== undefined) order.invoiceNumber = body.invoiceNumber;
+    if (body.orderNumber !== undefined) order.orderNumber = body.orderNumber;
+    if (body.customerNumber !== undefined) order.customerNumber = body.customerNumber;
     if (body.status && toOrderStatus(body.status)) order.status = body.status;
+    if (body.createdAt) order.createdAt = new Date(body.createdAt);
 
-    // 1. Cliente y Ubicación
-    // 1. Cliente y Ubicación
-    if (body.customer) { for (const [key, value] of Object.entries(body.customer)) {
+    // 2. Datos de Cliente y Tienda
+    if (body.customer) {
+      for (const [key, value] of Object.entries(body.customer)) {
         order.set(`customer.${key}`, value);
       }
     }
@@ -174,7 +180,7 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
       }
     }
 
-    // 2. Método de pago y metadatos
+    // 3. Método de pago y metadatos
     if (body.payment) {
       const p = body.payment;
       if (p.method) order.paymentMethod = toPaymentMethod(p.method);
@@ -189,12 +195,12 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
       if (p.tsi !== undefined) order.paymentTsi = p.tsi;
     }
 
-    // 3. Reemplazo/Edición total de Productos
+    // 4. Edición de Productos
     if (Array.isArray(body.items)) {
-      order.items = body.items; // Sobrescribe permitiendo editar cualquier propiedad del producto
+      order.items = body.items;
     }
 
-    // 4. Recálculo manual o automático de finanzas
+    // 5. Cálculos Financieros
     const customTaxRate = body.taxRate !== undefined ? Number(body.taxRate) : order.taxRate;
     order.taxRate = customTaxRate;
 
@@ -211,7 +217,6 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
         item.quantityFulfilled = fulfilled ? item.quantity : 0;
       });
     } else if (body.total !== undefined) {
-      // Si no se pasaron items pero sí totales explícitos, se permite el override manual
       order.total = Number(body.total);
       order.subtotal = Number(body.subtotal ?? order.subtotal);
       order.tax = Number(body.tax ?? order.tax);
@@ -233,6 +238,21 @@ export async function getOrderTicket(req: Request<{ id: string }>, res: Response
     if (!order) return res.status(404).send("Pedido no encontrado");
 
     res.type("html").send(buildTicketHtml(order));
+  } catch (error) {
+    next(error);
+  }
+}
+
+
+// Agregar la siguiente función al controlador:
+export async function getOrderInvoicePdf(req: Request<{ id: string }>, res: Response, next: NextFunction) {
+  try {
+    if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).send("ID no válido");
+
+    const order = await Order.findById(req.params.id).lean();
+    if (!order) return res.status(404).send("Pedido no encontrado");
+
+    res.type("html").send(buildInvoiceA4Html(order));
   } catch (error) {
     next(error);
   }

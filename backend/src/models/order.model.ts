@@ -15,7 +15,7 @@ const orderItemSchema = new Schema(
   {
     product: { type: Schema.Types.ObjectId, ref: "Product", required: true },
     name: { type: String, required: true },
-    sku: { type: String, default: "" }, // Part Number
+    sku: { type: String, default: "" }, // Part Number / SKU
     serialNumber: { type: String, default: "" },
     imei: { type: String, default: "" },
     price: { type: Number, required: true, min: 0 },
@@ -24,13 +24,14 @@ const orderItemSchema = new Schema(
     image: { type: String, default: "" },
     returnDate: { type: Date },
   },
-  { _id: true } // Mantenemos el ID para facilitar la edición individual
+  { _id: true }
 );
 
 const orderSchema = new Schema(
   {
-    invoiceNumber: { type: String, unique: true, sparse: true },
+    invoiceNumber: { type: String, sparse: true },
     customerNumber: { type: String, default: "" },
+    orderNumber: { type: String, default: "" }, // Ej: W1439345839
 
     customer: {
       name: { type: String, required: true, trim: true },
@@ -40,8 +41,8 @@ const orderSchema = new Schema(
     },
 
     location: {
-      name: { type: String, default: "Apple" },
-      address: { type: String, default: "Online store" },
+      name: { type: String, default: "Apple Fifth Avenue" },
+      address: { type: String, default: "767 Fifth Avenue" },
       email: { type: String, default: "" },
       phone: { type: String, default: "" },
     },
@@ -64,8 +65,8 @@ const orderSchema = new Schema(
     paymentCardBrand: { type: String, default: "" },
     paymentLast4: { type: String, default: "" },
     paymentTerms: { type: String, default: "Credit Card" },
-    
-    // Metadatos de transacción detallados
+
+    // Metadatos de transacción
     paymentAuthCode: { type: String, default: "" },
     paymentApplicationId: { type: String, default: "" },
     paymentDeviceId: { type: String, default: "" },
@@ -74,6 +75,7 @@ const orderSchema = new Schema(
     paymentTsi: { type: String, default: "" },
 
     status: { type: String, enum: ORDER_STATUSES, default: "recogido" },
+    createdAt: { type: Date, default: Date.now },
   },
   { timestamps: true }
 );
