@@ -9,13 +9,14 @@ export const ORDER_STATUSES = [
   "cancelado",
 ] as const;
 export const PAYMENT_METHODS = ["card", "cash", "transfer"] as const;
-export const IGV_RATE = 0.18;
+// Actualizado a 7% por defecto
+export const IGV_RATE = 0.07; 
 
 const orderItemSchema = new Schema(
   {
     product: { type: Schema.Types.ObjectId, ref: "Product", required: true },
     name: { type: String, required: true },
-    sku: { type: String, default: "" }, // Part Number / SKU
+    sku: { type: String, default: "" }, 
     serialNumber: { type: String, default: "" },
     imei: { type: String, default: "" },
     price: { type: Number, required: true, min: 0 },
@@ -31,7 +32,7 @@ const orderSchema = new Schema(
   {
     invoiceNumber: { type: String, sparse: true },
     customerNumber: { type: String, default: "" },
-    orderNumber: { type: String, default: "" }, // Ej: W1439345839
+    orderNumber: { type: String, default: "" }, 
 
     customer: {
       name: { type: String, required: true, trim: true },
@@ -66,7 +67,6 @@ const orderSchema = new Schema(
     paymentLast4: { type: String, default: "" },
     paymentTerms: { type: String, default: "Credit Card" },
 
-    // Metadatos de transacción
     paymentAuthCode: { type: String, default: "" },
     paymentApplicationId: { type: String, default: "" },
     paymentDeviceId: { type: String, default: "" },

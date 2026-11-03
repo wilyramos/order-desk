@@ -18,7 +18,7 @@ export default function InvoicePage({
   params: Promise<{ id: string }>;
 }) {
   return (
-    <Suspense fallback={<p style={{ padding: 24 }}>Cargando factura...</p>}>
+    <Suspense fallback={<p style={{ padding: 24 }}>Loading invoice...</p>}>
       <InvoiceContent params={params} />
     </Suspense>
   );

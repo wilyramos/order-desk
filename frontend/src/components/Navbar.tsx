@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import CartLink from "@/components/CartLink";
 import Logo from "@/components/Logo";
 
@@ -13,6 +16,13 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  // Si estamos en la página de factura, no renderizamos el Navbar
+  if (pathname.endsWith("/factura")) {
+    return null;
+  }
+
   return (
     <header className="sticky top-0 z-50 h-11 w-full border-b border-[#000000]/10 bg-[rgba(255,255,255,0.8)] backdrop-blur-md backdrop-saturate-150">
       <nav

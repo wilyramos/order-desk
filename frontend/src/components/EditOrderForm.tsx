@@ -43,6 +43,15 @@ function formatDateForInput(dateStr?: string | Date): string {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
 
+// Función auxiliar para calcular 14 días después
+function getReturnDate(dateStr?: string | Date): string {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return "";
+  d.setDate(d.getDate() + 14);
+  return d.toISOString().split("T")[0];
+}
+
 export default function EditOrderForm({ order }: { order: Order }) {
   const router = useRouter();
 
@@ -52,6 +61,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
     customerNumber: order.customerNumber || "",
     status: order.status,
     createdAt: formatDateForInput(order.createdAt),
+    taxRate: order.taxRate ?? 0.07, // Por defecto 7% (0.07)
   });
 
   const [customer, setCustomer] = useState({
@@ -74,25 +84,28 @@ export default function EditOrderForm({ order }: { order: Order }) {
   const [cardBrand, setCardBrand] = useState(order.paymentCardBrand || "AMERICAN EXPRESS");
   const [last4, setLast4] = useState(order.paymentLast4 ?? "");
 
+  // Inicialización de metadatos de pago con valores por defecto
   const [paymentMeta, setPaymentMeta] = useState({
-    authCode: order.paymentAuthCode || "",
-    applicationId: order.paymentApplicationId || "",
-    deviceId: order.paymentDeviceId || "",
-    cardType: order.paymentCardType || "",
-    tvr: order.paymentTvr || "",
-    tsi: order.paymentTsi || "",
+    authCode: order.paymentAuthCode || "841650",
+    applicationId: order.paymentApplicationId || "A000000025010402",
+    deviceId: order.paymentDeviceId || "0830",
+    cardType: order.paymentCardType || "Credit",
+    tvr: order.paymentTvr || "0000008000",
+    tsi: order.paymentTsi || "E800",
   });
 
   const [itemsData, setItemsData] = useState(
     order.items.map((item) => ({
       product: item.product,
       name: item.name,
-      sku: item.sku || "MJQC4LL/A",
+      sku: item.sku || "MFXK4LL/A",
       price: item.price,
       quantity: item.quantity,
       serialNumber: item.serialNumber || "",
       imei: item.imei || "",
-      returnDate: item.returnDate ? new Date(item.returnDate).toISOString().split("T")[0] : "",
+      returnDate: item.returnDate
+        ? new Date(item.returnDate).toISOString().split("T")[0]
+        : getReturnDate(order.createdAt),
       image: item.image,
     }))
   );
@@ -100,10 +113,22 @@ export default function EditOrderForm({ order }: { order: Order }) {
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
-  const total = itemsData.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const subtotal = itemsData.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = subtotal * (1 + Number(generalInfo.taxRate));
 
   function handleGeneralChange(e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
-    setGeneralInfo((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setGeneralInfo((prev) => ({ ...prev, [name]: value }));
+
+    // Si cambia la fecha de compra, recalcula la fecha límite de devolución para todos los productos en el evento
+    if (name === "createdAt") {
+      const newReturnDate = getReturnDate(value);
+      if (newReturnDate) {
+        setItemsData((prev) =>
+          prev.map((item) => ({ ...item, returnDate: newReturnDate }))
+        );
+      }
+    }
   }
 
   function handleCustomerChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
@@ -144,6 +169,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
           orderNumber: generalInfo.orderNumber,
           customerNumber: generalInfo.customerNumber,
           status: generalInfo.status,
+          taxRate: generalInfo.taxRate,
           createdAt: generalInfo.createdAt ? new Date(generalInfo.createdAt).toISOString() : undefined,
           customer,
           location,
@@ -237,6 +263,26 @@ export default function EditOrderForm({ order }: { order: Order }) {
               ))}
             </select>
           </div>
+          <div>
+            <label className={labelClass}>Tax (%)</label>
+            <div className="relative">
+              <input
+                type="number"
+                name="taxRate"
+                min={0}
+                step={0.01}
+                value={generalInfo.taxRate * 100}
+                onChange={(e) =>
+                  setGeneralInfo((prev) => ({
+                    ...prev,
+                    taxRate: Number(e.target.value) / 100,
+                  }))
+                }
+                className={inputClass}
+              />
+              <span className="absolute right-4 top-3 text-gray-500">%</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -262,7 +308,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
                     type="text"
                     value={item.sku}
                     onChange={(e) => handleItemChange(index, "sku", e.target.value)}
-                    placeholder="Ej. MJQC5LL/A"
+                    placeholder="Ej. MFXK4LL/A"
                     className={inputClass}
                   />
                 </div>
@@ -326,7 +372,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
           ))}
         </div>
         <div className="mt-6 flex justify-between border-t border-black/10 pt-4 text-[17px] font-semibold">
-          <span>Total Calculado</span>
+          <span>Total Calculado (con Tax)</span>
           <span>{formatearMoneda.format(total)}</span>
         </div>
       </section>
