@@ -1,4 +1,3 @@
-// components/invoice/invoice-styles.ts
 export const invoiceCss = `
   @page { size: letter; margin: 0; }
   *, *::before, *::after { box-sizing: border-box; }
@@ -106,6 +105,13 @@ export const invoiceCss = `
     white-space: nowrap;
     overflow: hidden;
   }
+  
+  /* Ajuste para que los saltos de línea de los <th> se apliquen */
+  .items-table th {
+    white-space: normal;
+    line-height: 1.2;
+  }
+
   .items-table td, .additional-table td {
     padding: 4px 0 0 0;
     vertical-align: top;
@@ -123,16 +129,22 @@ export const invoiceCss = `
 
   .item-notice { margin-top: 0.3in; }
 
-  /* Etiquetas de totales */
-  .totals {
+  /* Tabla de totales (Reemplaza a los antiguos .totals div) */
+  .totals-table {
     margin-top: 0.12in;
-    margin-left: 79%;
+    margin-left: auto;
+    width: 38%; /* Ancho aproximado para el bloque de totales */
+    border-collapse: collapse;
     font-weight: 600;
   }
-  .totals-row {
+  .totals-table td {
     font-size: 10.5pt;
     height: 19pt;
     line-height: 19pt;
+    padding: 0;
+  }
+  .totals-table td:last-child {
+    text-align: right;
   }
 
   /* Secciones con línea gruesa */
@@ -170,11 +182,9 @@ export const invoiceCss = `
   .footer-bottom { text-align: right; margin-top: 1px; }
 
    @media print {
-    /* Oculta todo el layout (navbar, footer, etc.) */
     body * {
       visibility: hidden;
     }
-    /* Solo muestra la factura y sus hijos */
     .invoice-screen,
     .invoice-screen * {
       visibility: visible;

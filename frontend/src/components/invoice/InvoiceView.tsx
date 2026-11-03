@@ -1,4 +1,3 @@
-// components/invoice/InvoiceView.tsx
 "use client";
 
 import { Fragment, useEffect, useRef } from "react";
@@ -7,7 +6,7 @@ import { invoiceCss } from "./invoice-styles";
 import Image from "next/image";
 
 const DEFAULT_PRINT_URL =
-  "https://secure9.store.apple.com/shop/order/print/invoice/10078/AFD4712735";
+  "https://secure6.store.apple.com/es-business/shop/order/print/invoice/10078/AFD4669200";
 
 const money = (value: number): string =>
   "$" +
@@ -16,12 +15,13 @@ const money = (value: number): string =>
     maximumFractionDigits: 2,
   }).format(value);
 
+// Se mantiene en 'en-US' para coincidir con "September 22, 2026" como muestra el PDF
 const longDate = (d: Date): string =>
   new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(d);
 
 const pad = (n: number): string => String(n).padStart(2, "0");
 
-// Pie de impresión del navegador: 21/10/26, 9:54 a. m.
+// Pie de impresión del navegador
 const printStamp = (d: Date): string => {
   const h = d.getHours() % 12 || 12;
   const suffix = d.getHours() < 12 ? "a. m." : "p. m.";
@@ -32,14 +32,17 @@ const printStamp = (d: Date): string => {
 };
 
 const getCardDescription = (order: Order): string => {
-  if (order.paymentMethod === "cash") return "Cash on pickup";
-  if (order.paymentMethod === "transfer") return "Bank transfer";
+  if (order.paymentMethod === "cash") return "Efectivo";
+  if (order.paymentMethod === "transfer") return "Transferencia bancaria";
   const brand = (order.paymentCardBrand || "Visa").toUpperCase();
   const last4 = order.paymentLast4 || "6390";
   return `${brand} XXXXXXXXXXXX${last4}`;
 };
 
 function ItemRows({ item }: { item: OrderItem }) {
+  const quantityFulfilled = item.quantityFulfilled ?? item.quantity;
+  const totalItemPrice = item.price * quantityFulfilled;
+
   return (
     <Fragment>
       <tr>
@@ -47,11 +50,12 @@ function ItemRows({ item }: { item: OrderItem }) {
         <td>{item.sku || "MJQ64LL/A"}</td>
         <td>{money(item.price)}</td>
         <td>{item.quantity}</td>
-        <td>{item.quantityFulfilled ?? item.quantity}</td>
+        <td>{quantityFulfilled}</td>
+        <td>{money(totalItemPrice)}</td>
       </tr>
       <tr>
-        <td colSpan={5} className="serial">
-          Serial No.: ({item.serialNumber || "DQDRWCNVTY"})
+        <td colSpan={6} className="serial">
+          N.º de serie: ({item.serialNumber || "F25HK9XDKW"})
         </td>
       </tr>
     </Fragment>
@@ -63,17 +67,15 @@ export default function InvoiceView({ order }: { order: Order }) {
 
   const displayOrderNumber =
     order.orderNumber || `W${order._id.slice(-10).toUpperCase()}`;
-  const invoiceNumber = order.invoiceNumber || "MD11673451";
+  const invoiceNumber = order.invoiceNumber || "MD11642211";
   const created = new Date(order.createdAt);
   const printUrl = order.printUrl || DEFAULT_PRINT_URL;
   const cardDescription = getCardDescription(order);
 
-  // La fecha del pie se rellena en cliente para evitar diferencias de hidratación.
   useEffect(() => {
     if (stampRef.current) stampRef.current.textContent = printStamp(new Date());
   }, []);
 
-  // El PDF solo se genera al pulsar el botón.
   const handlePrint = () => {
     if (stampRef.current) stampRef.current.textContent = printStamp(new Date());
     window.print();
@@ -85,7 +87,7 @@ export default function InvoiceView({ order }: { order: Order }) {
         <span>{printUrl}</span>
         <span ref={page === 1 ? stampRef : undefined} />
       </div>
-      <div className="footer-bottom">Página {page} de 2</div>
+      <div className="footer-bottom">{page}/2</div>
     </div>
   );
 
@@ -113,23 +115,23 @@ export default function InvoiceView({ order }: { order: Order }) {
             />
             <span className="store-title">Apple Store</span>
           </div>
-          <div className="receipt-subtitle">Invoice Receipt</div>
-          <div className="do-not-pay">Do Not Pay</div>
+          <div className="receipt-subtitle">Recibo de la factura</div>
+          <div className="do-not-pay">No abonable</div>
 
           <div className="grid-2col">
             <div>
-              <div className="field-label">Order Number:</div>
+              <div className="field-label">Número de pedido:</div>
               <div className="field-value">{displayOrderNumber}</div>
             </div>
             <div>
-              <div className="field-label">Order Date:</div>
+              <div className="field-label">Fecha de pedido:</div>
               <div className="field-value">{longDate(created)}</div>
             </div>
           </div>
 
           <div className="grid-2col">
             <div>
-              <div className="field-label">Sold To:</div>
+              <div className="field-label">Vendido a:</div>
               <div className="field-value pre">
                 {order.customer.name}
                 {"\n"}
@@ -137,41 +139,43 @@ export default function InvoiceView({ order }: { order: Order }) {
               </div>
             </div>
             <div>
-              <div className="field-label">Location:</div>
+              <div className="field-label">Ubicación:</div>
               <div className="field-value pre">
-                {order.customer.name}
+                {order.location?.name || "Neotec Peru"}
                 {"\n"}
-                {order.location?.name || "Apple Fifth Avenue"}
+                Apple Fifth Avenue
                 {"\n"}
                 {order.location?.address || "767 Fifth Avenue"}
                 {"\n"}
                 NEW YORK NY 10153-0023
                 {"\n"}
-                United States
+                Estados Unidos
               </div>
             </div>
           </div>
 
           <div className="customer-no">
-            Customer No:{order.customerNumber || "900004"}
+            N.º de cliente:{order.customerNumber || "900004"}
           </div>
 
-          <div className="section-heading">Order Details</div>
+          <div className="section-heading">Detalles del pedido</div>
           <table className="items-table">
             <colgroup>
-              <col style={{ width: "38.5%" }} />
-              <col style={{ width: "18.3%" }} />
-              <col style={{ width: "11.2%" }} />
-              <col style={{ width: "18.1%" }} />
-              <col style={{ width: "13.9%" }} />
+              <col style={{ width: "32%" }} />
+              <col style={{ width: "16%" }} />
+              <col style={{ width: "12%" }} />
+              <col style={{ width: "12%" }} />
+              <col style={{ width: "14%" }} />
+              <col style={{ width: "14%" }} />
             </colgroup>
             <thead>
               <tr>
-                <th>Product Name</th>
-                <th>Product Number</th>
-                <th>Item Price</th>
-                <th>Quantity Ordered</th>
-                <th>Quantity Fulfilled</th>
+                <th>Nombre de producto</th>
+                <th>Número de<br/>producto</th>
+                <th>Precio del<br/>artículo</th>
+                <th>Cantidad<br/>Pedido</th>
+                <th>Cantidad<br/>Completada</th>
+                <th>Factura<br/>desglosada Precio</th>
               </tr>
             </thead>
             <tbody>
@@ -182,24 +186,38 @@ export default function InvoiceView({ order }: { order: Order }) {
           </table>
 
           <div className="item-notice">
-            Items will be invoiced once they have shipped or are ready for pickup.
+            Los artículos se facturarán cuando se envíen o estén listos para recogida.
           </div>
 
-          <div className="totals">
-            <div className="totals-row">Subtotal</div>
-            <div className="totals-row">Sales Tax</div>
-            <div className="totals-row">Total</div>
-            <div className="totals-row">Amount Due</div>
-          </div>
+          <table className="totals-table">
+            <tbody>
+              <tr>
+                <td>Subtotal</td>
+                <td>{money(order.subtotal ?? order.total - (order.tax ?? 0))}</td>
+              </tr>
+              <tr>
+                <td>Impuesto sobre ventas</td>
+                <td>{money(order.tax ?? 0)}</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>{money(order.total)}</td>
+              </tr>
+              <tr>
+                <td>Plazo de abono</td>
+                <td>{money(order.amountDue ?? 0)}</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <div className="border-section-title">Payment Methods</div>
+          <div className="border-section-title">Formas de pago</div>
           <div className="payment-text">
-            {money(order.total)} charged to {cardDescription}
+            {money(order.total)} cobrado a {cardDescription}
             <br />
-            For a total of {money(order.total)}
+            Por un total de {money(order.total)}
           </div>
 
-          <div className="border-section-title plain">Additional Information</div>
+          <div className="border-section-title plain">Información adicional</div>
           <table className="additional-table">
             <colgroup>
               <col style={{ width: "38%" }} />
@@ -208,9 +226,9 @@ export default function InvoiceView({ order }: { order: Order }) {
             </colgroup>
             <thead>
               <tr>
-                <th>Invoice Number</th>
-                <th>Invoice Date</th>
-                <th>Terms</th>
+                <th>Número de factura</th>
+                <th>Fecha de factura</th>
+                <th>Condiciones</th>
               </tr>
             </thead>
           </table>
@@ -236,14 +254,14 @@ export default function InvoiceView({ order }: { order: Order }) {
           </table>
 
           <div className="policies-link">
-            This order is subject to Apple&apos;s Sales and Refunds Policies
+            Este pedido está sujeto a Política de ventas y devoluciones de Apple
             <br />
             <a
-              href="https://www.apple.com/shop/open/salespolicies"
+              href="https://www.apple.com/es/shop/open/salespolicies"
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://www.apple.com/shop/open/salespolicies
+              https://www.apple.com/es/shop/open/salespolicies
             </a>
           </div>
 
