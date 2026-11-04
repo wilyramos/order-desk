@@ -18,23 +18,39 @@ export interface BarRect {
   width: number;
 }
 
-export function encodeCode39(value: string, narrow = 0.9): { bars: BarRect[]; width: number } {
+
+
+ export function encodeCode39(
+  value: string,
+  narrow = 1
+): { bars: BarRect[]; width: number } {
   const text = `*${value.toUpperCase()}*`;
   const bars: BarRect[] = [];
+
   let x = 0;
 
   for (const ch of text) {
     const pattern = CODE39[ch] ?? CODE39["-"];
+
     for (let i = 0; i < pattern.length; i++) {
       const w = pattern[i] === "w" ? narrow * 2.2 : narrow;
-      if (i % 2 === 0) bars.push({ x, width: w });
+
+      if (i % 2 === 0) {
+        bars.push({ x, width: w });
+      }
+
       x += w;
     }
+
     x += narrow * 1.2;
   }
 
-  return { bars, width: x - narrow * 1.2 };
+  return {
+    bars,
+    width: x - narrow * 1.2,
+  };
 }
+
 
 export function orderBarcodeValue(order: Pick<Order, "_id" | "createdAt" | "orderNumber">): string {
   const d = new Date(order.createdAt);

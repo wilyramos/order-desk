@@ -3,7 +3,7 @@ import { encodeCode39 } from "@/lib/code39";
 export default function Code39Barcode({
   value,
   height = 26,
-  narrow = 0.9,
+  narrow = 0.65,
 }: {
   value: string;
   height?: number;

@@ -463,42 +463,41 @@ export default function PrintableReceipt({ order }: { order: Order }) {
           <span className="lbl">Amount Paid Via {paidVia}</span>
           <span className="val">{money(total)}</span>
 
-    {isCard && (
-  <>
-    <span className="lbl">•••• {last4}</span>
-    <span className="val"></span>
+          {isCard && (
+            <>
+              <span className="lbl">•••• {last4}</span>
+              <span className="val"></span>
 
-    <span className="lbl">{order.paymentAuthCode || "841650"}</span>
-    <span className="val"></span>
-  </>
-)}
+              <span className="lbl">{order.paymentAuthCode || "841650"}</span>
+              <span className="val"></span>
+            </>
+          )}
         </div>
+{/* BARCODE */}
+<hr
+  className="rcp-hr"
+  style={{
+    marginTop: "32px",
+    marginBottom: "16px",
+    borderTopWidth: "3px",
+  }}
+/>
 
-        {/* BARCODE */}
-        <hr
-          className="rcp-hr"
-          style={{
-            marginTop: "32px",
-            marginBottom: "16px",
-            borderTopWidth: "3px",
-          }}
-        />
-
-        <div className="rcp-center">
-          <div className="rcp-barcode">
-            <Code39Barcode value={barcode} height={30} narrow={1} />
-          </div>
-          <div
-            style={{
-              marginTop: "4px",
-              fontSize: "8.5px",
-              letterSpacing: "1.5px",
-              fontWeight: "bold",
-            }}
-          >
-            * {barcode.split("").join(" ")} *
-          </div>
-        </div>
+<div className="rcp-center">
+  <div className="rcp-barcode">
+    <Code39Barcode value={barcode} height={30} narrow={0.65} />
+  </div>
+  <div
+    style={{
+      marginTop: "4px",
+      fontSize: "8.5px",
+      letterSpacing: "1.5px",
+      fontWeight: 600, /* Cambiado de "bold" (700) a 600 para que se vea ligeramente más delgado */
+    }}
+  >
+    * {barcode.split("").join(" ")} *
+  </div>
+</div>
 
         {/* CARD AUTHORIZATION */}
         {isCard && (

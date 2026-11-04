@@ -61,7 +61,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
     customerNumber: order.customerNumber || "",
     status: order.status,
     createdAt: formatDateForInput(order.createdAt),
-    taxRate: order.taxRate ?? 0.07, // Por defecto 7% (0.07)
+    taxRate: order.taxRate ?? 0.07, // Por defecto 7% 
   });
 
   const [customer, setCustomer] = useState({
@@ -231,7 +231,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
             />
           </div>
           <div>
-            <label className={labelClass}>Número de Factura / Ticket</label>
+            <label className={labelClass}>Número de Factura</label>
             <input
               name="invoiceNumber"
               value={generalInfo.invoiceNumber}
@@ -263,26 +263,26 @@ export default function EditOrderForm({ order }: { order: Order }) {
               ))}
             </select>
           </div>
-          <div>
-            <label className={labelClass}>Tax (%)</label>
-            <div className="relative">
-              <input
-                type="number"
-                name="taxRate"
-                min={0}
-                step={0.01}
-                value={generalInfo.taxRate * 100}
-                onChange={(e) =>
-                  setGeneralInfo((prev) => ({
-                    ...prev,
-                    taxRate: Number(e.target.value) / 100,
-                  }))
-                }
-                className={inputClass}
-              />
-              <span className="absolute right-4 top-3 text-gray-500">%</span>
-            </div>
-          </div>
+         <div>
+  <label className={labelClass}>Tax (%)</label>
+  <div className="relative">
+    <input
+      type="number"
+      name="taxRate"
+      min={0}
+      step={0.01}
+      value={Number((generalInfo.taxRate * 100).toFixed(4))}
+      onChange={(e) =>
+        setGeneralInfo((prev) => ({
+          ...prev,
+          taxRate: Number(e.target.value) / 100,
+        }))
+      }
+      className={inputClass}
+    />
+    <span className="absolute right-4 top-3 text-gray-500">%</span>
+  </div>
+</div>
         </div>
       </section>
 

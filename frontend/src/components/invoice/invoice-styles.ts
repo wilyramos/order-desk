@@ -34,7 +34,7 @@ export const invoiceCss = `
   }
   .invoice-screen {
     background: #d9d9d9;
-    padding: 12px 0;
+    padding: 14px;
     min-height: 100vh;
   }
 
@@ -45,7 +45,7 @@ export const invoiceCss = `
     position: relative;
     overflow: hidden;
     margin: 0 auto 16px;
-    padding: 0.5in 0.5in 0.5in 0.5in;
+    padding: 0.75in 0.5in 0.5in 0.5in;
     background: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     page-break-after: always;
@@ -106,7 +106,7 @@ export const invoiceCss = `
     font-size: 8.5pt;
     letter-spacing: -0.2px;
     padding: 0 0 2px 0;
-    border-bottom: 1.5px solid #000;
+    border-bottom: 2.5px solid #000; /* Aumentado de 1.5px a 2.5px */
     vertical-align: bottom;
     line-height: 1.1;
   }
@@ -124,7 +124,7 @@ export const invoiceCss = `
     white-space: normal;
   }
 
-  .additional-table.continued { border-top: 1.5px solid #000; }
+  .additional-table.continued { border-top: 2.5px solid #000; } /* Aumentado de 1.5px a 2.5px */
   .additional-table.continued td { padding-top: 4px; }
 
   .item-notice { margin-top: 0.15in; font-size: 8.5pt; }
@@ -134,7 +134,7 @@ export const invoiceCss = `
     font-size: 10.5pt;
     font-weight: 600;
     letter-spacing: -0.2px;
-    border-bottom: 1.5px solid #000;
+    border-bottom: 2.5px solid #000; /* Aumentado de 1.5px a 2.5px */
     padding-bottom: 2px;
     margin-top: 0.2in;
     margin-bottom: 0.06in;
@@ -200,6 +200,7 @@ export const invoiceCss = `
     }
     .sheet {
       margin: 0;
+      padding-top: 0.75in;
       box-shadow: none;
     }
     .no-print {

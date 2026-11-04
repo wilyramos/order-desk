@@ -6,7 +6,7 @@ import { invoiceCss } from "./invoice-styles";
 import Image from "next/image";
 
 const DEFAULT_PRINT_URL =
-  "https://secure6.store.apple.com/es-business/shop/order/print/invoice/10078/AFD4669200";
+  "https://secure6.store.apple.com/us/shop/order/print/invoice/10078/AFD4669200";
 
 const money = (value: number): string =>
   "$" +
@@ -22,7 +22,7 @@ const pad = (n: number): string => String(n).padStart(2, "0");
 
 const printStamp = (d: Date): string => {
   const h = d.getHours() % 12 || 12;
-  const suffix = d.getHours() < 12 ? "a. m." : "p. m.";
+  const suffix = d.getHours() < 12 ? "AM" : "PM";
   const year = String(d.getFullYear()).slice(-2);
   return `${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${year}, ${h}:${pad(
     d.getMinutes()
@@ -30,8 +30,8 @@ const printStamp = (d: Date): string => {
 };
 
 const getCardDescription = (order: Order): string => {
-  if (order.paymentMethod === "cash") return "Efectivo";
-  if (order.paymentMethod === "transfer") return "Transferencia bancaria";
+  if (order.paymentMethod === "cash") return "Cash";
+  if (order.paymentMethod === "transfer") return "Bank Transfer";
   const brand = (order.paymentCardBrand || "Visa").toUpperCase();
   const last4 = order.paymentLast4 || "6390";
   return `${brand} XXXXXXXXXXXX${last4}`;
@@ -53,7 +53,7 @@ function ItemRows({ item }: { item: OrderItem }) {
       </tr>
       <tr>
         <td colSpan={6} className="serial" contentEditable suppressContentEditableWarning>
-          N.º de serie: ({item.serialNumber || "F25HK9XDKW"})
+          Serial No.: ({item.serialNumber || "F25HK9XDKW"})
         </td>
       </tr>
     </Fragment>
@@ -79,29 +79,19 @@ export default function InvoiceView({ order }: { order: Order }) {
     window.print();
   };
 
-  const footer = (page: number) => (
-    <div className="footer">
-      <div className="footer-top">
-        <span contentEditable suppressContentEditableWarning>{printUrl}</span>
-        <span ref={page === 1 ? stampRef : undefined} contentEditable suppressContentEditableWarning />
-      </div>
-      <div className="footer-bottom" contentEditable suppressContentEditableWarning>{page}/2</div>
-    </div>
-  );
-
   return (
     <>
       <style>{invoiceCss}</style>
 
       <div className="toolbar no-print">
         <button type="button" onClick={handlePrint}>
-          Imprimir factura
+          Print Invoice
         </button>
       </div>
 
       <div className="invoice-screen">
-        {/* HOJA 1 */}
         <div className="sheet">
+          {/* HEADER */}
           <div className="header-title-row">
             <Image
               src="/Apple_logo_black.svg"
@@ -113,23 +103,23 @@ export default function InvoiceView({ order }: { order: Order }) {
             />
             <span className="store-title" contentEditable suppressContentEditableWarning>Apple Store</span>
           </div>
-          <div className="receipt-subtitle" contentEditable suppressContentEditableWarning>Recibo de la factura</div>
-          <div className="do-not-pay" contentEditable suppressContentEditableWarning>No abonable</div>
+          <div className="receipt-subtitle" contentEditable suppressContentEditableWarning>Invoice Receipt</div>
+          <div className="do-not-pay" contentEditable suppressContentEditableWarning>Non-Payable</div>
 
           <div className="grid-2col">
             <div>
-              <div className="field-label">Número de pedido:</div>
-              <div className="field-value" contentEditable suppressContentEditableWarning>{displayOrderNumber}</div>
+              <div className="field-label">Order Number:</div>
+              <div className="" contentEditable suppressContentEditableWarning>{displayOrderNumber}</div>
             </div>
             <div>
-              <div className="field-label">Fecha de pedido:</div>
+              <div className="field-label">Order Date:</div>
               <div className="field-value" contentEditable suppressContentEditableWarning>{longDate(created)}</div>
             </div>
           </div>
 
           <div className="grid-2col">
             <div>
-              <div className="field-label">Vendido a:</div>
+              <div className="field-label">Sold To:</div>
               <div className="field-value pre" contentEditable suppressContentEditableWarning>
                 {order.customer.name}
                 {"\n"}
@@ -137,7 +127,7 @@ export default function InvoiceView({ order }: { order: Order }) {
               </div>
             </div>
             <div>
-              <div className="field-label">Ubicación:</div>
+              <div className="field-label">Location:</div>
               <div className="field-value pre" contentEditable suppressContentEditableWarning>
                 {order.location?.name || "Neotec Peru"}
                 {"\n"}
@@ -147,16 +137,17 @@ export default function InvoiceView({ order }: { order: Order }) {
                 {"\n"}
                 NEW YORK NY 10153-0023
                 {"\n"}
-                Estados Unidos
+                United States
               </div>
             </div>
           </div>
 
           <div className="customer-no" contentEditable suppressContentEditableWarning>
-            N.º de cliente:{order.customerNumber || "900004"}
+            Customer No.: {order.customerNumber || "900004"}
           </div>
 
-          <div className="section-heading" contentEditable suppressContentEditableWarning>Detalles del pedido</div>
+          {/* PRODUCT DETAILS */}
+          <div className="section-heading" contentEditable suppressContentEditableWarning>Order Details</div>
           <table className="items-table">
             <colgroup>
               <col style={{ width: "32%" }} />
@@ -168,12 +159,12 @@ export default function InvoiceView({ order }: { order: Order }) {
             </colgroup>
             <thead>
               <tr>
-                <th>Nombre de producto</th>
-                <th>Número de<br/>producto</th>
-                <th>Precio del<br/>artículo</th>
-                <th>Cantidad<br/>Pedido</th>
-                <th>Cantidad<br/>Completada</th>
-                <th>Factura<br/>desglosada Precio</th>
+                <th>Product Name</th>
+                <th>Part<br/>Number</th>
+                <th>Item<br/>Price</th>
+                <th>Quantity<br/>Ordered</th>
+                <th>Quantity<br/>Fulfilled</th>
+                <th>Itemized<br/>Price</th>
               </tr>
             </thead>
             <tbody>
@@ -184,18 +175,42 @@ export default function InvoiceView({ order }: { order: Order }) {
           </table>
 
           <div className="item-notice" contentEditable suppressContentEditableWarning>
-            Los artículos se facturarán cuando se envíen o estén listos para recogida.
+            Items will be invoiced when shipped or ready for pickup.
           </div>
 
-          <div className="border-section-title" contentEditable suppressContentEditableWarning>Formas de pago</div>
+          {/* TOTALS */}
+          <div className="totals-section">
+            <table className="totals-table">
+              <tbody>
+                <tr>
+                  <td>Subtotal</td>
+                  <td contentEditable suppressContentEditableWarning>{money(order.subtotal ?? order.total - (order.tax ?? 0))}</td>
+                </tr>
+                <tr>
+                  <td>Sales Tax</td>
+                  <td contentEditable suppressContentEditableWarning>{money(order.tax ?? 0)}</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td contentEditable suppressContentEditableWarning>{money(order.total)}</td>
+                </tr>
+                <tr>
+                  <td>Amount Due</td>
+                  <td contentEditable suppressContentEditableWarning>{money(order.amountDue ?? 0)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* PAYMENT METHODS AND ADDITIONAL INFORMATION */}
+          <div className="border-section-title" contentEditable suppressContentEditableWarning>Payment Methods</div>
           <div className="payment-text" contentEditable suppressContentEditableWarning>
-            {money(order.total)} cobrado a {cardDescription}
+            {money(order.total)} charged to {cardDescription}
             <br />
-            Por un total de {money(order.total)}
+            For a total of {money(order.total)}
           </div>
 
-          {/* Información adicional unificada con encabezados y valores */}
-          <div className="border-section-title plain" contentEditable suppressContentEditableWarning>Información adicional</div>
+          <div className="border-section-title plain" contentEditable suppressContentEditableWarning>Additional Information</div>
           <table className="additional-table">
             <colgroup>
               <col style={{ width: "38%" }} />
@@ -204,9 +219,9 @@ export default function InvoiceView({ order }: { order: Order }) {
             </colgroup>
             <thead>
               <tr>
-                <th>Número de factura</th>
-                <th>Fecha de factura</th>
-                <th>Condiciones</th>
+                <th>Invoice Number</th>
+                <th>Invoice Date</th>
+                <th>Terms</th>
               </tr>
             </thead>
             <tbody>
@@ -218,45 +233,26 @@ export default function InvoiceView({ order }: { order: Order }) {
             </tbody>
           </table>
 
-          {footer(1)}
-        </div>
-
-        {/* HOJA 2 */}
-        <div className="sheet">
-          <table className="totals-table">
-            <tbody>
-              <tr>
-                <td>Subtotal</td>
-                <td contentEditable suppressContentEditableWarning>{money(order.subtotal ?? order.total - (order.tax ?? 0))}</td>
-              </tr>
-              <tr>
-                <td>Impuesto sobre ventas</td>
-                <td contentEditable suppressContentEditableWarning>{money(order.tax ?? 0)}</td>
-              </tr>
-              <tr>
-                <td>Total</td>
-                <td contentEditable suppressContentEditableWarning>{money(order.total)}</td>
-              </tr>
-              <tr>
-                <td>Plazo de abono</td>
-                <td contentEditable suppressContentEditableWarning>{money(order.amountDue ?? 0)}</td>
-              </tr>
-            </tbody>
-          </table>
-
           <div className="policies-link" contentEditable suppressContentEditableWarning>
-            Este pedido está sujeto a Política de ventas y devoluciones de Apple
+            This order is subject to Apple&apos;s Sales and Refund Policy
             <br />
             <a
-              href="https://www.apple.com/es/shop/open/salespolicies"
+              href="https://www.apple.com/legal/sales-support/sales-policies/retail_us.html"
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://www.apple.com/es/shop/open/salespolicies
+              https://www.apple.com/legal/sales-support/sales-policies/retail_us.html
             </a>
           </div>
 
-          {footer(2)}
+          {/* FOOTER */}
+          <div className="footer">
+            <div className="footer-top">
+              <span contentEditable suppressContentEditableWarning>{printUrl}</span>
+              <span ref={stampRef} contentEditable suppressContentEditableWarning />
+            </div>
+            <div className="footer-bottom" contentEditable suppressContentEditableWarning>1/1</div>
+          </div>
         </div>
       </div>
     </>
