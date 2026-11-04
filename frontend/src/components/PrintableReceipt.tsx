@@ -473,13 +473,13 @@ export default function PrintableReceipt({ order }: { order: Order }) {
             </>
           )}
         </div>
-{/* BARCODE */}
+{/* BARCODE */}{/* BARCODE */}
 <hr
   className="rcp-hr"
   style={{
     marginTop: "32px",
     marginBottom: "16px",
-    borderTopWidth: "3px",
+    borderTopWidth: "2px",
   }}
 />
 
@@ -492,17 +492,22 @@ export default function PrintableReceipt({ order }: { order: Order }) {
       marginTop: "4px",
       fontSize: "8.5px",
       letterSpacing: "1.5px",
-      fontWeight: 600, /* Cambiado de "bold" (700) a 600 para que se vea ligeramente más delgado */
+      fontWeight: 600,
     }}
   >
     * {barcode.split("").join(" ")} *
   </div>
 </div>
 
+
         {/* CARD AUTHORIZATION */}
         {isCard && (
           <div className="rcp-page-break">
-            <hr className="rcp-hr" style={{ marginBottom: "16px" }} />
+            <hr className="rcp-hr"  style={{
+    marginTop: "16px",
+    marginBottom: "16px",
+    borderTopWidth: "2px",
+  }} />
 
             <div className="rcp-authorization">
               <div>
