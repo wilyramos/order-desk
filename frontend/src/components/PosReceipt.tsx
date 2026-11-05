@@ -49,7 +49,7 @@ export default function PosReceipt({ order }: { order: Order }) {
     method === "cash" ? "Cash" : method === "transfer" ? "Bank Transfer" : `${brand} Credit`;
 
   return (
-<article className="receipt mx-auto w-full bg-white px-6 py-8 font-sans text-[12px] leading-snug text-black">      {/* Encabezado de la tienda */}
+    <article className="receipt mx-auto w-full bg-white px-6 py-8 font-sans text-[12px] leading-snug text-black">      {/* Encabezado de la tienda */}
       <header className="text-[12px] leading-relaxed">
         <p className="text-[16px] font-semibold tracking-tight">Apple Order Desk</p>
         <p>Online Store</p>
@@ -134,9 +134,12 @@ export default function PosReceipt({ order }: { order: Order }) {
       )}
 
       {/* Código de barras */}
+
+
+      {/* Código de barras */}
       <section className="mt-6 border-t-[1.5px] border-black pt-4">
         <div className="flex justify-center">
-          <Code39Barcode value={barcode} height={44} narrow={1.5} />
+          <Code39Barcode value={barcode} height={44} moduleWidth={1.5} />
         </div>
         <p className="mt-3 text-center text-[11px]">
           Apple Order Desk can recycle your old electronics. Thank you for your purchase.
