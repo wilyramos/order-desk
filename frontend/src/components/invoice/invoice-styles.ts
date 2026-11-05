@@ -72,6 +72,8 @@ export const invoiceCss = `
     letter-spacing: -0.2px;
     margin-top: 2px;
   }
+
+  
   .do-not-pay { margin-top: 6px; margin-bottom: 0.2in; font-size: 8.5pt; }
 
   /* Grid de dos columnas */

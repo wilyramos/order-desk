@@ -1,4 +1,4 @@
-import Code39Barcode from "@/components/Code39Barcode";
+import Code39Barcode from "@/components/OrderBarcode";
 import { orderBarcodeValue } from "@/lib/code39";
 import type { Order } from "@/types/order";
 
