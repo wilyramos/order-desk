@@ -459,7 +459,7 @@ Please debit my account •••• {last4} by {money(total)} (Sale)
 
 <div className="rcp-center rcp-authorization-links">
 <div>
-https://www.apple.com/shop/open/salespolicies
+https://www.apple.com/legal/sales-support/sales-policies/retail_us.html
 </div>
 <div>
 Apple can recycle your old electronics, visit apple.com/recycle to learn

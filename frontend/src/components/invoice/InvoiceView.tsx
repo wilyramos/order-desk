@@ -237,11 +237,11 @@ export default function InvoiceView({ order }: { order: Order }) {
             This order is subject to Apple&apos;s Sales and Refund Policy
             <br />
             <a
-              href="https://www.apple.com/legal/sales-support/sales-policies/retail_us.html"
+              href="https://www.apple.com/shop/open/salespolicies"
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://www.apple.com/legal/sales-support/sales-policies/retail_us.html
+              https://www.apple.com/shop/open/salespolicies
             </a>
           </div>
 
