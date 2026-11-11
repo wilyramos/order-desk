@@ -320,7 +320,7 @@ export function buildInvoiceA4Html(order: any): string {
         <div class="field-value">
           ${order.customer.name}<br />
           ${order.location?.name || "Apple Fifth Avenue"}<br />
-          ${order.location?.address || "767 Fifth Avenue"}<br />
+          ${order.location?.address}<br />
           NEW YORK NY 10153-0023<br />
           United States
         </div>

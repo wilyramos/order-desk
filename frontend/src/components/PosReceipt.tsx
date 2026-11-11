@@ -4,7 +4,7 @@ import type { Order } from "@/types/order";
 
 const money = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "PEN",
+  currency: "USD",
   minimumFractionDigits: 2,
 });
 
@@ -70,7 +70,7 @@ export default function PosReceipt({ order }: { order: Order }) {
               <span className="shrink-0">{money.format(item.price * item.quantity)}</span>
             </div>
             <div className="pl-4 text-[11px]">
-              <p>Part Number: {item.sku || "—"}</p>
+              <p>Product Number: {item.sku || "—"}</p>
               {item.serialNumber && <p>Serial Number: {item.serialNumber}</p>}
               <p>Return Date: {returnDate.format(returnBy)}</p>
             </div>

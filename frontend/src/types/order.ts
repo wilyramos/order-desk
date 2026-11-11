@@ -1,4 +1,6 @@
-﻿export type OrderStatus =
+﻿// File: frontend/src/types/order.ts
+
+export type OrderStatus =
   | "pendiente"
   | "confirmado"
   | "enviado"
@@ -21,7 +23,7 @@ export interface OrderItem {
 
 export interface Order {
   _id: string;
-   printUrl?: string;
+  printUrl?: string;
   invoiceNumber?: string;
   orderNumber?: string; // Formato: W1439345839
   customerNumber?: string;
@@ -54,6 +56,7 @@ export interface Order {
   paymentTvr?: string;
   paymentTsi?: string;
   status: OrderStatus;
+  pickedUpAt?: string | null;
   createdAt: string;
   updatedAt: string;
 }

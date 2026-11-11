@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 
-const priceFormatter = new Intl.NumberFormat("es-PE", {
+const priceFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "PEN",
+  currency: "USD",
   minimumFractionDigits: 2,
 });
 

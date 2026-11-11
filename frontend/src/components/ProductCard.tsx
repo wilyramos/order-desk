@@ -3,9 +3,9 @@ import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
 import type { Product } from "@/types/product";
 
-const priceFormatter = new Intl.NumberFormat("es-PE", {
+const priceFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "PEN",
+  currency: "USD",
   minimumFractionDigits: 0,
 });
 

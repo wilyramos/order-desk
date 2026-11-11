@@ -1,3 +1,5 @@
+//File: frontend/src/app/ordenes/%5Bid%5D/factura/page.tsx
+
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getOrder } from "@/lib/orders";

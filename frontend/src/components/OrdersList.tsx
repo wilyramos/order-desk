@@ -1,11 +1,15 @@
+// File: frontend/src/components/OrdersList.tsx
+
 import Image from "next/image";
 import Link from "next/link";
-import { getOrders, ticketUrl } from "@/lib/orders";
+import { getOrders } from "@/lib/orders";
 import type { Order, OrderStatus } from "@/types/order";
+// NUEVO: Importa el componente de los botones
+import OrderEmailButtons from "@/components/invoice/OrderEmailButtons";
 
-const priceFormatter = new Intl.NumberFormat("es-ES", {
+const priceFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "EUR",
+  currency: "USD",
   minimumFractionDigits: 2,
 });
 
@@ -97,7 +101,6 @@ export default async function OrdersList({
                 </div>
                 <div className="flex flex-col md:items-end">
                   <p className="text-xs text-[#6e6e73]">Número de pedido <span className="font-medium text-[#1d1d1f]">W{shortId(order._id)}</span></p>
-                
                 </div>
               </div>
 
@@ -155,6 +158,11 @@ export default async function OrdersList({
                   >
                     Ver detalles del pedido
                   </Link>
+
+                  {/* NUEVO: Botones para enviar por email integrados en la lista */}
+                  <div className="mt-2 border-t border-[#d2d2d7] pt-2">
+                    <OrderEmailButtons orderId={order._id} />
+                  </div>
                 </div>
               </div>
             </li>

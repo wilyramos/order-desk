@@ -1,3 +1,5 @@
+//File: backend/src/models/product.model.ts
+
 import { Schema, model, type InferSchemaType } from "mongoose";
 
 export const DEFAULT_STOCK = 100;

@@ -9,9 +9,6 @@ interface TicketItem {
   quantityFulfilled?: number | null;
 }
 
-
-
-
 interface TicketOrder {
   _id: unknown;
   invoiceNumber?: string | null;
@@ -31,6 +28,7 @@ interface TicketOrder {
   status: string;
   createdAt?: Date | null;
   updatedAt?: Date | null;
+  pickedUpAt?: Date | null;
 }
 
 const round2 = (value: number) => Math.round(value * 100) / 100;
@@ -43,8 +41,9 @@ const escapeHtml = (value: unknown) =>
 const money = (value: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "PEN" }).format(value);
 
-const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "long" });
-const longDateTime = new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeStyle: "short" });
+// Formateador con Zona Horaria de Perú
+const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeZone: "America/Lima" });
+const longDateTime = new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeStyle: "short", timeZone: "America/Lima" });
 
 const STATUS_LABELS: Record<string, string> = {
   pendiente: "Order Placed",
@@ -59,6 +58,7 @@ export function buildTicketHtml(order: TicketOrder): string {
   const orderNumber = String(order._id).slice(-10).toUpperCase();
   const invoiceNumber = order.invoiceNumber || `INV-${orderNumber}`;
   const created = new Date(order.createdAt ?? Date.now());
+  const displayDate = order.pickedUpAt ? new Date(order.pickedUpAt) : (order.updatedAt ? new Date(order.updatedAt) : created);
   const customer = order.customer ?? {};
   const location = order.location ?? {};
 
@@ -190,7 +190,7 @@ export function buildTicketHtml(order: TicketOrder): string {
         <thead>
           <tr>
             <th>Product Name</th>
-            <th>Product Number</th>
+            <th>Part Number</th>
             <th class="r">Item Price</th>
             <th class="r">Qty Ordered</th>
             <th class="r">Qty Fulfilled</th>
@@ -220,7 +220,7 @@ export function buildTicketHtml(order: TicketOrder): string {
       </div>
       <div>
         <p class="label">Last Updated</p>
-        <p class="value">${escapeHtml(longDateTime.format(new Date(order.updatedAt ?? created)))}</p>
+        <p class="value">${escapeHtml(longDateTime.format(displayDate))}</p>
       </div>
     </section>
 

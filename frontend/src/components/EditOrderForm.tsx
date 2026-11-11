@@ -1,3 +1,5 @@
+// File: frontend/src/components/EditOrderForm.tsx
+
 "use client";
 
 import { useRouter } from "next/navigation";
@@ -35,7 +37,7 @@ const inputClass =
 const labelClass = "mb-2 block text-[15px] font-medium text-[#1d1d1f]";
 const sectionClass = "rounded-3xl bg-[#f5f5f7] p-8 sm:p-10";
 
-function formatDateForInput(dateStr?: string | Date): string {
+function formatDateForInput(dateStr?: string | Date | null): string {
   if (!dateStr) return "";
   const d = new Date(dateStr);
   if (isNaN(d.getTime())) return "";
@@ -52,15 +54,29 @@ function getReturnDate(dateStr?: string | Date): string {
   return d.toISOString().split("T")[0];
 }
 
+// Generadores por defecto
+function generateInvoiceNumber(): string {
+  return `MD${Math.floor(10000000 + Math.random() * 90000000)}`;
+}
+
+function generateOrderNumber(): string {
+  return `W${Math.floor(1000000000 + Math.random() * 9000000000)}`;
+}
+
+function generateLast4Digits(): string {
+  return Math.floor(1000 + Math.random() * 9000).toString();
+}
+
 export default function EditOrderForm({ order }: { order: Order }) {
   const router = useRouter();
 
   const [generalInfo, setGeneralInfo] = useState({
-    invoiceNumber: order.invoiceNumber || "",
-    orderNumber: order.orderNumber || "",
+    invoiceNumber: order.invoiceNumber || generateInvoiceNumber(),
+    orderNumber: order.orderNumber || generateOrderNumber(),
     customerNumber: order.customerNumber || "",
     status: order.status,
     createdAt: formatDateForInput(order.createdAt),
+    pickedUpAt: formatDateForInput(order.pickedUpAt),
     taxRate: order.taxRate ?? 0.07, // Por defecto 7% 
   });
 
@@ -82,7 +98,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
     (order.paymentMethod as PaymentMethod) || "card"
   );
   const [cardBrand, setCardBrand] = useState(order.paymentCardBrand || "AMERICAN EXPRESS");
-  const [last4, setLast4] = useState(order.paymentLast4 ?? "");
+  const [last4, setLast4] = useState(order.paymentLast4 || generateLast4Digits());
 
   // Inicialización de metadatos de pago con valores por defecto
   const [paymentMeta, setPaymentMeta] = useState({
@@ -120,7 +136,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
     const { name, value } = e.target;
     setGeneralInfo((prev) => ({ ...prev, [name]: value }));
 
-    // Si cambia la fecha de compra, recalcula la fecha límite de devolución para todos los productos en el evento
+    // Si cambia la fecha de compra, recalcula la fecha límite de devolución para todos los productos
     if (name === "createdAt") {
       const newReturnDate = getReturnDate(value);
       if (newReturnDate) {
@@ -171,6 +187,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
           status: generalInfo.status,
           taxRate: generalInfo.taxRate,
           createdAt: generalInfo.createdAt ? new Date(generalInfo.createdAt).toISOString() : undefined,
+          pickedUpAt: generalInfo.pickedUpAt ? new Date(generalInfo.pickedUpAt).toISOString() : null,
           customer,
           location,
           payment: {
@@ -221,6 +238,16 @@ export default function EditOrderForm({ order }: { order: Order }) {
             />
           </div>
           <div>
+            <label className={labelClass}>Fecha y Hora de Recojo (Picked Up)</label>
+            <input
+              type="datetime-local"
+              name="pickedUpAt"
+              value={generalInfo.pickedUpAt}
+              onChange={handleGeneralChange}
+              className={inputClass}
+            />
+          </div>
+          <div>
             <label className={labelClass}>Número de Orden (QR/Barras)</label>
             <input
               name="orderNumber"
@@ -236,6 +263,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
               name="invoiceNumber"
               value={generalInfo.invoiceNumber}
               onChange={handleGeneralChange}
+              placeholder="Ej. MD12345678"
               className={inputClass}
             />
           </div>
@@ -263,26 +291,26 @@ export default function EditOrderForm({ order }: { order: Order }) {
               ))}
             </select>
           </div>
-         <div>
-  <label className={labelClass}>Tax (%)</label>
-  <div className="relative">
-    <input
-      type="number"
-      name="taxRate"
-      min={0}
-      step={0.01}
-      value={Number((generalInfo.taxRate * 100).toFixed(4))}
-      onChange={(e) =>
-        setGeneralInfo((prev) => ({
-          ...prev,
-          taxRate: Number(e.target.value) / 100,
-        }))
-      }
-      className={inputClass}
-    />
-    <span className="absolute right-4 top-3 text-gray-500">%</span>
-  </div>
-</div>
+          <div>
+            <label className={labelClass}>Tax (%)</label>
+            <div className="relative">
+              <input
+                type="number"
+                name="taxRate"
+                min={0}
+                step={0.01}
+                value={Number((generalInfo.taxRate * 100).toFixed(4))}
+                onChange={(e) =>
+                  setGeneralInfo((prev) => ({
+                    ...prev,
+                    taxRate: Number(e.target.value) / 100,
+                  }))
+                }
+                className={inputClass}
+              />
+              <span className="absolute right-4 top-3 text-gray-500">%</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -303,7 +331,7 @@ export default function EditOrderForm({ order }: { order: Order }) {
                   />
                 </div>
                 <div className="sm:col-span-3">
-                  <label className={labelClass}>Part Number (SKU)</label>
+                  <label className={labelClass}>Numero de producto (SKU)</label>
                   <input
                     type="text"
                     value={item.sku}

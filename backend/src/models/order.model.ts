@@ -1,3 +1,5 @@
+// File: backend/src/models/order.model.ts
+
 import { Schema, model, type InferSchemaType } from "mongoose";
 
 export const ORDER_STATUSES = [
@@ -8,7 +10,9 @@ export const ORDER_STATUSES = [
   "recogido",
   "cancelado",
 ] as const;
+
 export const PAYMENT_METHODS = ["card", "cash", "transfer"] as const;
+
 // Actualizado a 7% por defecto
 export const IGV_RATE = 0.07; 
 
@@ -75,6 +79,7 @@ const orderSchema = new Schema(
     paymentTsi: { type: String, default: "" },
 
     status: { type: String, enum: ORDER_STATUSES, default: "recogido" },
+    pickedUpAt: { type: Date, default: null },
     createdAt: { type: Date, default: Date.now },
   },
   { timestamps: true }

@@ -1,3 +1,5 @@
+//File: frontend/src/app/%28main%29/ordenes/page.tsx
+
 import { Suspense } from "react";
 import OrdersList from "@/components/OrdersList";
 

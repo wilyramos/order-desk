@@ -1,3 +1,5 @@
+// File: frontend/src/app/(main)/ordenes/[id]/page.tsx
+
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -13,8 +15,8 @@ const money = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 2,
 });
 
-const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "long" });
-const shortDate = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" });
+const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeZone: "America/Lima" });
+const shortDate = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", timeZone: "America/Lima" });
 
 const STEPS = ["Order Placed", "Processing", "Ready for Pickup", "Picked Up"];
 
@@ -27,8 +29,9 @@ const RANK: Record<OrderStatus, number> = {
   cancelado: -1,
 };
 
-function headline(status: OrderStatus, updatedAt: string): string {
-  const date = shortDate.format(new Date(updatedAt));
+function headline(status: OrderStatus, updatedAt: string, pickedUpAt?: string | null): string {
+  const targetDate = pickedUpAt ? new Date(pickedUpAt) : new Date(updatedAt);
+  const dateStr = shortDate.format(targetDate);
   switch (status) {
     case "pendiente":
       return "Order Placed";
@@ -37,9 +40,9 @@ function headline(status: OrderStatus, updatedAt: string): string {
     case "enviado":
       return "Ready for Pickup";
     case "entregado":
-      return `Delivered ${date}`;
+      return `Delivered ${dateStr}`;
     case "recogido":
-      return `Picked Up ${date}`;
+      return `Picked Up ${dateStr}`;
     case "cancelado":
       return "Canceled";
   }
@@ -108,7 +111,7 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
 
   if (!order) notFound();
 
-  const number = order.invoiceNumber || `W${order._id.slice(-9).toUpperCase()}`;
+  const number = order.orderNumber || `W${order._id.slice(-9).toUpperCase()}`;
   const [first] = order.items;
   const subtotal = order.subtotal ?? (order.total - (order.tax ?? 0));
   const tax = order.tax ?? 0;
@@ -116,7 +119,6 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
 
   return (
     <div className="mx-auto max-w-[980px] pt-10">
-      {/* ENCABEZADO CON BOTONES DE FACTURA Y TICKET */}
       <header className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between pb-8 ">
         <div>
           <h1 className="text-[32px] font-semibold leading-tight tracking-tight sm:text-[38px]">
@@ -139,7 +141,6 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
         </div>
       </header>
 
-      {/* Producto principal (2/5 Imagen, 3/5 Información) */}
       {first && (
         <section className="grid items-center gap-8 pb-16 pt-12 md:grid-cols-5">
           <div className="md:col-span-2 flex justify-center items-center">
@@ -156,7 +157,7 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
 
           <div className="md:col-span-3 flex flex-col justify-center">
             <h2 className="text-[36px] font-semibold leading-tight tracking-tight md:text-[42px]">
-              {headline(order.status, order.updatedAt)}
+              {headline(order.status, order.updatedAt, order.pickedUpAt)}
             </h2>
             <ProgressBar status={order.status} />
             <p className="mt-6 text-[17px] text-[#1d1d1f]">{message[order.status]}</p>
@@ -164,7 +165,6 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
         </section>
       )}
 
-      {/* Detalle del producto & Punto de recogida */}
       <section className="border-t border-black/10 py-10 text-[14px]">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
@@ -210,7 +210,6 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
         </div>
       </section>
 
-      {/* Resumen de Pago */}
       <section className="border-t border-black/10 py-12 max-w-3xl">
         <h2 className="mb-8 text-[28px] font-semibold tracking-tight text-[#1d1d1f]">
           Payment summary

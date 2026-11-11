@@ -1,3 +1,5 @@
+//File: frontend/src/components/invoice/InvoiceView.tsx
+
 "use client";
 
 import { Fragment, useEffect, useRef } from "react";

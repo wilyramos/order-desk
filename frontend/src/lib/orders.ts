@@ -1,4 +1,6 @@
-﻿import { API_URL } from "@/lib/api";
+﻿// File: frontend/src/lib/orders.ts
+
+import { API_URL } from "@/lib/api";
 import type { Order } from "@/types/order";
 
 export async function getOrders(): Promise<Order[]> {
@@ -20,4 +22,19 @@ export function ticketUrl(id: string): string {
 
 export function invoicePdfUrl(id: string): string {
   return `${API_URL}/api/orders/${id}/invoice`;
+}
+
+// NUEVA FUNCIÓN: Enviar emails (Recibo o Factura)
+export async function sendOrderEmail(id: string, type: "receipt" | "invoice"): Promise<{ message: string }> {
+  const res = await fetch(`${API_URL}/api/orders/${id}/email/${type}`, {
+    method: "POST",
+  });
+  
+  const data = await res.json();
+  
+  if (!res.ok) {
+    throw new Error(data.message || "Error al enviar el email");
+  }
+  
+  return data;
 }

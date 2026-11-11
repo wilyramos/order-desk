@@ -1,3 +1,5 @@
+//File: backend/src/scripts/set-stock.ts
+
 import "dotenv/config";
 import mongoose from "mongoose";
 import { Product, DEFAULT_STOCK } from "../models/product.model.js";
