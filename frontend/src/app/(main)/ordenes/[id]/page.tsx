@@ -191,7 +191,7 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
             <div>
               <p className="font-semibold text-[#1d1d1f]">In-store pickup location:</p>
               <p className="text-[#6e6e73]">{order.location?.name || "Apple Fifth Avenue"}</p>
-              <p className="text-[#6e6e73]">{order.location?.address || "767 Fifth Avenue"}</p>
+              <p className="text-[#6e6e73]">{order.location?.address}</p>
               <p className="text-[#6e6e73]">NEW YORK, NY 10153-0023</p>
             </div>
           </div>

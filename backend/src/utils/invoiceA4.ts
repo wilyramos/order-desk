@@ -1,11 +1,16 @@
 import type { Order } from "../models/order.model.js";
 
-const money = (value: number) =>
-  "$" +
-  new Intl.NumberFormat("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(value);
+const money = (value: number | string) => {
+  const num = Number(value) || 0;
+  const isInt = Number.isInteger(num);
+  return (
+    "$" +
+    new Intl.NumberFormat("en-US", {
+      minimumFractionDigits: isInt ? 0 : 2,
+      maximumFractionDigits: 2,
+    }).format(num)
+  );
+};
 
 const longDate = (d: Date) =>
   new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(d);

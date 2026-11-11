@@ -10,12 +10,17 @@ import Image from "next/image";
 const DEFAULT_PRINT_URL =
   "https://secure6.store.apple.com/us/shop/order/print/invoice/10078/AFD4669200";
 
-const money = (value: number): string =>
-  "$" +
-  new Intl.NumberFormat("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(value);
+const money = (value: number | string) => {
+  const num = Number(value) || 0;
+  const isInt = Number.isInteger(num);
+  return (
+    "$" +
+    new Intl.NumberFormat("en-US", {
+      minimumFractionDigits: isInt ? 0 : 2,
+      maximumFractionDigits: 2,
+    }).format(num)
+  );
+};
 
 const longDate = (d: Date): string =>
   new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(d);
@@ -132,8 +137,7 @@ export default function InvoiceView({ order }: { order: Order }) {
               <div className="field-label">Location:</div>
               <div className="field-value pre" contentEditable suppressContentEditableWarning>
                 {order.location?.name || "Neotec Peru"}
-                {"\n"}
-                Apple Fifth Avenue
+                
                 {"\n"}
                 {order.location?.address || "767 Fifth Avenue"}
                 {"\n"}
@@ -162,7 +166,7 @@ export default function InvoiceView({ order }: { order: Order }) {
             <thead>
               <tr>
                 <th>Product Name</th>
-                <th>Part<br/>Number</th>
+                <th>Product<br/>Number</th>
                 <th>Item<br/>Price</th>
                 <th>Quantity<br/>Ordered</th>
                 <th>Quantity<br/>Fulfilled</th>
