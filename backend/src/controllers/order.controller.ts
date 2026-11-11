@@ -3,7 +3,8 @@
 import type { Request, Response, NextFunction } from "express";
 import mongoose from "mongoose";
 import { createHash } from "node:crypto";
-import puppeteer, { type Browser } from "puppeteer";
+import puppeteer, { type Browser } from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 import { Product } from "../models/product.model.js";
 import {
   Order,
@@ -14,6 +15,10 @@ import {
 } from "../models/order.model.js";
 import { buildTicketHtml } from "../utils/ticket.js";
 import { buildInvoiceA4Html } from "../utils/invoiceA4.js";
+
+// ---------------------------------------------------------------------------
+// Tipos y constantes
+// ---------------------------------------------------------------------------
 
 type OrderStatusValue = (typeof ORDER_STATUSES)[number];
 type PaymentMethodValue = (typeof PAYMENT_METHODS)[number];
@@ -41,6 +46,10 @@ const PAYMENT_FIELD_MAP = {
   tvr: "paymentTvr",
   tsi: "paymentTsi",
 } as const;
+
+// ---------------------------------------------------------------------------
+// Brevo API REST
+// ---------------------------------------------------------------------------
 
 interface BrevoEmailPayload {
   sender: { name: string; email: string };
@@ -71,15 +80,25 @@ async function sendBrevoEmail(payload: BrevoEmailPayload): Promise<unknown> {
   return data;
 }
 
+// ---------------------------------------------------------------------------
+// Puppeteer Core + Chromium (Compatible con Render)
+// ---------------------------------------------------------------------------
+
 let browserPromise: Promise<Browser> | null = null;
 
 function getBrowser(): Promise<Browser> {
   if (!browserPromise) {
-    browserPromise = puppeteer.launch({
-      headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
-    browserPromise.catch(() => {
+    browserPromise = (async () => {
+      const executablePath = await chromium.executablePath();
+      return puppeteer.launch({
+        args: chromium.args,
+        executablePath: executablePath || process.env.PUPPETEER_EXECUTABLE_PATH,
+        headless: true,
+      }) as unknown as Browser;
+    })();
+
+    browserPromise.catch((err) => {
+      console.error("Error al iniciar Chromium:", err);
       browserPromise = null;
     });
   }
@@ -97,6 +116,10 @@ async function generatePdfBuffer(html: string): Promise<Buffer> {
     await page.close();
   }
 }
+
+// ---------------------------------------------------------------------------
+// Utilidades
+// ---------------------------------------------------------------------------
 
 const round2 = (value: number) => Math.round(value * 100) / 100;
 
@@ -141,6 +164,10 @@ function applyPaymentUpdate(order: any, p: Record<string, any>) {
 const generateInvoiceNumber = () => `MD${Math.floor(10000000 + Math.random() * 90000000)}`;
 const generateOrderNumber = () => `W${Math.floor(1000000000 + Math.random() * 9000000000)}`;
 const generateLast4Digits = () => Math.floor(1000 + Math.random() * 9000).toString();
+
+// ---------------------------------------------------------------------------
+// Crear pedido
+// ---------------------------------------------------------------------------
 
 export async function createOrder(req: Request, res: Response, next: NextFunction) {
   try {
@@ -219,6 +246,10 @@ export async function createOrder(req: Request, res: Response, next: NextFunctio
   }
 }
 
+// ---------------------------------------------------------------------------
+// Consultas
+// ---------------------------------------------------------------------------
+
 export async function getOrders(_req: Request, res: Response, next: NextFunction) {
   try {
     const orders = await Order.find().sort({ createdAt: -1 });
@@ -238,6 +269,10 @@ export async function getOrderById(req: Request<{ id: string }>, res: Response, 
     next(error);
   }
 }
+
+// ---------------------------------------------------------------------------
+// Actualizaciones
+// ---------------------------------------------------------------------------
 
 export async function updateOrderStatus(req: Request<{ id: string }>, res: Response, next: NextFunction) {
   try {
@@ -324,6 +359,10 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
   }
 }
 
+// ---------------------------------------------------------------------------
+// Documentos (ticket / factura)
+// ---------------------------------------------------------------------------
+
 export async function getOrderTicket(req: Request<{ id: string }>, res: Response, next: NextFunction) {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).send("Invalid ID");
@@ -345,6 +384,10 @@ export async function getOrderInvoicePdf(req: Request<{ id: string }>, res: Resp
     next(error);
   }
 }
+
+// ---------------------------------------------------------------------------
+// Envío por correo
+// ---------------------------------------------------------------------------
 
 interface SendDocumentOptions {
   buildHtml: (order: any) => string;
