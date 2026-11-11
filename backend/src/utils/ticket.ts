@@ -26,9 +26,9 @@ interface TicketOrder {
   paymentLast4?: string | null;
   paymentTerms?: string | null;
   status: string;
-  createdAt?: Date | null;
-  updatedAt?: Date | null;
-  pickedUpAt?: Date | null;
+  createdAt?: Date | string | null;
+  updatedAt?: Date | string | null;
+  pickedUpAt?: Date | string | null;
 }
 
 const round2 = (value: number) => Math.round(value * 100) / 100;
@@ -38,12 +38,36 @@ const escapeHtml = (value: unknown) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c] as string
   );
 
-const money = (value: number) =>
-  new Intl.NumberFormat("en-US", { style: "currency", currency: "PEN" }).format(value);
+// Formateador de Moneda (sin decimales .00 si es entero exacto)
+const money = (value: number | string) => {
+  const num = Number(value) || 0;
+  const isInt = Number.isInteger(num);
+  return new Intl.NumberFormat("es-PE", {
+    style: "currency",
+    currency: "PEN",
+    minimumFractionDigits: isInt ? 0 : 2,
+    maximumFractionDigits: 2,
+  }).format(num);
+};
 
-// Formateador con Zona Horaria de Perú
-const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeZone: "America/Lima" });
-const longDateTime = new Intl.DateTimeFormat("en-US", { dateStyle: "long", timeStyle: "short", timeZone: "America/Lima" });
+// Formateadores configurados explícitamente para Perú (Zona Horaria America/Lima)
+const longDate = new Intl.DateTimeFormat("es-PE", {
+  dateStyle: "long",
+  timeZone: "America/Lima",
+});
+
+const longDateTime = new Intl.DateTimeFormat("es-PE", {
+  dateStyle: "long",
+  timeStyle: "short",
+  timeZone: "America/Lima",
+});
+
+// Convierte Date, string o null a una fecha válida
+const parseDate = (d?: Date | string | null): Date => {
+  if (!d) return new Date();
+  const parsed = new Date(d);
+  return isNaN(parsed.getTime()) ? new Date() : parsed;
+};
 
 const STATUS_LABELS: Record<string, string> = {
   pendiente: "Order Placed",
@@ -57,8 +81,15 @@ const STATUS_LABELS: Record<string, string> = {
 export function buildTicketHtml(order: TicketOrder): string {
   const orderNumber = String(order._id).slice(-10).toUpperCase();
   const invoiceNumber = order.invoiceNumber || `INV-${orderNumber}`;
-  const created = new Date(order.createdAt ?? Date.now());
-  const displayDate = order.pickedUpAt ? new Date(order.pickedUpAt) : (order.updatedAt ? new Date(order.updatedAt) : created);
+  
+  // Garantizar el procesamiento correcto con zona horaria de Perú
+  const created = parseDate(order.createdAt);
+  const displayDate = order.pickedUpAt
+    ? parseDate(order.pickedUpAt)
+    : order.updatedAt
+    ? parseDate(order.updatedAt)
+    : created;
+
   const customer = order.customer ?? {};
   const location = order.location ?? {};
 
