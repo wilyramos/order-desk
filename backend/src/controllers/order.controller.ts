@@ -21,7 +21,7 @@ type OrderDoc = OrderAttrs & { _id: mongoose.Types.ObjectId };
 
 const FULFILLED_STATUSES: readonly OrderStatusValue[] = ["enviado", "entregado", "recogido"];
 
-const EMAIL_SENDER = { name: "MacStore", email: "MacStore@order-pickup.com" } as const;
+const EMAIL_SENDER = { name: "McStore", email: "no-reply@order-pickup.com" } as const;
 
 const EMAIL_HTML = `
   <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #1d1d1f; padding: 20px;">
