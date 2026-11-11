@@ -106,7 +106,7 @@ export default function InvoiceView({ order }: { order: Order }) {
             <span className="store-title" contentEditable suppressContentEditableWarning>Apple Store</span>
           </div>
           <div className="receipt-subtitle" contentEditable suppressContentEditableWarning>Invoice Receipt</div>
-          <div className="do-not-pay" contentEditable suppressContentEditableWarning>Non-Payable</div>
+          <div className="do-not-pay" contentEditable suppressContentEditableWarning>Do Not Pay</div>
 
           <div className="grid-2col">
             <div>
