@@ -169,7 +169,7 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
           </div>
 
           <div className="md:col-span-3 flex flex-col justify-center">
-            <span className="text-[17px] font-medium text-[#e30000]">
+            <span className="text-[17px] font-medium">
               {extractModel(first.name)}
             </span>
             <h2 className="text-[36px] font-semibold leading-tight tracking-tight md:text-[42px]">
