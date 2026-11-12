@@ -57,6 +57,19 @@ const message: Record<OrderStatus, string> = {
   cancelado: "This order has been canceled.",
 };
 
+function extractModel(name: string): string {
+  if (!name) return "";
+  // 1. Cortar si tiene un guión o coma ("iPhone 17 - Lavanda" -> "iPhone 17")
+  const baseName = name.split(/[-,]/)[0].trim();
+
+  // 2. Coincidir con el modelo principal (ej. "iPhone 17", "iPhone 17 Pro", "iPhone 17 Pro Max")
+  const match = baseName.match(/(iPhone\s+\d+(\s+(Pro\s+Max|Pro|Plus))?)/i);
+  if (match) return match[0];
+
+  // Si no coincide con el patrón iPhone estándar, devolver el texto previo al guión
+  return baseName;
+}
+
 function maskEmail(email: string): string {
   if (!email || !email.includes("@")) return email;
   const [user, domain] = email.split("@");
@@ -119,7 +132,7 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
 
   return (
     <div className="mx-auto max-w-[980px] pt-10">
-      <header className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between pb-8 ">
+      <header className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between pb-8">
         <div>
           <h1 className="text-[32px] font-semibold leading-tight tracking-tight sm:text-[38px]">
             Details of your order.
@@ -156,6 +169,9 @@ async function OrderDetail({ params }: { params: Promise<{ id: string }> }) {
           </div>
 
           <div className="md:col-span-3 flex flex-col justify-center">
+            <span className="text-[17px] font-medium text-[#e30000]">
+              {extractModel(first.name)}
+            </span>
             <h2 className="text-[36px] font-semibold leading-tight tracking-tight md:text-[42px]">
               {headline(order.status, order.updatedAt, order.pickedUpAt)}
             </h2>

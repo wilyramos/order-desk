@@ -271,6 +271,7 @@ export async function getOrderInvoicePdf(req: Request<{ id: string }>, res: Resp
   }
 }
 
+
 export async function sendReceiptEmail(req: Request, res: Response, next: NextFunction) {
   try {
     const orderId = req.params.id;
@@ -288,15 +289,16 @@ export async function sendReceiptEmail(req: Request, res: Response, next: NextFu
     const recipientEmail = order.customer.email; 
     const dateStr = new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14);
     const receiptFilename = `Sale_Email_Receipt_${dateStr}R09510744.pdf`;
+    const storeName = order.location?.name || "Apple Fifth Avenue";
 
     const { data, error } = await resend.emails.send({
-      from: "Apple Store <AppleStore@order-pickup.com>",
+      from: "Store <store-pickup.com>",
       to: [recipientEmail],
-      subject: "Your receipt from Apple Store",
+      subject: `Your receipt from ${storeName}`,
       html: `
-        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #1d1d1f; padding: 20px;">
-          <p style="margin-bottom: 24px;">Thank you for shopping at the Apple Store.</p>
-          <p>To tell us about your experience, <a href="#" style="color: #ff6600; text-decoration: none;">click here</a>.</p>
+        <div style="font-family: -system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #1d1d1f; padding: 20px;">
+          <p style="margin-bottom: 24px;">Thank you for shopping at the Store.</p>
+          <p>To tell us about your experience, <a href="#" style="color: #d0531c; text-decoration: underline;">click here</a>.</p>
         </div>
       `,
       attachments: [
@@ -335,15 +337,16 @@ export async function sendInvoiceEmail(req: Request, res: Response, next: NextFu
     const recipientEmail = order.customer.email;
     const dateStr = new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14);
     const invoiceFilename = `Sale_Email_Invoice_${dateStr}R09510744.pdf`;
+    const storeName = order.location?.name || "Apple Fifth Avenue";
 
     const { data, error } = await resend.emails.send({
-      from: "Apple Store <AppleStore@order-pickup.com>",
+      from: "Store <store-pickup.com>",
       to: [recipientEmail],
-      subject: "Your invoice from Apple Store",
+      subject: `Your invoice from ${storeName}`,
       html: `
-        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #1d1d1f; padding: 20px;">
-          <p style="margin-bottom: 24px;">Thank you for shopping at the Apple Store.</p>
-          <p>To tell us about your experience, <a href="#" style="color: #ff6600; text-decoration: none;">click here</a>.</p>
+        <div style="font-family: -system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; color: #1d1d1f; padding: 20px;">
+          <p style="margin-bottom: 24px;">Thank you for shopping at the Store.</p>
+          <p>To tell us about your experience, <a href="#" style="color: #d0531c; text-decoration: underline;">click here</a>.</p>
         </div>
       `,
       attachments: [
