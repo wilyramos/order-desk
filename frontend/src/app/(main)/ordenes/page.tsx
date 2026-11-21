@@ -16,7 +16,7 @@ function OrdersSkeleton() {
 export default function OrdersPage({
   searchParams,
 }: {
-  searchParams: Promise<{ nuevo?: string }>;
+  searchParams: Promise<{ nuevo?: string; page?: string }>;
 }) {
   return (
     <main className="min-h-screen bg-[#f5f5f7] px-4 pb-32 pt-12 md:px-6 md:pt-16 text-[#1d1d1f]">

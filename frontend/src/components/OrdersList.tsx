@@ -6,6 +6,9 @@ import { getOrders } from "@/lib/orders";
 import type { Order, OrderStatus } from "@/types/order";
 // NUEVO: Importa el componente de los botones
 import OrderEmailButtons from "@/components/invoice/OrderEmailButtons";
+import OrdersPagination from "@/components/OrdersPagination";
+
+const PAGE_SIZE = 5;
 
 const priceFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -33,10 +36,17 @@ const shortId = (id: string) => id.slice(-8).toUpperCase();
 export default async function OrdersList({
   searchParams,
 }: {
-  searchParams: Promise<{ nuevo?: string }>;
+  searchParams: Promise<{ nuevo?: string; page?: string }>;
 }) {
-  const { nuevo } = await searchParams;
+  const { nuevo, page } = await searchParams;
   const orders = await getOrders();
+
+  const totalPages = Math.max(1, Math.ceil(orders.length / PAGE_SIZE));
+  const requestedPage = Math.floor(Number(page));
+  const currentPage = Number.isFinite(requestedPage)
+    ? Math.min(Math.max(requestedPage, 1), totalPages)
+    : 1;
+  const visibleOrders = orders.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   if (orders.length === 0) {
     return (
@@ -74,7 +84,7 @@ export default async function OrdersList({
       )}
 
       <ul className="space-y-6 md:space-y-8">
-        {orders.map((order) => {
+        {visibleOrders.map((order) => {
           const mainItem = order.items[0];
           const extraCount = order.items.length - 1;
 
@@ -169,6 +179,12 @@ export default async function OrdersList({
           );
         })}
       </ul>
+
+      <OrdersPagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        extraParams={{ nuevo }}
+      />
     </div>
   );
 }
