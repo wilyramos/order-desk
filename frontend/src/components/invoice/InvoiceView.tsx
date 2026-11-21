@@ -202,7 +202,7 @@ export default function InvoiceView({ order }: { order: Order }) {
                 </tr>
                 <tr>
                   <td>Amount Due</td>
-                  <td contentEditable suppressContentEditableWarning>{money(order.amountDue ?? 0)}</td>
+                  <td contentEditable suppressContentEditableWarning>{money(0)}</td>
                 </tr>
               </tbody>
             </table>

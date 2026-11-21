@@ -96,7 +96,6 @@ export function buildTicketHtml(order: TicketOrder): string {
   const taxRate = order.taxRate ?? IGV_RATE;
   const subtotal = order.subtotal ?? round2(order.total / (1 + taxRate));
   const tax = order.tax ?? round2(order.total - subtotal);
-  const amountDue = order.amountDue ?? order.total;
 
   const paymentLine =
     order.paymentMethod === "cash"
@@ -235,7 +234,7 @@ export function buildTicketHtml(order: TicketOrder): string {
         <div><span>Subtotal</span><span>${money(subtotal)}</span></div>
         <div><span>Sales Tax (${Math.round(taxRate * 100)}%)</span><span>${money(tax)}</span></div>
         <div><span>Total</span><span>${money(order.total)}</span></div>
-        <div class="due"><span>Amount Due</span><span>${money(amountDue)}</span></div>
+        <div class="due"><span>Amount Due</span><span>${money(0)}</span></div>
       </div>
     </section>
 
