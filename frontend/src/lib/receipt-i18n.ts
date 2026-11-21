@@ -153,11 +153,8 @@ export const RECEIPT_DICTIONARY: Record<ReceiptLocale, ReceiptTranslations> = {
   },
 };
 
-/** Formateador de moneda dinámico según el idioma */
-export function formatCurrencyByLocale(amount: number, locale: ReceiptLocale) {
-  if (locale === "ja") {
-    return new Intl.NumberFormat("ja-JP", { style: "currency", currency: "JPY" }).format(amount);
-  }
+/** Formatea montos siempre en dólares (USD), sin importar el idioma */
+export function formatCurrencyByLocale(amount: number, _locale: ReceiptLocale) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(amount);
 }
 

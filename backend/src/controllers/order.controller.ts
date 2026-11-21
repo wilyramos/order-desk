@@ -81,10 +81,11 @@ export async function createOrder(req: Request, res: Response, next: NextFunctio
       total += product.price * quantity;
     }
 
-    total = round2(total);
+    // Los precios de los productos NO incluyen impuesto: el impuesto se suma encima.
+    const subtotal = round2(total);
     const taxRate = IGV_RATE;
-    const subtotal = round2(total / (1 + taxRate));
-    const tax = round2(total - subtotal);
+    const tax = round2(subtotal * taxRate);
+    total = round2(subtotal + tax);
 
     const count = await Order.countDocuments();
     const invoiceNumber = `INV-${String(count + 1).padStart(6, "0")}`;
@@ -223,11 +224,13 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
     order.taxRate = customTaxRate;
 
     if (Array.isArray(body.items)) {
-      const total = round2(order.items.reduce((sum, item) => sum + item.price * item.quantity, 0));
-      const subtotal = round2(total / (1 + customTaxRate));
-      order.total = total;
+      // Los precios de los productos NO incluyen impuesto: el impuesto se suma encima.
+      const subtotal = round2(order.items.reduce((sum, item) => sum + item.price * item.quantity, 0));
+      const tax = round2(subtotal * customTaxRate);
+      const total = round2(subtotal + tax);
       order.subtotal = subtotal;
-      order.tax = round2(total - subtotal);
+      order.tax = tax;
+      order.total = total;
       order.amountDue = total;
 
       const fulfilled = FULFILLED_STATUSES.includes(order.status as OrderStatusValue);

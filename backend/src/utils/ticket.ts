@@ -42,9 +42,9 @@ const escapeHtml = (value: unknown) =>
 const money = (value: number | string) => {
   const num = Number(value) || 0;
   const isInt = Number.isInteger(num);
-  return new Intl.NumberFormat("es-PE", {
+  return new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "PEN",
+    currency: "USD",
     minimumFractionDigits: isInt ? 0 : 2,
     maximumFractionDigits: 2,
   }).format(num);

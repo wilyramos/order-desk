@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
+import { TAX_RATE, calcTaxBreakdown } from "@/lib/tax";
 
 const priceFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -12,6 +13,7 @@ const priceFormatter = new Intl.NumberFormat("en-US", {
 
 export default function CartView() {
   const { items, total, setQuantity, removeItem } = useCart();
+  const breakdown = calcTaxBreakdown(total);
 
   if (items.length === 0) {
     return (
@@ -76,9 +78,17 @@ export default function CartView() {
 
       <aside className="h-fit rounded-3xl bg-[#f5f5f7] p-6">
         <h2 className="text-xl font-semibold">Resumen</h2>
-        <div className="mt-4 flex justify-between text-lg">
+        <div className="mt-4 flex justify-between text-[15px]">
+          <span>Subtotal</span>
+          <span>{priceFormatter.format(breakdown.subtotal)}</span>
+        </div>
+        <div className="mt-2 flex justify-between text-[15px]">
+          <span>Impuesto ({Math.round(TAX_RATE * 100)}%)</span>
+          <span>{priceFormatter.format(breakdown.tax)}</span>
+        </div>
+        <div className="mt-4 flex justify-between border-t border-black/10 pt-4 text-lg">
           <span>Total</span>
-          <span className="font-semibold">{priceFormatter.format(total)}</span>
+          <span className="font-semibold">{priceFormatter.format(breakdown.total)}</span>
         </div>
         <Link
           href="/checkout"

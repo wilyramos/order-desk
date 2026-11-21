@@ -4,10 +4,11 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { API_URL } from "@/lib/api";
 import { useCart } from "@/context/CartContext";
+import { TAX_RATE, calcTaxBreakdown } from "@/lib/tax";
 
-const priceFormatter = new Intl.NumberFormat("es-PE", {
+const priceFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "PEN",
+  currency: "USD",
   minimumFractionDigits: 2,
 });
 
@@ -16,6 +17,7 @@ const EMPTY_FORM = { name: "", email: "", phone: "", address: "" };
 export default function CheckoutForm() {
   const router = useRouter();
   const { items, total, clear } = useCart();
+  const breakdown = calcTaxBreakdown(total);
   const [form, setForm] = useState(EMPTY_FORM);
   const [error, setError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
@@ -110,9 +112,19 @@ router.push(`/ordenes?nuevo=${data._id}`);
             </li>
           ))}
         </ul>
+        <div className="mt-4 space-y-2 border-t border-black/10 pt-4 text-[15px]">
+          <div className="flex justify-between">
+            <span>Subtotal</span>
+            <span>{priceFormatter.format(breakdown.subtotal)}</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Impuesto ({Math.round(TAX_RATE * 100)}%)</span>
+            <span>{priceFormatter.format(breakdown.tax)}</span>
+          </div>
+        </div>
         <div className="mt-4 flex justify-between border-t border-black/10 pt-4 text-lg font-semibold">
           <span>Total</span>
-          <span>{priceFormatter.format(total)}</span>
+          <span>{priceFormatter.format(breakdown.total)}</span>
         </div>
       </aside>
     </div>
