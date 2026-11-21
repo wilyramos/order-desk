@@ -185,6 +185,9 @@ export async function updateOrderDetails(req: Request<{ id: string }>, res: Resp
     if (body.customerNumber !== undefined) order.customerNumber = body.customerNumber;
     if (body.status && toOrderStatus(body.status)) order.status = body.status;
     if (body.createdAt) order.createdAt = new Date(body.createdAt);
+    if (body.pickedUpAt !== undefined) {
+      order.pickedUpAt = body.pickedUpAt ? new Date(body.pickedUpAt) : null;
+    }
 
     if (body.customer) {
       for (const [key, value] of Object.entries(body.customer)) {

@@ -76,7 +76,8 @@ export default function EditOrderForm({ order }: { order: Order }) {
     customerNumber: order.customerNumber || "",
     status: order.status,
     createdAt: formatDateForInput(order.createdAt),
-    pickedUpAt: formatDateForInput(order.pickedUpAt),
+    // Por defecto, la fecha de recojo es igual a la fecha de compra
+    pickedUpAt: formatDateForInput(order.pickedUpAt ?? order.createdAt),
     taxRate: order.taxRate ?? 0.07, // Por defecto 7% 
   });
 
