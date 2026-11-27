@@ -25,9 +25,6 @@ const printStamp = (d: Date) => {
 };
 
 export function buildInvoiceA4Html(order: any): string {
-  const frontendUrl = process.env.URL_FRONTEND || "http://localhost:3000";
-  const logoUrl = `${frontendUrl}/Apple_logo_black.svg`;
-
   const displayOrderNumber =
     order.orderNumber || `W${String(order._id).slice(-10).toUpperCase()}`;
   const invoiceNumber = order.invoiceNumber || "MD11673451";
@@ -295,7 +292,6 @@ export function buildInvoiceA4Html(order: any): string {
   <!-- HOJA 1 -->
   <div class="sheet">
     <div class="header-title-row">
-      <img src="${logoUrl}" alt="Apple" class="store-logo" />
       <span class="store-title">Apple Store</span>
     </div>
     <div class="receipt-subtitle">Invoice Receipt</div>
