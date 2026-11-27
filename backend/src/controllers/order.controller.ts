@@ -16,6 +16,9 @@ import { buildInvoiceA4Html } from "../utils/invoiceA4.js";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Remitente: debe ser una dirección del dominio verificado en Resend (order-pickup.com).
+const EMAIL_FROM = process.env.RESEND_FROM_EMAIL || "Store <no-reply@order-pickup.com>";
+
 type OrderStatusValue = (typeof ORDER_STATUSES)[number];
 type PaymentMethodValue = (typeof PAYMENT_METHODS)[number];
 
@@ -295,10 +298,10 @@ export async function sendReceiptEmail(req: Request, res: Response, next: NextFu
     const recipientEmail = order.customer.email; 
     const dateStr = new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14);
     const receiptFilename = `Sale_Email_Receipt_${dateStr}R09510744.pdf`;
-    const storeName = order.location?.name || "Apple Fifth Avenue";
+    const storeName = "Store Avenue";
 
     const { data, error } = await resend.emails.send({
-      from: "Store <store-pickup.com>",
+      from: EMAIL_FROM,
       to: [recipientEmail],
       subject: `Your receipt from ${storeName}`,
       html: `
@@ -346,7 +349,7 @@ export async function sendInvoiceEmail(req: Request, res: Response, next: NextFu
     const storeName = order.location?.name || "Apple Fifth Avenue";
 
     const { data, error } = await resend.emails.send({
-      from: "Store <store-pickup.com>",
+      from: EMAIL_FROM,
       to: [recipientEmail],
       subject: `Your invoice from ${storeName}`,
       html: `

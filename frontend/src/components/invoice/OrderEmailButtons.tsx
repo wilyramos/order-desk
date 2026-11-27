@@ -59,7 +59,8 @@ function SendEmailButton({ orderId, type }: { orderId: string; type: EmailType }
 export default function OrderEmailButtons({ orderId }: { orderId: string }) {
   return (
     <div className="flex flex-col gap-2">
-      <SendEmailButton orderId={orderId} type="receipt" />
+      {/* Por ahora solo se envía la factura. Para volver a mostrar el recibo:
+          <SendEmailButton orderId={orderId} type="receipt" /> */}
       <SendEmailButton orderId={orderId} type="invoice" />
     </div>
   );

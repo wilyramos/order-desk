@@ -11,13 +11,13 @@ const priceFormatter = new Intl.NumberFormat("en-US", {
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="group relative flex flex-col justify-between rounded-3xl bg-[#f5f5f7] p-8 text-left transition-all duration-300 hover:shadow-xl">
+    <article className="apple-lift group relative flex h-full flex-col justify-between rounded-3xl bg-[#f5f5f7] p-8 text-left">
       <div>
         <p className="text-xs font-medium uppercase tracking-wider text-[#6e6e73]">
           {product.category}
         </p>
 
-        <h3 className="mt-1 text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-3xl">
+        <h3 className="apple-display mt-1 text-2xl font-semibold text-[#1d1d1f] md:text-3xl">
           {product.name}
         </h3>
 

@@ -3,15 +3,97 @@
 :root {
   --background: #ffffff;
   --foreground: #1d1d1f;
+  --ease-apple: cubic-bezier(0.28, 0.11, 0.32, 1);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* SF Pro en macOS/iOS; en Windows se usa Inter (cargada en layout.tsx) como fallback más parecido. */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", var(--font-inter), "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern", "liga", "calt";
+  text-rendering: optimizeLegibility;
+}
+
+/* Titulares grandes: interlineado apretado y tracking negativo, como en apple.com */
+.apple-display {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", var(--font-inter), "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+/* ---------- Animaciones ---------- */
+
+@keyframes apple-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Entrada al cargar la página (hero). Funciona sin JavaScript. */
+.hero-enter {
+  animation: apple-fade-up 1s var(--ease-apple) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+/* Aparición al hacer scroll (controlada por <Reveal />). Solo se oculta si hay JavaScript. */
+@media (scripting: enabled) {
+  .reveal {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+    transition:
+      opacity 0.9s var(--ease-apple) var(--reveal-delay, 0ms),
+      transform 0.9s var(--ease-apple) var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Hover de tarjetas: elevación suave */
+.apple-lift {
+  transition:
+    transform 0.5s var(--ease-apple),
+    box-shadow 0.5s var(--ease-apple);
+}
+
+.apple-lift:hover {
+  transform: translate3d(0, -4px, 0);
+  box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-enter {
+    animation: none;
+  }
+
+  .reveal,
+  .reveal.is-visible,
+  .apple-lift,
+  .apple-lift:hover {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    box-shadow: none;
+  }
 }
